@@ -58,10 +58,14 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   [[params.social]]
     name = "linkedin"
     url = "https://twitter.com/"
-
+	
   [[params.social]]
     name = "github"
-    url = "https://github.com/"
+    url = "https://github.com/mlangstrof/"
+
+  [[params.social]]
+    name = "mastodon"	
+    url = "https://techhub.social/@mlangstrof#"
 
 [menu]
 
