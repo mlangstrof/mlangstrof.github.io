@@ -128,15 +128,15 @@ expiryDate = ["expiryDate"]
   # footerHideThemeName = false
   # usesAnimation = true
 
-  [[params.socialLinks]]
+  [[params.social]]
     name = "linkedin"
     url = "https://linkedin.com/in/max-langstrof-002589a8/"
 
-  [[params.socialLinks]]
+  [[params.social]]
     name = "github"
     url = "https://github.com/mlangstrof/"
 	
-  [[params.socialLinks]]
+  [[params.social]]
     name = "mastodon"	
     url = "https://techhub.social/@mlangstrof#"
 	
