@@ -25,7 +25,7 @@ theme = "Niello"
 			pageRef = '/'
 			weight = 1
 		[[languages.en.menus.main]]
-			name = 'About IT'
+			name = 'About'
 			pageRef = '/categories'
 			weight = 2
 		[[languages.en.menus.main]]
@@ -139,6 +139,9 @@ expiryDate = ["expiryDate"]
   [[params.socialLinks]]
     name = "mastodon"	
     url = "https://techhub.social/@mlangstrof#"
+	
+[social]
+	linkedIn = "https://linkedin.com/in/max-langstrof-002589a8/"
 
 [outputs]
   home = ["HTML", "JSON"]

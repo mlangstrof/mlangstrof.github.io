@@ -3,7 +3,7 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'crimson': ['"Crimson Pro"', 'serif'],
+      'Helvetica': ['"Helvetica"', 'sans-serif'],
     },
     extend: {
       'colors': {
