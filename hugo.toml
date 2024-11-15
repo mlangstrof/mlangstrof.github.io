@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = 'Max Langstrof'
 staticDir = ["static", "themes/Niello/static"]
-theme = "Niello"
+theme = ["Niello", "hugo-shortcode-gallery"]
 
 # [outputs]
 #   home = ['html', 'rss']
