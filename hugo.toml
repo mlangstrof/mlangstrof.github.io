@@ -1,6 +1,9 @@
 baseURL = "https://mlangstrof.github.io/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+title = 'Max Langstrof'
+staticDir = ["static", "themes/Niello/static"]
+theme = "Niello"
 
 # [outputs]
 #   home = ['html', 'rss']
@@ -12,10 +15,27 @@ defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
-    title = 'Max Langstrof'
-    [languages.en.params]
-      homeSubtitle = "Continuing Hermit's legacy to be minimal and fast theme"
-    weight = 1
+		title = "Max Langstrof"
+		languageCode = "en-us"
+		LanguageName = "🇺🇸EN"
+		contentDir = "content/en"
+		weight = 1
+		[[languages.en.menus.main]]
+			name = 'Home'
+			pageRef = '/'
+			weight = 1
+		[[languages.en.menus.main]]
+			name = 'About IT'
+			pageRef = '/categories'
+			weight = 2
+		[[languages.en.menus.main]]
+			name = 'Tags'
+			pageRef = '/tags'
+			weight = 3
+		[[languages.en.menus.main]]
+			name = 'Contact'
+			pageRef = '/contact'
+			weight = 4
  
 languageCode = "en-us"
 
@@ -120,24 +140,5 @@ expiryDate = ["expiryDate"]
     name = "mastodon"	
     url = "https://techhub.social/@mlangstrof#"
 
-[menu]
-
-  [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 10
-
-  [[menu.main]]
-    name = "On Technology"
-    url = "posts/"
-    weight = 20
-	
-  [[menu.main]]
-    name = "On Wine"
-    url = "posts/"
-    weight = 30
-
-  [[menu.main]]
-    name = "Resources"
-    url = "resources/"
-    weight = 40
+[outputs]
+  home = ["HTML", "JSON"]
