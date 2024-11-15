@@ -28,6 +28,15 @@ other = "No matches found"
 [home]
 other = "Home"
 
+[about]
+other = "About"
+
+[technology]
+other = "On technology"
+
+[wine]
+other = "On wine"
+
 [next]
 other = "Next >>"
 
