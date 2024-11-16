@@ -7,7 +7,7 @@
         font-family: 'Lato';
         font-style: normal;
         font-display: "sans-serif";
-        src: url("/fonts/Lato.ttf") format("truetype");
+        src: url("/fonts/Lato-Regular.ttf") format("truetype");
     }
 
     html {
