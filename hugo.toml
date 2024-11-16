@@ -40,10 +40,6 @@ theme = ["Niello", "hugo-shortcode-gallery"]
 			name = 'Tags'
 			pageRef = '/tags'
 			weight = 5
-		[[languages.en.menus.main]]
-			name = 'Contact'
-			pageRef = '/contact'
-			weight = 6
  
 languageCode = "en-us"
 

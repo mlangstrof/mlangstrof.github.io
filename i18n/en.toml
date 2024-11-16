@@ -2,7 +2,10 @@
 other = "Max Langstrof"
 
 [siteslogan]
-other = "Observations about IT and wine."
+other = "Observations about IT and wine"
+
+[slogan]
+other = "Hi I'm Max, I write about IT topics and wine."
 
 [siteseokeywords]
 other = "SEO keywords"
