@@ -4,6 +4,7 @@ date = 2024-11-15T09:16:03+08:00
 draft = false
 categories = ["about"]
 layout = "single"
+image: "/images/about.webp"
 +++
 
 Welcome to my blog. My name is Max Langstrof and I'm an experienced DevOps engineer and solution architect with a lot of knowledge and history in planning, designing and realizing complex cloud based workloads.
