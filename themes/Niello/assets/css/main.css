@@ -4,14 +4,14 @@
 
 @layer base {
     @font-face {
-        font-family: 'Lato';
+        font-family: 'Dosis';
         font-style: normal;
         font-display: "sans-serif";
-        src: url("/fonts/Lato-Regular.ttf") format("truetype");
+        src: url("/fonts/Dosis-Regular.ttf") format("truetype");
     }
 
     html {
-        font-family: "Lato";
+        font-family: "Dosis";
         line-height: 200%;
         font-display: "sans-serif";
         color: #adb5bd;
