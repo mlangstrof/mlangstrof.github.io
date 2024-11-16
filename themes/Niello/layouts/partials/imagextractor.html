@@ -13,7 +13,7 @@
 
 <!-- Weather have featured image in front matter -->
 {{ with $page.Params.featuredImage }}
-{{ $image := . | absURL }}
+{{ $image = . | absURL }}
 {{ end }}
 
 {{ if eq $image "" }}
