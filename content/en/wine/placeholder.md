@@ -3,6 +3,7 @@ author: "Max Langstrof"
 date: 2023-01-02
 title: Placeholder
 featuredImage : "/images/about.webp"
+image : "/images/about.webp"
 ---
 
 # Introduction

@@ -5,6 +5,7 @@ draft = false
 categories = ["about"]
 layout = "single"
 featuredImage = "about.webp"
+image = "about.webp"
 +++
 
 Welcome to my blog. My name is Max Langstrof and I'm an experienced DevOps engineer and solution architect with a lot of knowledge and history in planning, designing and realizing complex cloud based workloads.
