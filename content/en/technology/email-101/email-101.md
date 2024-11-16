@@ -4,6 +4,7 @@ date = 2024-11-15T09:16:03+08:00
 draft = false
 categories = ["technology","recommendation"]
 featuredImage = "/images/about.webp"
+
 +++
 
 # Introduction
