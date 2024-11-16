@@ -2,7 +2,7 @@
 author: "Max Langstrof"
 date: 2023-01-02
 title: Red wines
-featuredImage: "/images/ascii-art.png"
+featuredImage: "/images/about.webp"
 
 ---
 

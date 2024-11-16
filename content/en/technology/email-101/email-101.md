@@ -2,7 +2,7 @@
 author: "Max Langstrof"
 date: 2023-01-02
 title: Email 101
-image: /images/about.webp
+image : "/images/about.webp"
 
 ---
 
