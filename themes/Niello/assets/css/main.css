@@ -4,14 +4,14 @@
 
 @layer base {
     @font-face {
-        font-family: 'Inter';
+        font-family: 'OpenSans';
         font-style: normal;
         font-display: "sans-serif";
-        src: url("/fonts/Inter-Regular.ttf") format("truetype");
+        src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
     }
 
     html {
-        font-family: "Inter";
+        font-family: "OpenSans";
         line-height: 200%;
         font-display: "sans-serif";
         color: #adb5bd;
