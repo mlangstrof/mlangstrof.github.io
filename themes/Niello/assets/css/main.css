@@ -4,14 +4,14 @@
 
 @layer base {
     @font-face {
-        font-family: 'Montserrat';
+        font-family: 'Inter';
         font-style: normal;
         font-display: "sans-serif";
-        src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+        src: url("/fonts/Inter-Regular.ttf") format("truetype");
     }
 
     html {
-        font-family: "Montserrat";
+        font-family: "Inter";
         line-height: 200%;
         font-display: "sans-serif";
         color: #adb5bd;
