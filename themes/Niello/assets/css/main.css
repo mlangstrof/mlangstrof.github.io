@@ -4,14 +4,14 @@
 
 @layer base {
     @font-face {
-        font-family: 'Poppins';
+        font-family: 'Raleway';
         font-style: normal;
         font-display: "sans-serif";
-        src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+        src: url("/fonts/Raleway-Regular.ttf") format("truetype");
     }
 
     html {
-        font-family: "Poppins";
+        font-family: "Raleway";
         line-height: 200%;
         font-display: "sans-serif";
         color: #adb5bd;
