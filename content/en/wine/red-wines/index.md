@@ -3,6 +3,7 @@ author: "Max Langstrof"
 date: 2023-01-02
 title: Red wines
 featuredImage: "/images/about.webp"
+categories: "AI"
 
 ---
 
