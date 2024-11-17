@@ -9,16 +9,16 @@ tags = ["communication","email","basics"]
 
 +++
 
-# Introduction
+## Introduction
 
 For better or worse, if you work any kind of corporate or office job, emails will take a prominent spot in your daily work schedule. They are arguably still the most important means of communicating, since they are both (nearly) instantaneous but also asynchronous and allow the transfer of structured information.
 
 However, they are also one of the technologies that are rarely trained, since most people assume that writing a mail, be it digital or analog, is obvious. While that may be true in general, there is a significant gap between a well-crafted email and a poorly written barely understandable one. This post aims to give a sort of crash course based on personal experiences and opinions in how to write effective messages.
 
-# Do 
+## Do 
 
 - use brackets with qualifiers in subject line like \[Urgent\], \[Info\], \[Action Required\], \[Signature required\], \[Decision required\] or \[Request for Information\]. This makes it easier for the receiver to categorize your mail when skimming the subject
-- Use the Bottom Line Up Front" (BLUF) approach:
+- Use the "Bottom Line Up Front" (BLUF) approach:
   - Subject Line: Clearly indicate the purpose of the email, such as "Action Required: Approve Project Proposal by Nov 20."
   - Opening Sentence: Begin with the main point or required action. For example, "Please review and approve the attached project proposal by November 20."
   - Supporting Details: Follow with necessary context or background information to support the main point.
@@ -36,13 +36,13 @@ However, they are also one of the technologies that are rarely trained, since mo
   - note that you are answering in line below, then in a different font color underneath the previus content using your initials first, put your answer 
   - copy the whole paragraph , put a > in front and give it a slight indentation (one tab), then underneath put your answer
 
-# Consider also
+## Consider also
 
 - using a signature for outside communication containing your contact details, normal work hours and if applicable advanced warning of time off
 
 - using markdown structure: since markdown structure has a high legibility even unparsed, it can be well used to quickly write mails no matter what client you are using
 
-# Do Not
+## Do Not
 
 - Use smaller font size than 10 pt: if the font is too small, it is hard to read, especially on mobile devices
 
