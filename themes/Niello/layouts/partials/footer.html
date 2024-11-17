@@ -1,5 +1,7 @@
 <footer class="p-5 text-xl text-center mt-8 pt-8 pb-8 border-t border-gray-100/10">
+	test1
     <div class="text-gray-500">
+		test2
         {{ if .Site.Params.copyright }}
         {{ .Site.Params.copyright | safeHTML }}
         {{ else }}
@@ -9,8 +11,9 @@
         {{ end }}
 
         <!--{{ range .Site.Languages }}
-        | <a class="hover:text-gray-100" href="{{ if eq .Lang " en" }} / {{ else }} /{{.Lang}} {{ end }}">{{
+        | <a class="hover:text-gray-100" href="{{ if eq .Lang ' en' }} / {{ else }} /{{.Lang}} {{ end }}">{{
             .LanguageName }}</a>
         {{ end }}-->
     </div>
+	test3
 </footer>
