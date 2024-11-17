@@ -25,7 +25,7 @@ For wine enthusiasts, Expovina is an unmissable event. Even after countless visi
 *Time: Primavera April/ Wine boats November* | *Location: Primavera Puls 5 / Wine boats Bürkliplatz* | *Ticket price: ~30 CHF* | *Link: [expovina.ch](https://expovina.ch/en-ch/)*
 
 # Zurich Wine Festival
-The **Zurich Wine Festival**, held in autumn at the base of the Ütliberg in Sihlcity, offers a smaller, more focused alternative to Expovina while still delivering an impressive and diverse wine selection. Alongside the tastings, the festival features a variety of intriguing events and master classes, though the quality of these sessions can vary significantly depending on the lecturer.
+The **Zurich Wine Festival**, held in autumn at the base of the Uetliberg in Sihlcity, offers a smaller, more focused alternative to Expovina while still delivering an impressive and diverse wine selection. Alongside the tastings, the festival features a variety of intriguing events and master classes, though the quality of these sessions can vary significantly depending on the lecturer.
 
 One class I attended was rather disappointing as though the selection of wines was decent, the presenter made multiple false statements about Italian wines and was rather condescending, which left a bad taste (no pun intended). Fortunately, another class I joined was much more engaging and well-delivered.
 
