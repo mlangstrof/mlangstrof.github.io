@@ -14,7 +14,7 @@ For better or worse, if you work any kind of corporate or office job, emails wil
 However, they are also one of the technologies that are rarely trained, since most people assume that writing a mail, be it digital or analog, is obvious. While that may be true in general, there is a significant gap between a well-crafted email and a poorly written barely understandable one. This post aims to give a sort of crash course based on personal experiences and opinions in how to write effective messages.
 
 # Do 
-- use brackets with qualifiers in subject line like [Urgent], [Info], [Action Required], [Signature required], [Decision required] or [Request for Information]. This makes it easier for the receiver to categorize your mail when skimming the subject
+- use brackets with qualifiers in subject line like \[Urgent\], \[Info\], \[Action Required\], \[Signature required\], \[Decision required\] or \[Request for Information\]. This makes it easier for the receiver to categorize your mail when skimming the subject
 - Use the Bottom Line Up Front" (BLUF) approach:
   - Subject Line: Clearly indicate the purpose of the email, such as "Action Required: Approve Project Proposal by Nov 20."
   - Opening Sentence: Begin with the main point or required action. For example, "Please review and approve the attached project proposal by November 20."
