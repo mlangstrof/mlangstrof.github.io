@@ -14,7 +14,3 @@ But there’s more to me than tech! When I’m not wrangling cloud services, you
 
 This blog is where my worlds collide—a space for musings, observations, and a splash of humor on all things IT and wine. So pour yourself a glass (or brew some coffee), and let’s dive in!
 
-list:
-- first entry
-- second entry
-

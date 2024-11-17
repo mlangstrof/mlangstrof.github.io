@@ -70,7 +70,7 @@ expiryDate = ["expiryDate"]
   name = "Max Langstrof"
   about = "about"
 
-[blackfriday]
+#[blackfriday]
   # hrefTargetBlank = true
   # noreferrerLinks = true
   # nofollowLinks = true
@@ -82,6 +82,9 @@ expiryDate = ["expiryDate"]
 
 [markup]
   [markup.goldmark]
+    renderer = "html"
+    [markup.goldmark.parser]
+      autoHeadingID = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true
