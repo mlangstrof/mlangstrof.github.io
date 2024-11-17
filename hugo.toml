@@ -95,7 +95,7 @@ expiryDate = ["expiryDate"]
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
-  copyright = "&#xA9; 2024 Max Langstrof. All Rights Reserved."
+  copyright = "2024 Max Langstrof. All Rights Reserved."
 
   # Metadata mostly used in document's head
   description = "On IT and wine"
