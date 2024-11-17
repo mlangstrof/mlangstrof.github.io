@@ -49,7 +49,7 @@ pygmentsUseClasses  = true
 
 rssLimit = 10
 
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+#copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 enableEmoji = true
 
 #[services]
@@ -103,7 +103,7 @@ expiryDate = ["expiryDate"]
   themeColor = "#494f5c"
 
   #homeSubtitle = ""
-  footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  #footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""
 
   justifyContent = false
