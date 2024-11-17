@@ -20,7 +20,7 @@ However, they are also one of the technologies that are rarely trained, since mo
   - *Subject Line:* Clearly indicate the purpose of the email, such as "Action Required: Approve Project Proposal by Nov 20."
   - *Opening Sentence:* Begin with the main point or required action. For example, "Please review and approve the attached project proposal by November 20."
   - *Supporting Details:* Follow with necessary context or background information to support the main point.
-  - Make sure to answer the *five W’s*: who, what, where, when, and why
+  - Make sure to answer the *five W’s:* who, what, where, when, and why
 - use **importance** tag: Most email client support sending an email with "high importance", which makes the message pop out and can be used when creating rules in the email client.
 - use **sensitivity** labels: If your organization has introduced sensitivity labels, always make use of them to ensure data is classified and protected accordingly
 - use the **receiver, copy and blind copy** fields correctly:
