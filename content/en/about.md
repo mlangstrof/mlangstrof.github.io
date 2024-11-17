@@ -8,9 +8,11 @@ featuredImage = "/images/about.webp"
 
 +++
 
-Welcome to my blog. My name is Max Langstrof and I'm an experienced DevOps engineer and solution architect with a lot of knowledge and history in planning, designing and realizing complex cloud based workloads.
+Welcome to my corner of the web! My name is Max Langstrof —a seasoned solution architect and DevSecOps engineer with a passion for cracking the code on complex cloud-based workloads. Whether I’m designing secure, automated Azure solutions or digging into the nitty-gritty of how Azure services tick under the hood, I thrive on solving puzzles and turning chaos into clarity.
 
-I'm primarily focused around Azure and love the challenge of piecing together various components to build a novel, comprehensive, automated solution, as well as doing deep dive explorations to understand how the different Azure services work "under the hood" and can be best utilized.
+But there’s more to me than tech! When I’m not wrangling cloud services, you’ll find me swirling wine glasses and training my taste buds. With certifications like WSET Level 3 and the Italian Wine Scholar already under my belt—and more to come—I’m on a lifelong mission to sip, savor, and share the magic of wine with anyone willing to listen.
 
-This blog is meant as a collection of private projects, explanations of Azure topics, scripts and tools I found particularly helpful as well as thoughts and observations around all things related to working in IT.
+This blog is where my worlds collide—a space for musings, observations, and a splash of humor on all things IT and wine. So pour yourself a glass (or brew some coffee), and let’s dive in!
+
+
 
