@@ -82,9 +82,12 @@ expiryDate = ["expiryDate"]
 
 [markup]
   [markup.goldmark]
-    renderer = "html"
-    [markup.goldmark.parser]
-      autoHeadingID = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = false
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 
 [params]
