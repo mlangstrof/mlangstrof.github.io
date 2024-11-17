@@ -17,9 +17,9 @@ However, they are also one of the technologies that are rarely trained, since mo
 
 - **use brackets with qualifiers** in subject line like \[Urgent\], \[Info\], \[Action Required\], \[Signature required\], \[Decision required\] or \[Request for Information\]. This makes it easier for the receiver to categorize your mail when skimming the subject
 - Use the **"Bottom Line Up Front"** (BLUF) approach:
-  - *Subject Line*: Clearly indicate the purpose of the email, such as "Action Required: Approve Project Proposal by Nov 20."
-  - *Opening Sentence*: Begin with the main point or required action. For example, "Please review and approve the attached project proposal by November 20."
-  - *Supporting Details*: Follow with necessary context or background information to support the main point.
+  - *Subject Line:* Clearly indicate the purpose of the email, such as "Action Required: Approve Project Proposal by Nov 20."
+  - *Opening Sentence:* Begin with the main point or required action. For example, "Please review and approve the attached project proposal by November 20."
+  - *Supporting Details:* Follow with necessary context or background information to support the main point.
   - Make sure to answer the *five W’s*: who, what, where, when, and why
 - use **importance** tag: Most email client support sending an email with "high importance", which makes the message pop out and can be used when creating rules in the email client.
 - use **sensitivity** labels: If your organization has introduced sensitivity labels, always make use of them to ensure data is classified and protected accordingly
@@ -37,17 +37,12 @@ However, they are also one of the technologies that are rarely trained, since mo
 # Consider also
 
 - using a **signature** for outside communication containing your contact details, normal work hours and if applicable advanced warning of time off
-
 - using **markdown structure**: since markdown structure has a high legibility even unparsed, it can be well used to quickly write mails no matter what client you are using
 
 # Do Not
 
 - Use **smaller font size than 10 pt**: if the font is too small, it is hard to read, especially on mobile devices
-
 - Use **anything but a standard sans-serif font** (and doubly so, do not use comic sans): emails are meant to convey information, not be art pieces. Don't be fancy, be legible
-
 - use **too many different colors, colors that are too light or not accessible**: Too many colors cause confusion and colors that are too light or which are impacted by common disabilities (like red green blindness) can make them hard to read for the receiver.
-
 - directly **send large files**: Large files can cause failures in delivery and extend the duration of sending and receiving, use links to the files (e.g. OneDrive or Dropbox) instead wherever possible
-
 - include a lot of and/or **very large pictures** in the body of the email
