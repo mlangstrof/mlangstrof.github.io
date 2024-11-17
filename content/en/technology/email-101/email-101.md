@@ -38,7 +38,7 @@ However, they are also one of the technologies that are rarely trained, since mo
 
 # Consider also
 
--using a signature for outside communication containing your contact details, normal work hours and if applicable advanced warning of time off
+- using a signature for outside communication containing your contact details, normal work hours and if applicable advanced warning of time off
 
 - using markdown structure: since markdown structure has a high legibility even unparsed, it can be well used to quickly write mails no matter what client you are using
 
