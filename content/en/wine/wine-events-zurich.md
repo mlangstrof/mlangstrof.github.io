@@ -8,6 +8,7 @@ tags = ["wine","events","tastings"]
 +++
 
 Due to it's central location and high purchasing power, Switzerland is at the top of the list for many wine exporters. Considering this, it makes sense that Zurich has a vibrant wine scene and can call itself home to multiple exciting wine fairs. Let's go over the most popular ones. 
+
 *Please keep in mind the information below are based on previous experiences, ticket prices and locations may change in the future.*
 
 # Expovina
@@ -41,10 +42,7 @@ Interestingly, I noticed one master class drop in price from 40 CHF to 20 CHF wi
 
 All in all, the Zurich Wine Festival is a great event for wine lovers, with its mix of classic and rare finds, engaging producers, and vibrant atmosphere. Just approach the master classes with a bit of discernment!
 
-*Time: October*
-*Location: Zurich Papiersaal (located in Sihlcity)*
-*Ticket price: 30 CHF*
-*Link: [zurichwinefestival.ch](https://zurichwinefestival.ch/)*
+*Time: October*; *Location: Zurich Papiersaal (located in Sihlcity)*; *Ticket price: 30 CHF*; *Link: [zurichwinefestival.ch](https://zurichwinefestival.ch/)*
 
 # Matter Of Taste
 Who hasn’t heard of the famous (or infamous?) Parker points, the rating system pioneered by wine critic Robert Parker that’s been around for what feels like an eternity. While wine critics and their scoring methods often spark debate — and some are more questionable than others (*cough* Luca Maroni *cough*) — I personally find Parker's system to be one of the more accurate ones.
@@ -57,10 +55,7 @@ However that does not necessarily mean they are approachable or "fun" — I woul
 
 In summary, this event is both unique and intriguing, and if money is no object, it’s absolutely worth experiencing — at least once. However, for most wine enthusiasts, Zurich’s other wine fairs offer a more enjoyable and budget-friendly experience, with plenty of phenomenal wines waiting to be discovered. For me, the Parker event will likely remain a one-time adventure — but a memorable one nonetheless.
 
-*Time: March*
-*Location: Tonhalle*
-*Ticket price: 249 CHF*
-*Link: [zurich.robertparker.com](https://www.zurich.robertparker.com/)*
+*Time: March*; *Location: Tonhalle*; *Ticket price: 249 CHF*; *Link: [zurich.robertparker.com](https://www.zurich.robertparker.com/)*
 
 # Terroir Zürisee
 No roundup of Zurich wine events would be complete without a nod to **Terroir Zürisee**, the charming, lakeside festival celebrating wines from the Lake Zurich region. While you’ll find plenty of familiar favorites like Pinot Noir (Blauburgunder), Sauvignon Blanc, and Chardonnay, the real gems are the local specialties. From the fantastic indigenous grape Räuschling to Swiss classics like Petit Arvine and Heida, there’s a lot to explore.
@@ -69,7 +64,4 @@ Some producers even bring a sense of adventure with experimental varieties, incl
 
 Set in a charming venue near Tiefenbrunnen, Terroir Zürisee is the perfect spot for anyone looking to expand their knowledge of Swiss wines or connect with local producers. For all those wanting to extend their knowledge of Swiss wines or meet some local producers, I recommend a visit!
 
-*Time: April*
-*Location: Kulturareal Mühle Tiefenbrunnen*
-*Ticket price: 25 CHF*
-*Link: [terroir-zuerisee.ch](https://terroir-zuerisee.ch/)*
+*Time: April*; *Location: Kulturareal Mühle Tiefenbrunnen*; *Ticket price: 25 CHF*; *Link: [terroir-zuerisee.ch](https://terroir-zuerisee.ch/)*
