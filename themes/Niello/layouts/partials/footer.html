@@ -1,19 +1,13 @@
 <footer class="p-5 text-xl text-center mt-8 pt-8 pb-8 border-t border-gray-100/10">
-	test1
+    test1
     <div class="text-gray-500">
-		test2
+        test2
         {{ if .Site.Params.copyright }}
         {{ .Site.Params.copyright | safeHTML }}
         {{ else }}
-        &#xA9; 2019 - 2023 by <a class="hover:text-gray-100" href="https://github.com/guangmean/Niello"
+        2019 - 2023 by <a class="hover:text-gray-100" href="https://github.com/guangmean/Niello"
             target="_blank">guangmean</a>. All Rights
         Reserved.
         {{ end }}
-
-        <!--{{ range .Site.Languages }}
-        | <a class="hover:text-gray-100" href="{{ if eq .Lang ' en' }} / {{ else }} /{{.Lang}} {{ end }}">{{
-            .LanguageName }}</a>
-        {{ end }}-->
     </div>
-	test3
 </footer>
