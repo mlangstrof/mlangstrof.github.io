@@ -50,7 +50,7 @@ pygmentsUseClasses  = true
 rssLimit = 10
 
 #copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-enableEmoji = true
+#enableEmoji = true
 
 #[services]
 #  [services.disqus]
@@ -117,7 +117,7 @@ expiryDate = ["expiryDate"]
   readTime = true
   readTimeSeparator = "\u2026 \u23F2 Reading Time:"
   # legacyLayout = false
-  shareSocial = true
+  #shareSocial = true
   # googleTagManager = "GTM-XXXXXXXX"
   # tagSymbol = "#"
   # categorySymbol = "⊲"
@@ -125,28 +125,13 @@ expiryDate = ["expiryDate"]
   # pinnedSVGname = "pin"
   descriptionInPosts = true
   # initialPublish = "Initally Posted on: "
-  human = ["single","posts"]
+  #human = ["single","posts"]
   # denyRobots = "noindex, nofollow, noarchive"
   # allowRobots = "index, follow"
   # siteNoIndex = false
   # noIndexPages = ["404 Page not found"]
   # footerHideThemeName = false
   # usesAnimation = true
-
-  [[params.social]]
-    name = "linkedin"
-    url = "https://linkedin.com/in/max-langstrof-002589a8/"
-
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/mlangstrof/"
-    
-  [[params.social]]
-    name = "mastodon"   
-    url = "https://techhub.social/@mlangstrof#"
-    
-[social]
-    linkedIn = "https://linkedin.com/in/max-langstrof-002589a8/"
 
 [outputs]
   home = ["HTML", "JSON"]
