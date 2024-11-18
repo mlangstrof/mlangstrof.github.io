@@ -2,7 +2,7 @@
 {{ $page := .context.Page }}
 {{ $image := "" }}
 {{ $alt := "" }}
-{{ $tags := .Params.tags | default (slice) }} 
+{{ $tags := slice "events" "ai" "design" }}
 
 {{ $pageTitle := $page.Title | lower }}
 
