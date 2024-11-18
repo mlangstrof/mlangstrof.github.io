@@ -15,31 +15,31 @@ theme = ["Niello", "hugo-shortcode-gallery"]
 
 [languages]
   [languages.en]
-		title = "Max Langstrof"
-		languageCode = "en-us"
-		LanguageName = "🇺🇸EN"
-		contentDir = "content/en"
-		weight = 1
-		[[languages.en.menus.main]]
-			name = 'Home'
-			pageRef = '/'
-			weight = 1
-		[[languages.en.menus.main]]
-			name = 'About'
-			pageRef = '/about'
-			weight = 2
-		[[languages.en.menus.main]]
-			name = 'On technology'
-			pageRef = '/technology'
-			weight = 3
-		[[languages.en.menus.main]]
-			name = 'On wine'
-			pageRef = '/wine'
-			weight = 4
-		[[languages.en.menus.main]]
-			name = 'Tags'
-			pageRef = '/tags'
-			weight = 5
+        title = "Max Langstrof"
+        languageCode = "en-us"
+        LanguageName = "🇺🇸EN"
+        contentDir = "content/en"
+        weight = 1
+        [[languages.en.menus.main]]
+            name = 'Home'
+            pageRef = '/'
+            weight = 1
+        [[languages.en.menus.main]]
+            name = 'About'
+            pageRef = '/about'
+            weight = 2
+        [[languages.en.menus.main]]
+            name = 'On technology'
+            pageRef = '/technology'
+            weight = 3
+        [[languages.en.menus.main]]
+            name = 'On wine'
+            pageRef = '/wine'
+            weight = 4
+        [[languages.en.menus.main]]
+            name = 'Tags'
+            pageRef = '/tags'
+            weight = 5
  
 languageCode = "en-us"
 
@@ -140,13 +140,13 @@ expiryDate = ["expiryDate"]
   [[params.social]]
     name = "github"
     url = "https://github.com/mlangstrof/"
-	
+    
   [[params.social]]
-    name = "mastodon"	
+    name = "mastodon"   
     url = "https://techhub.social/@mlangstrof#"
-	
+    
 [social]
-	linkedIn = "https://linkedin.com/in/max-langstrof-002589a8/"
+    linkedIn = "https://linkedin.com/in/max-langstrof-002589a8/"
 
 [outputs]
   home = ["HTML", "JSON"]
