@@ -3,11 +3,22 @@
 {{ $image := "" }}
 {{ $alt := "" }}
 {{ $tags := slice "events" "ai" "design" }}
+{{ $allTags := slice }} <!-- Initialize an empty slice -->
+
+{{ range .Site.RegularPages }}
+  {{ $tags := .Params.tags | default (slice) }} <!-- Get tags from front matter -->
+  {{ range $tags }}
+    {{ $allTags = $allTags | append . }}
+  {{ end }}
+{{ end }}
+
+<!-- Remove duplicates -->
+{{ $uniqueTags := uniq $allTags }}
 
 {{ $pageTitle := $page.Title | lower }}
 
 <!-- Taxonomy image, eg: categories or tags -->
-{{ if in $tags $pageTitle }}
+{{ if in $uniqueTags $pageTitle }}
 {{ $image = "/image/about.webp" }}
 {{ end }}
 
