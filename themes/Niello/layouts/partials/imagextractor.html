@@ -2,11 +2,8 @@
 {{ $page := .context.Page }}
 {{ $image := "" }}
 {{ $alt := "" }}
-{{ $tags := slice }} <!-- Initialize an empty array -->
+{{ $tags := .Params.tags | default (slice) }} 
 
-{{ range .Site.Taxonomies.tags }}
-  {{ $tags = $tags | append (lower .Name) }} <!-- Append each tag to the array in lowercase -->
-{{ end }}
 {{ $pageTitle := $page.Title | lower }}
 
 <!-- Taxonomy image, eg: categories or tags -->
