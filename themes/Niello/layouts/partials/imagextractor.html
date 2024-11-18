@@ -5,7 +5,7 @@
 
 <!-- Taxonomy image, eg: categories or tags -->
 {{ if eq $page.Title "tags" }}
-{{ $pages := where site.RegularPages "Params.categories" "intersect" (slice .context.Title) }}
+{{ $pages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
 {{ with first 1 $pages }}
 {{ $page = index . 0 }}
 {{ end }}
