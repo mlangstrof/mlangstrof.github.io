@@ -1,5 +1,5 @@
 +++
 title = "Search"
 layout = "search"
-draft = true
+draft = false
 +++
