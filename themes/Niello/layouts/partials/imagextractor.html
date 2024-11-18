@@ -4,9 +4,11 @@
 {{ $alt := "" }}
 
 <!-- Taxonomy image, eg: categories or tags -->
-{{ if eq .Kind "taxonomy" }}
-  {{ $tagName := .Title | urlize }} <!-- Get the tag name (e.g., "Technology") and URL-encode it -->
-  {{ $image = printf "/images/tag_%s.webp" $tagName }} <!-- Construct the image path -->
+{{ if eq .Title "tags" }}
+{{ $pages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
+{{ with first 1 $pages }}
+{{ $page = index . 0 }}
+{{ end }}
 {{ end }}
 
 {{ if eq $page.Kind "term" }}
