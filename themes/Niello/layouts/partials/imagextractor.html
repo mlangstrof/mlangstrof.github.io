@@ -4,8 +4,8 @@
 {{ $alt := "" }}
 
 <!-- Taxonomy image, eg: categories or tags -->
-{{ if eq .Title "tags" }}
-{{ $pages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
+{{ if eq $page.Title "tags" }}
+{{ $pages := where site.RegularPages "Params.categories" "intersect" (slice .context.Title) }}
 {{ with first 1 $pages }}
 {{ $page = index . 0 }}
 {{ end }}
