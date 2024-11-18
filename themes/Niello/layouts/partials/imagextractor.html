@@ -4,8 +4,10 @@
 {{ $alt := "" }}
 
 <!-- Taxonomy image, eg: categories or tags -->
+{{ if eq $page.Kind "taxonomy" }}
 {{ if eq $page.Title "Events" }}
 {{ $image = "/image/about.webp" }}
+{{ end }}
 {{ end }}
 
 {{ if eq $page.Kind "term" }}
