@@ -6,9 +6,7 @@
 
 {{ $pageTitle := $page.Title | lower | urlize }}
 
-<!--{{ if in $uniqueTags $pageTitle }}
-{{ $image = "/image/about.webp" }}
-{{ end }}-->
+<!-- {{ if in $tags $pageTitle }} {{ $image = "/image/about.webp" }} {{ end }} -->
 
 <!-- Taxonomy image, eg: categories or tags, does not appear to be working though-->
 {{ if eq $page.Kind "term" }}
