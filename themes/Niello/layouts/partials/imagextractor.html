@@ -53,7 +53,7 @@
 
 <!-- lazy solution for tags -->
 {{ if eq $image "" }}
-{{ $imagePath := printf "/images/tag_%s.webp" $pageTitle } }} <!-- Path to the image -->
+{{ $imagePath := printf "/images/tag_%s.webp" $pageTitle }} <!-- Path to the image -->
 {{ $imageExists := fileExists (printf "static%s" $imagePath) }} <!-- Check if the file exists -->
 {{ if $imageExists }}
 {{ $image = "/image/about.webp" }}
