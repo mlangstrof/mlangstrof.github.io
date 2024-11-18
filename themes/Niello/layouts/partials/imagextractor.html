@@ -64,6 +64,15 @@
 {{ end }}
 {{ end }}
 
+<!-- lazy solution for tags -->
+{{ if eq $image "" }}
+{{ $imagePath := "/image/about.webp" }} <!-- Path to the image -->
+{{ $imageExists := fileExists (printf "static%s" $imagePath) }} <!-- Check if the file exists -->
+{{ if $imageExists }}
+{{ $image = "/image/about.webp" }}
+{{ end }}
+{{ end }}
+
 <!-- Return a placeholder image if no images -->
 {{ if eq $image "" }}
 {{ $image = "/image/common-writing-empty.webp" }}
