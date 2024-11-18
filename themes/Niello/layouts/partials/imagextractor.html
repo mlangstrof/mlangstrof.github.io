@@ -2,26 +2,15 @@
 {{ $page := .context.Page }}
 {{ $image := "" }}
 {{ $alt := "" }}
-{{ $tags := slice "events" "ai" "design" }}
-{{ $allTags := slice }} <!-- Initialize an empty slice -->
+<!-- {{ $tags := slice "events" "ai" "design" }} -->
 
-{{ range .Site.RegularPages }}
-  {{ $tags := .Params.tags | default (slice) }} <!-- Get tags from front matter -->
-  {{ range $tags }}
-    {{ $allTags = $allTags | append . }}
-  {{ end }}
-{{ end }}
+{{ $pageTitle := $page.Title | lower | urlize }}
 
-<!-- Remove duplicates -->
-{{ $uniqueTags := uniq $allTags }}
-
-{{ $pageTitle := $page.Title | lower }}
-
-<!-- Taxonomy image, eg: categories or tags -->
-{{ if in $uniqueTags $pageTitle }}
+<!--{{ if in $uniqueTags $pageTitle }}
 {{ $image = "/image/about.webp" }}
-{{ end }}
+{{ end }}-->
 
+<!-- Taxonomy image, eg: categories or tags, does not appear to be working though-->
 {{ if eq $page.Kind "term" }}
   {{ $pages := where site.RegularPages "Params.categories" "intersect" (slice .context.Title) }}
   {{ $tagPages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
@@ -66,7 +55,7 @@
 
 <!-- lazy solution for tags -->
 {{ if eq $image "" }}
-{{ $imagePath := "/image/about.webp" }} <!-- Path to the image -->
+{{ $imagePath := printf "/images/tag_%s.webp" $pageTitle } }} <!-- Path to the image -->
 {{ $imageExists := fileExists (printf "static%s" $imagePath) }} <!-- Check if the file exists -->
 {{ if $imageExists }}
 {{ $image = "/image/about.webp" }}
