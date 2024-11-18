@@ -2,12 +2,15 @@
 {{ $page := .context.Page }}
 {{ $image := "" }}
 {{ $alt := "" }}
+{{ $tags := slice }} <!-- Initialize an empty array -->
+
+{{ range .Site.Taxonomies.tags }}
+  {{ $tags = $tags | append (lower .Name) }} <!-- Append each tag to the array in lowercase -->
+{{ end }}
 
 <!-- Taxonomy image, eg: categories or tags -->
-{{ if eq $page.Kind "taxonomy" }}
-{{ if eq $page.Title "Events" }}
+{{ if in $tags $page.Title }}
 {{ $image = "/image/about.webp" }}
-{{ end }}
 {{ end }}
 
 {{ if eq $page.Kind "term" }}
