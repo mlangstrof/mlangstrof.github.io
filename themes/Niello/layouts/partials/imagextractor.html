@@ -4,7 +4,14 @@
 {{ $alt := "" }}
 
 <!-- Taxonomy image, eg: categories or tags -->
-{{ if eq $page.RelPermalink "/en/tags/" }}
+{{ if eq $page.Title "Tags" }}
+{{ $pages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
+{{ with first 1 $pages }}
+{{ $page = index . 0 }}
+{{ end }}
+{{ end }}
+
+{{ if eq .Title "Tags" }}
 {{ $pages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
 {{ with first 1 $pages }}
 {{ $page = index . 0 }}
