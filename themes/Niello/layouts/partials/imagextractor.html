@@ -6,7 +6,9 @@
 <!-- Taxonomy image, eg: categories or tags -->
 {{ if eq $page.Kind "term" }}
 {{ $pages := where site.RegularPages "Params.categories" "intersect" (slice .context.Title) }}
-{{ with first 1 $pages }}
+{{ $tagPages := where site.RegularPages "Params.tags" "intersect" (slice .context.Title) }}
+{{ $allPages := union $pages $tagPages }}
+{{ with first 1 $allPages }}
 {{ $page = index . 0 }}
 {{ end }}
 {{ end }}
