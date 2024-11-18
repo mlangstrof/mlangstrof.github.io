@@ -1,5 +1,5 @@
 +++
 title = "Search"
 url = "/search"
-layout "search"
+layout = "search"
 +++
