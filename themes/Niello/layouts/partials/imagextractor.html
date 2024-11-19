@@ -2,11 +2,8 @@
 {{ $page := .context.Page }}
 {{ $image := "" }}
 {{ $alt := "" }}
-<!-- {{ $tags := slice "events" "ai" "design" }} -->
 
 {{ $pageTitle := $page.Title | lower | urlize }}
-
-<!-- {{ if in $tags $pageTitle }} {{ $image = "/image/about.webp" }} {{ end }} -->
 
 <!-- Taxonomy image, eg: categories or tags, does not appear to be working though-->
 {{ if eq $page.Kind "term" }}

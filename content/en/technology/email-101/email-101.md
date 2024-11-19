@@ -3,7 +3,7 @@ title = 'Email 101'
 date = 2024-11-16T10:00:03+08:00
 draft = false
 categories = ["technology","recommendation"]
-featuredImage = "/images/emails.webp"
+featuredImage = "/images/tag_emails.webp"
 tags = ["communication","email","basics"]
 
 
