@@ -38,5 +38,5 @@ This rule is a helpful shortcut: matching flavors can enhance a dish and wine. F
 ## 3. Salt and acid make the wine *softer*, sweetness and umami *harder*
 Salt and acidity in food can soften the perception of certain characteristics in wine, making it taste smoother and more balanced. Salt reduces the impact of bitterness and astringency from tannins, while acidic foods can decrease the wine's apparent acidity, enhancing its fruitiness and body. This interaction makes the wine feel rounder and more enjoyable alongside salty or acidic dishes. On the other hand, sweetness and umami in food can make a wine taste harder by intensifying its bitterness, acidity, and astringency. Sweet and umami-rich foods can diminish the perception of body, sweetness, and fruitiness in the wine, causing it to seem more austere or sharp. 
 
-{{< gallery match="images/*" sortOrder="desc" rowHeight="530" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true lastRow="nojustify" loadJQuery=true >}}
+{{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true lastRow="justified" loadJQuery=true >}}
 
