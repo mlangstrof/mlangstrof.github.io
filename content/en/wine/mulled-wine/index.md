@@ -34,4 +34,4 @@ Of course, it doesn't always have to be mulled **wine**. If you prefer a *non-al
 
 &nbsp;
 
-{{< gallery match="images/*" sortOrder="asc" rowHeight="530" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true lastRow="nojustify" loadJQuery=true >}}
+{{< gallery match="images/*" sortOrder="asc" rowHeight="531" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true lastRow="nojustify" loadJQuery=true >}}
