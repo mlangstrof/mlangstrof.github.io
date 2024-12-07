@@ -11,7 +11,8 @@
             }}</span>
     </div>
     <ul>
-        {{ range (where .Pages "Type" "post") }}
+        {{ range (where .Pages "Section" "in" (slice "wine" "technology")) }}
+
         <li>
             {{ .PublishDate.Format (i18n "archivefmt") }}
             -
