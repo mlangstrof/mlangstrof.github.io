@@ -30,4 +30,6 @@ Wine aromas are delicate, so you want to heat your wine slowly and evenly up to 
 
 Of course, it doesn't always have to be mulled **wine**. If you prefer a *non-alcoholic* alternative, there's **winter punch**. You can find recipe cards for both below.
 
+&nbsp;
+
 {{< gallery match="images/*" sortOrder="desc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
