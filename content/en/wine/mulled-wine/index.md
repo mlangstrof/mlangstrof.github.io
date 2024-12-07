@@ -9,7 +9,7 @@ tags = ["wine", "basics"]
 
 As the days grow shorter and Christmas decorations begin to light up our streets, the festive spirit comes alive. With the start of Advent, Christmas markets are finally opening in most places, bringing with them the delightful aromas of Bratwurst, Raclette, gingerbread, and — of course — Glühwein. But what makes a good Glühwein, and can you make it at home?
 
-Mulled wine, or **Glühwein** as it's known in German-speaking countries, is essentially spiced wine and can be made with either red or white wine as the base. To the wine, you add a variety of spices — usually seasonal ones like cinnamon, star anise, and cloves — to give it more depth and warmth. You can also incorporate fruit juices, most commonly orange juice, to make the Glühwein a bit easier to drink and to add sweetness and acidity. Some people prefer to give it a little extra kick by adding a shot of brandy, cognac, or other liqueurs.
+Mulled wine, or **Glühwein** as it's known in German-speaking countries, is essentially spiced wine and can be made with either red or white wine as the base. To the wine, you add a variety of spices — usually seasonal ones like cinnamon, star anise, and cloves — to give it more depth and warmth. You can also incorporate fruit juices, most commonly orange juice, to make the Glühwein a bit easier to drink and to add sweetness and acidity. Some people prefer to give it a little extra kick by adding a shot of rum, brandy, cognac, or other liqueurs.
 
 # Three Steps to the Perfect Glühwein
 ## 1. Choose the Right Base Wine
