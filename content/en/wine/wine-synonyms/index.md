@@ -23,4 +23,4 @@ Examples of **biotypes**, so local variations of the same grape, are:
 
 Still wondering? Have a look at the infographic below!
 
-![wine synonyms infographic](/images/wine_synonyms_infographic.webp)
+![wine synonyms infographic](images/wine_synonyms_infographic.webp "800px")
