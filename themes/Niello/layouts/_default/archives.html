@@ -11,7 +11,7 @@
             }}</span>
     </div>
     <ul>
-        {{ range (where .Pages "Section" "in" (slice "wine" "technology" "wein", "technologie")) }}
+        {{ range (where .Pages "Section" "in" (slice "wine" "technology" "wein" "technologie")) }}
 
         <li>
             {{ .PublishDate.Format (i18n "archivefmt") }}
