@@ -5,7 +5,8 @@ draft = false
 categories = ["about"]
 layout = "single"
 featuredImage = "/images/about.webp"
-
+[ _build ]
+  list = false
 +++
 
 Willkommen in meiner Ecke des Internets! Ich heiße Max Langstrof, bin erfahrener Solution Architect und DevSecOps Engineer und brenne dafür, komplexe IT-Probleme zu lösen sowie moderne, cloudbasierte Umgebungen aufzubauen. Ob es um hochsichere, automatisierte Lösungsarchitekturen auf Azure geht oder darum, die innersten Zusammenhänge von Azure-Services zu verstehen – ich liebe es, Puzzleteile zusammenzufügen und aus Chaos klare Strukturen zu formen.

@@ -5,7 +5,8 @@ draft = false
 categories = ["about"]
 layout = "single"
 featuredImage = "/images/about.webp"
-
+[ _build ]
+  list = false
 +++
 
 Welcome to my corner of the web! My name is Max Langstrof —a seasoned solution architect and DevSecOps engineer with a passion for cracking the code on complex cloud-based workloads. Whether I’m designing secure, automated Azure solutions or digging into the nitty-gritty of how Azure services tick under the hood, I thrive on solving puzzles and turning chaos into clarity.
