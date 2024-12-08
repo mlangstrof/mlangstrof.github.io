@@ -1,0 +1,92 @@
+[sitename]
+other = "Max Langstrof"
+
+[siteslogan]
+other = "Beobachtungen über IT und Wein"
+
+[slogan]
+other = "Hi, meine Name ist Max, ich schreibe über moderne IT, die Cloud, Data, AI und Wein"
+
+[siteseokeywords]
+other = "SEO keywords"
+
+[siteseodescription]
+other = "SEO description"
+
+[search]
+other = "Suche"
+
+[searchplaceholder]
+other = "Suchbegriffe eingeben..."
+
+[searching]
+other = "Suche..."
+
+[keywordmissing]
+other = "Bitte geben Sie ein Wort oder einen Suchbegriff in die Suchleiste ein."
+
+[nomatch]
+other = "Keine Treffer gefunden"
+
+[home]
+other = "Home"
+
+[about]
+other = "Über mich"
+
+[technology]
+other = "Technologie"
+
+[wine]
+other = "Wein"
+
+[next]
+other = "Nächste Seite >>"
+
+[previous]
+other = "<< Vorherige Seite"
+
+[recommendpost]
+other = "Empfohlene Beiträge"
+
+[intro]
+other = "About"
+
+[topost]
+other = "Neuster Beitrag"
+
+[topcat]
+other = "Topkategorien"
+
+[toptag]
+other = "Top Tags"
+
+[archive]
+other = "Archiv"
+
+[contact]
+other = "Kontakt"
+
+[emptypost]
+other = "Keine Beiträge vorhanden"
+
+[emptycat]
+other = "Keine Kategorien vorhanden"
+
+[emptytag]
+other = "Keine Tags vorhanden"
+
+[emptyarchive]
+other = "Kein Archiv vorhanden"
+
+[missing404title]
+other = "Seite nicht gefunden"
+
+[missing404body]
+other = "Entschuldigung, die gewünschte Seite wurde nicht gefunden."
+
+[articlelink]
+other = "Page link"
+
+[archivefmt]
+other = "Jan, 2006"

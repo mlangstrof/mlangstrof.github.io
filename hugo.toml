@@ -40,6 +40,32 @@ theme = ["Niello", "hugo-shortcode-gallery"]
             name = 'Tags'
             pageRef = '/tags'
             weight = 5
+  [languages.de]
+        title = "Max Langstrof"
+        languageCode = "de-de"
+        LanguageName = "DE"
+        contentDir = "content/de"
+        weight = 1
+        [[languages.de.menus.main]]
+            name = 'Home'
+            pageRef = '/'
+            weight = 1
+        [[languages.de.menus.main]]
+            name = 'Über mich'
+            pageRef = '/ueber-mich'
+            weight = 2
+        [[languages.de.menus.main]]
+            name = 'Technologie'
+            pageRef = '/technologie'
+            weight = 3
+        [[languages.de.menus.main]]
+            name = 'wein'
+            pageRef = '/Wein'
+            weight = 4
+        [[languages.de.menus.main]]
+            name = 'Tags'
+            pageRef = '/tags'
+            weight = 5
  
 languageCode = "en-us"
 
