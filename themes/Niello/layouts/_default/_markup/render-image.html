@@ -1,8 +1,9 @@
 {{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
 <img
-    src="{{ .Destination | safeURL }}" alt="{{ .Text }}"
+    src="{{ with $image }}{{ .RelPermalink }}{{ else }}{{ .Destination | safeURL }}{{ end }}"
+    alt="{{ .Text }}"
     {{ with $image }}
-    width="{{ $image.Width }}" height="{{ $image.Height }}"
+    width="{{ .Width }}" height="{{ .Height }}"
     {{ end }}
-    {{ with .Title}} style="width: 100%; max-width: {{ . }};"{{ end }}
-    />
+    {{ with .Title }} style="display: block; margin: 0 auto; width: 100%; max-width: {{ . }};"{{ end }}
+/>
