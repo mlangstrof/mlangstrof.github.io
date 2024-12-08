@@ -59,8 +59,8 @@ theme = ["Niello", "hugo-shortcode-gallery"]
             pageRef = '/technologie'
             weight = 3
         [[languages.de.menus.main]]
-            name = 'wein'
-            pageRef = '/Wein'
+            name = 'Wein'
+            pageRef = '/wein'
             weight = 4
         [[languages.de.menus.main]]
             name = 'Tags'

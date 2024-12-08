@@ -1,5 +1,5 @@
 +++
-title = 'Email Grundlagen'
+title = 'Email-Grundlagen'
 date = 2024-11-16T10:00:03+08:00
 draft = false
 categories = ["technology","recommendation"]
@@ -36,9 +36,8 @@ Allerdings gehören E-Mails auch zu den Technologien, deren Nutzung selten train
 
 # Was Sie außerdem in Betracht ziehen sollten
 
-Eine **Signatur** für die externe Kommunikation zu verwenden, die Ihre Kontaktdaten, reguläre Arbeitszeiten und ggf. geplante Abwesenheiten enthält.
-
-**Markdown-Strukturen** einzusetzen: Da Markdown von Haus aus gut lesbar ist – selbst wenn es nicht gerendert wird –, kann es in vielen E-Mail-Clients sinnvoll sein, um E-Mails schnell und übersichtlich zu gestalten.
+- Eine **Signatur** für die externe Kommunikation zu verwenden, die Ihre Kontaktdaten, reguläre Arbeitszeiten und ggf. geplante Abwesenheiten enthält.
+- **Markdown-Strukturen** einzusetzen: Da Markdown von Haus aus gut lesbar ist – selbst wenn es nicht gerendert wird –, kann es in vielen E-Mail-Clients sinnvoll sein, um E-Mails schnell und übersichtlich zu gestalten.
 
 # Was Sie nicht tun sollten
 
