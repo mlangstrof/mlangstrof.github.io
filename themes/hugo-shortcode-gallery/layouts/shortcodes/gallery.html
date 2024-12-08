@@ -86,6 +86,20 @@
 		/* inline css from assets folder */
 		{{ (resources.Get "shortcode-gallery/filterbar.sass" | toCSS).Content | safeCSS }}
 	{{ end }}
+	
+	/* Center single images */
+	.justified-gallery.single-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.justified-gallery.single-image img {
+		max-height: 100%; /* Ensure the image fits within the container */
+		max-width: 100%; /* Ensure the image scales responsively */
+		margin: 0 auto; /* Center horizontally */
+		display: block; /* Reset inline styles for proper centering */
+	}
 </style>
 
 <!--
@@ -96,7 +110,7 @@ Ordinal: {{ .Ordinal}}
 {{ $galleryWrapperId := (printf "gallery-%v-%v-wrapper" .Page.File.UniqueID .Ordinal)}}
 
 <div id="{{ $galleryWrapperId }}" class="gallery-wrapper">
-<div id="{{ $galleryId }}" class="justified-gallery">
+<div id="{{ $galleryId }}" class="justified-gallery {{ if eq (len $images) 1 }} single-image {{ end }}">
 	{{ range $original := sort $images "Name" $sortOrder}}
 		{{ if eq $original.ResourceType "image" }}
 
@@ -214,6 +228,12 @@ Ordinal: {{ .Ordinal}}
 </div>
 
 <script>
+	// Detect if there is only one image and apply custom behavior
+	const gallery = document.querySelector('#{{ $galleryId }}');
+	const images = gallery.querySelectorAll('img');
+	if (images.length === 1) {
+		gallery.classList.add('single-image');
+	}
 	if (!("HSCGjQuery" in window)) {
 		if (!window.jQuery) {
 			throw new Error("jQuery is not loaded, hugo-shortcode-gallery wont work without it!");
