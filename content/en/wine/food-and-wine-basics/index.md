@@ -40,4 +40,4 @@ Salt and acidity in food can soften the perception of certain characteristics in
 
 {{< gallery match="images/*" sortOrder="desc" rowHeight="800" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true lastRow="nojustify" loadJQuery=true >}}
 
-{{< img src="images/food_and_wine_pairing_infographic.webp" alt="wine infographic" width="600px" >}}
+![wine and food pairing infographic](images/food_and_wine_pairing_infographic.webp "500px")
