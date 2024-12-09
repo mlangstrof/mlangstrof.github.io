@@ -4,7 +4,7 @@ date = 2024-11-20T12:50:03+08:00
 draft = false
 categories = ["wine","recommendation"]
 featuredImage = "/images/wine_synonyms.webp"
-tags = ["wine"]
+tags = ["Wein"]
 +++
 
 Haben Sie schon einmal zwei verschiedene Weine probiert und waren sich sicher, dass sie aus derselben Rebsorte hergestellt wurden? Nun, vielleicht lagen Sie genau richtig! Viele Rebsorten haben in unterschiedlichen Regionen verschiedene Namen, und manche weisen sogar leichte genetische Abweichungen auf, die als Biotypen bekannt sind.
