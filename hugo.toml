@@ -17,7 +17,7 @@ theme = ["Niello", "hugo-shortcode-gallery"]
   [languages.en]
         title = "Max Langstrof"
         languageCode = "en-us"
-        LanguageName = "🇺🇸EN"
+        LanguageName = "EN"
         contentDir = "content/en"
         weight = 1
         [[languages.en.menus.main]]
