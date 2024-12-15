@@ -21,7 +21,7 @@ Die Veranstalter geben sich große Mühe ein reibungsloses und gut organisiertes
 
 Für Weinliebhaber ist die Expovina ein Pflichttermin. Selbst nach unzähligen Besuchen freue ich mich jedes Mal aufs Neue – um alte Favoriten wiederzuentdecken, neue Schätze ausfindig zu machen und meinen Weinkeller aufzufüllen.
 
-*Zeit: Primavera April/ Weinschiffe November* | *Ort: Primavera Puls 5 / Weinschiffe Bürkliplatz* | *Ticketpreis: ~30 CHF* | *Link: [expovina.ch](https://expovina.ch/en-ch/)*
+*Zeit: Primavera April/ Weinschiffe November* | *Ort: Primavera Puls 5 / Weinschiffe Bürkliplatz* | *Ticketpreis: ~30 CHF* | *Link: [expovina.ch](https://expovina.ch/de-ch/)*
 
 # Zurich Wine Festival
 Das **Zurich Wine Festival**, das im Herbst am Fuße des Uetlibergs in Sihlcity stattfindet, ist eine etwas kleinere, aber dennoch vielseitige Alternative zu Expovina. Es bietet ein beeindruckendes und vielfältiges Weinsortiment und ergänzt das Programm durch verschiedene spannende Events und Masterclasses. Allerdings schwankt die Qualität dieser Kurse stark, je nachdem, wer sie leitet.
