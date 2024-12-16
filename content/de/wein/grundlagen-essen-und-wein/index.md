@@ -31,9 +31,11 @@ Weine und Gerichte aus derselben Region ergänzen sich oft besonders gut, da sie
 ## 2. Gleiches schafft Harmonie
 Diese Regel ist ein praktischer Merksatz: Wenn gleiche Aromen aufeinandertreffen, verbessern sie das Gericht sowie den Wein. Ein süßer Dessertwein wie Sauternes in Kombination mit einem süßen Dessert lässt die Süße im Wein geringer erscheinen, wodurch seine Fruchtaromen stärker hervortreten. Ebenso funktioniert ein säurebetonter Wein wie Verdicchio hervorragend mit einem säuerlichen Gericht wie Ceviche: Die Säuren von Wein und Speise mildern sich gegenseitig ab, was ein harmonischeres, ausgewogeneres Geschmackserlebnis ergibt.
 
-*Achtung*: Diese Regel gilt nicht für Bitterkeit. Bittere Speisen mit bitteren Weinen zu kombinieren, kann die Bitterkeit unangenehm verstärken.
+*Achtung: Diese Regel gilt nicht für Bitterkeit. Bittere Speisen mit bitteren Weinen zu kombinieren, kann die Bitterkeit unangenehm verstärken.*
 
 ## 3. Salz und Säure machen den Wein *weicher*, Süße und Umami *härter*
-Salz und Säure im Essen können die Wahrnehmung bestimmter Weineigenschaften mildern, sodass der Wein runder und ausgewogener schmeckt. Salz verringert etwa die spürbare Bitterkeit und Adstringenz von Tanninen. Säuerliche Gerichte können die Weinsäure mildern, wodurch Fruchtigkeit und Körper des Weins deutlicher hervortreten und er insgesamt angenehmer wirkt.Auf der anderen Seite können süße und umami-betonte Speisen den Wein „härter“ erscheinen lassen, indem sie seine Bitterkeit, Säure und Adstringenz hervorheben. Solche Speisen können zudem den Körper, die Süße und die Fruchtigkeit des Weins in den Hintergrund drängen, was ihn karger oder strenger wirken lässt.
+Salz und Säure im Essen können die Wahrnehmung bestimmter Weineigenschaften mildern, sodass der Wein runder und ausgewogener schmeckt. Salz verringert etwa die spürbare Bitterkeit und Adstringenz von Tanninen. Säuerliche Gerichte können die Weinsäure mildern, wodurch Fruchtigkeit und Körper des Weins deutlicher hervortreten und er insgesamt angenehmer wirkt. Auf der anderen Seite können süße und umami-betonte Speisen den Wein „härter“ erscheinen lassen, indem sie seine Bitterkeit, Säure und Adstringenz hervorheben. Solche Speisen können zudem den Körper, die Süße und die Fruchtigkeit des Weins in den Hintergrund drängen, was ihn karger oder strenger wirken lässt.
+
+Ich hoffe diese Regeln sind hilfreich und vergessen Sie nicht: Am besten lernt man durch Experimentieren.
 
 ![Essen und Wein Grundlagen Infographic](images/food_and_wine_pairing_infographic.webp "800px")
