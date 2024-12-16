@@ -22,7 +22,145 @@ Nachdem wir einige Anwendungsfälle gesehen haben, stellt sich die Frage: Wie k�
 
 Wie im nachfolgenden Beispiel für die Aktualisierung von PostgreSQL-Flexible-Server-Extensions zu sehen ist, verwenden wir innerhalb der DINE-Policy zwei Deployments: eins, welches die Ressource im jetzigen Status liest, ohne sie zu aktualisieren, aber dabei die aktuellen Ressourcendaten als Output ausgibt, und eine weitere, die diesen Output nutzt, um die Ressource zu aktualisieren. Die Idee dabei ist, die pgaudit-Erweiterung zu einer bereits vorhandenen Liste von erlaubten Erweiterungen hinzuzufügen.
 
+```
+{
+    "properties": {
+        "displayName": "DINE-UpdateExtensions",
+        "description": "Deploy if not exist, add pgaudit to flexible server extensions",
+        "parameters": {
+            "effect": {
+                "type": "String",
+                "allowedValues": [
+                    "auditIfNotExists", 
+                    "deployIfNotExists"
+                ]
+            }
+        },
+        "policyRule": {
+            "if": {
+                "allOf": [
+                    {
+                        "field": "type",
+                        "equals": "Microsoft.DBforPostgreSQL/flexibleServers"
+                    },
+                    {
+                        "field": "Microsoft.DBforPostgreSQL/flexibleServers/state",
+                        "equals": "Ready"
+                    }
+                ]
+            },
+            "then": {
+                "effect": "[parameters('effect')]",
+                "details": {
+                    "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+                    "name": "azure.extensions",
+                    "existenceCondition": {
+                        "field": "Microsoft.DBforPostgreSQL/flexibleServers/configurations/value",
+                        "contains": "pgaudit"
+                    },
+                    "deployment": {
+                        "properties": {
+                            "mode": "incremental",
+                            "parameters": {
+                                "resourceName": {
+                                    "value": "[field('fullName')]"
+                                },
+                                "resourceGroupName": {
+                                    "value": "[resourceGroup().name]"
+                                }
+                            },
+                            "template": {
+                                "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                                "contentVersion": "1.0.0.0",
+                                "parameters": {
+                                    "resourceName": {
+                                        "type": "string",
+                                        "defaultValue": "[field('fullName')]"
+                                    },
+                                    "resourceGroupName": {
+                                        "type": "string",
+                                        "defaultValue": "[resourceGroup().name]"
+                                    }
+                                },
+                                "variables": {
+                                    "deploymentGetName": "[concat('PGExtensions-Get-', parameters('resourceName'))]",
+                                    "deploymentUpdateName": "[concat('PGExtensions-Update-', parameters('resourceName'))]"
+                                },
+                                "resources": [
+                                    {
+                                        "type": "Microsoft.Resources/deployments",
+                                        "apiVersion": "2020-06-01",
+                                        "name": "[variables('deploymentGetName')]",
+                                        "properties": {
+                                            "mode": "Incremental",
+                                            "template": {
+                                                "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                                                "contentVersion": "1.0.0.0",
+                                                "resources": [],
+                                                "outputs": {
+                                                    "serverExtensions": {
+                                                        "type": "object",
+                                                        "value": "[reference(resourceId(parameters('resourceGroupName'), 'Microsoft.DBforPostgreSQL/flexibleServers/configurations', parameters('resourceName'), 'azure.extensions'), '2021-06-01', 'Full')]"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "Microsoft.Resources/deployments",
+                                        "apiVersion": "2020-06-01",
+                                        "name": "[variables('deploymentUpdateName')]",
+                                        "properties": {
+                                            "mode": "Incremental",
+                                            "expressionEvaluationOptions": {
+                                                "scope": "inner"
+                                            },
+                                            "parameters": {
+                                                "extensions": {
+                                                    "value": "[reference(variables('deploymentGetName')).outputs.serverExtensions.value.properties.value]"
+                                                },
+                                                "serverName": {
+                                                    "value": "[parameters('resourceName')]"
+                                                }
+                                            },
+                                            "template": {
+                                                "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                                                "contentVersion": "1.0.0.0",
+                                                "resources": [
+                                                    {
+                                                        "type": "Microsoft.DBforPostgreSQL/flexibleServers/configurations",
+                                                        "apiVersion": "2021-06-01",
+                                                        "name": "[concat(parameters('serverName'), '/azure.extensions')]",
+                                                        "properties": {
+                                                            "value": "[concat(parameters('extensions'), ',pgaudit')]",
+                                                            "source": "user-override"
+                                                        }
+                                                    }
+                                                ],
+                                                "parameters": {
+                                                    "extensions": {
+                                                        "type": "string"
+                                                    },
+                                                    "serverName": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "outputs": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+
+```
 
 In diesem Beispiel habe ich einen neuen Server erstellt und dann nur die pgcrypto-Erweiterung ausgewählt. Wie man sehen kann, ist momentan nur diese Extension erlaubt:
 
