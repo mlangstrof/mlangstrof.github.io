@@ -1,26 +1,26 @@
 +++
-title = 'Advanced Azure Policy Techniques #1: Extend Arrays Using DINE'
+title = 'Fortgeschrittene Azure Policy Techniken #1: Arrays erweitern mittels DINE'
 date = 2024-12-15T18:45:03+08:00
 draft = false
-categories = ["technology","recommendation"]
+categories = ["Technologie","recommendation"]
 featuredImage = "/images/azure_policy_1.webp"
 tags = ["azure"]
 
 
 +++
 
-This is the first post of a series showing some more advanced Azure Policy techniques that might not be featured so frequently, but can be very useful if the situation requires it.
+Dies ist der erste Beitrag einer Reihe, in der wir einige fortgeschrittenere Azure-Policy-Techniken vorstellen, die nicht allzu häufig im Rampenlicht stehen, aber in bestimmten Situationen äußerst hilfreich sein können.
 
-Have you noticed that if you use a DINE policy to update a property on an existing resource where the property type is an array, it will overwrite the existing array with the one that you configured in the DINE policy? That behavior makes sense if we look at what a DINE policy is supposed to do - update a resource using a deployment template.
+Ist Ihnen schon aufgefallen, dass bei Verwendung einer DINE-Policy (DeployIfNotExists), um eine Eigenschaft eines bestehenden Ressourcenobjekts zu aktualisieren, und diese Eigenschaft eine Liste (bzw. ein "Array") ist, die bestehende Liste durch die in der DINE-Policy konfigurierte Liste überschrieben wird? Dieses Verhalten ist logisch, wenn man bedenkt, was eine DINE-Policy eigentlich tun soll — eine Ressource mithilfe einer Vorlage (bzw. eines Templates) aktualisieren.
 
-However what if you want to **update** an array rather than overwrite it? Examples of where this behavior could be desired:
-- on a PostgreSQL flexible server, update the list of extensions that you want to allow (i.e. whitelist)
-- on any resource with an IP based network whitelist, update the whitelist without removing already configured settings
-- if you want to add tags to a resource (although note that you can also use **Modify** policies for that, rather than DINE)
+Aber was, wenn Sie eine Liste **erweitern** möchten, anstatt sie zu überschreiben? Beispiele, in denen dieses Verhalten wünschenswert sein könnte:
+- Bei einem PostgreSQL Flexible Server die Liste der zulässigen Erweiterungen (Whitelist) ergänzen
+- Bei Ressourcen mit einer IP-basierten Netzwerk-Whitelist diese aktualisieren, ohne bereits konfigurierte Einstellungen zu löschen
+- Wenn Sie einer Ressource Tags hinzufügen möchten (beachten Sie jedoch, dass hierfür auch **Modify**-Richtlinien verwendet werden können, anstatt DINE)
 
-So now that we have seen some use cases, how can we update properties that are collections rather than single values? The short answer is: **Chained deployments** utilizing the fact that deployments are able to have **outputs**.
+Nachdem wir einige Anwendungsfälle gesehen haben, stellt sich die Frage: Wie können wir Eigenschaften, die Sammlungen statt Einzelwerte darstellen, aktualisieren? Die kurze Antwort lautet: Durch **gekoppelte Deployments**, bei denen wir uns zunutze machen, dass Deployments **Outputs** liefern können.
 
-As you can see on the PostgreSQL flexible server extension update below, we are using two deployments within the DINE policy, one that retrieves the resources without updating it (but outputting the current resource information) and one that will take that information and update the resource. The idea here is that we want to add the pgaudit extension to the list of extensions already being whitelisted. 
+Wie im nachfolgenden Beispiel für die Aktualisierung von PostgreSQL-Flexible-Server-Extensions zu sehen ist, verwenden wir innerhalb der DINE-Policy zwei Deployments: eins, welches die Ressource im jetzigen Status liest, ohne sie zu aktualisieren, aber dabei die aktuellen Ressourcendaten als Output ausgibt, und eine weitere, die diesen Output nutzt, um die Ressource zu aktualisieren. Die Idee dabei ist, die pgaudit-Erweiterung zu einer bereits vorhandenen Liste von erlaubten Erweiterungen hinzuzufügen.
 
 ```
 {
@@ -162,11 +162,12 @@ As you can see on the PostgreSQL flexible server extension update below, we are 
 
 ```
 
-For this example I created a fresh server and activated the pgcrypto extension. As you an see this is the only extension currently allowed:
+In diesem Beispiel habe ich einen neuen Server erstellt und dann nur die pgcrypto-Erweiterung ausgewählt. Wie man sehen kann, ist momentan nur diese Extension erlaubt:
+
 ![PostgreSQL extensions 1](images/extensions_1.webp "800px")
 
-Then I created a new policy definition based on the template above and assigned it to my subscription (and associating it with an UAMI that has Contributor rights to the PostgreSQL flexible server). After creating a remediation tasks, we can see the policy took effect and now the pgaudit extension has been added to the whitelist as well:
+Dann habe ich eine neue Richtlinie basierend auf der vorhergehenden Definition erstellt, zu meiner Subscription zugewiesen (und mit einer UAMI mit Contributor-Rechten über den Server assoziiert). Nachdem ich eine Remediationsaufgabe erstellt habe, können wir sehen, dass die Policy ausgeführt wurde und die pgaudit-Erweiterung zu der Liste der erlaubten Erweiterungen hinzugefügt wurde:
 ![PostgreSQL extensions 2](images/extensions_2.webp "800px")
 ![PostgreSQL extensions 3](images/extensions_3.webp "800px")
 
-I hope this article was useful to you, see you next time!
+Ich hoffe dieser Artikel war hilfreich und bis zum nächsten Mal!
