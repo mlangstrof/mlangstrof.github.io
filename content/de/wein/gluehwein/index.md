@@ -9,7 +9,7 @@ tags = ["Wein", "Grundlagen"]
 
 Wenn die Tage kürzer werden und die Weihnachtsdekorationen unsere Straßen erhellen, kommt auch die festliche Stimmung auf. Mit Beginn der Adventszeit öffnen in den meisten Orten auch die Weihnachtsmärkte ihre Tore, und mit ihnen verbreiten sich die wunderbaren Düfte von Bratwurst, Raclette, Lebkuchen und — natürlich — Glühwein. Doch was macht einen guten Glühwein aus, und kann man ihn auch selbst zu Hause zubereiten?
 
-Bei *Glühwein* handelt es sich bekannterweise um mit Gewürzen versetzten, aufgeheizten Wein, der sowohl auf Rot- als auch auf Weißwein basieren kann. Meist handelt es sich um saisonale Gewürze wie Zimt, Sternanis und Nelken, die dem Wein mehr Tiefe und Wärme zu verleihen. Außerdem kann man Fruchtsäfte, am häufigsten Orangensaft, hinzugeben, um den Glühwein etwas leichter trinkbar zu machen und ihm zugleich Süße und Säure zu verleihen. Manche bevorzugen auch einen kleinen „Extra-Kick“, indem sie einen Schuss Rum, Brandy, Cognac oder andere Liköre hinzufügen.
+Bei *Glühwein* handelt es sich bekannterweise um mit Gewürzen versetzten, aufgeheizten Wein, der sowohl auf Rot- als auch auf Weißwein basieren kann. Meist handelt es sich um saisonale Gewürze wie Zimt, Sternanis und Nelken, die dem Wein mehr Tiefe und Wärme verleihen. Außerdem kann man Fruchtsäfte, am häufigsten Orangensaft, hinzugeben, um den Glühwein etwas leichter trinkbar zu machen und ihm zugleich Süße und Säure zu verleihen. Manche bevorzugen auch einen kleinen „Extra-Kick“, indem sie einen Schuss Rum, Brandy, Cognac oder andere Liköre hinzufügen.
 
 # Drei Schritte zum perfekten Glühwein
 ## 1. Die richtige Weinbasis wählen
