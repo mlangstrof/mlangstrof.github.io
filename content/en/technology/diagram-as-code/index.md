@@ -80,10 +80,12 @@ I would like to use the python diagrams library to create an Azure solution arch
 As names for the elements, please only use the names I supplied, such as VM1 and AG1 without any additional words or descriptions. The name of the diagram should be *Example applicaton architecture*. Please ensure connections from resources go to private endpoints first if the target resource has a private endpoint associated with it.
 ```
 
+
 ### Prompt 2
 ```
-Please check the exact class names for all resources as listed on the official diagrams.mingrammer site here: https://diagrams.mingrammer.com/docs/nodes/azure and https://diagrams.mingrammer.com/docs/nodes/generic . Do not generalize or pluralize. For example, use ApplicationGateway instead of ApplicationGateways. Be as detail oriented and precise as possible. Please correct any mistakes you found.
+Please check the exact class names for all resources as listed on the official diagrams.mingrammer site here: https://diagrams.mingrammer.com/docs/nodes/azure and https://diagrams.mingrammer.com/docs/nodes/generic . Do not generalize or pluralize. For example, use ApplicationGateway instead of ApplicationGateways. Be as detail oriented and precise as possible. Please correct any mistakes you find.
 ```
+
 
 Using these prompts, ChatGPT generated for me the following output:
 ```
@@ -117,10 +119,10 @@ with Diagram("Example application architecture", show=False):
     vm1 >> Edge(label="Fetches secrets via Private Endpoint") >> akv1_endpoint >> keyvault
 ```
 
-Which generates the following output:
+Which after pasting the code into a Python file and executing it with Diagrams generates the following image:
 ![Example application architecture](images/example_application_architecture.webp "800px")
 
-Do note that the same input prompt does not necessarily produce the same output consistently and that sometimes the class names will still use wrong terms, but in this case you can just give the bot a small nudge and it should correct itself.
+Do note that the same input prompt does not necessarily produce the same output consistently and that sometimes the class names will still use wrong terms (e.g. plural instead of singular or ChatGPT will assume classes like "user" exists, even though they don't), but in this case you can just give the bot a small nudge and it should correct itself.
 
 All in all the diagrams might not be quite as pretty as if produced manually using Visio or other tools, but for the amount of time needed, I would argue the results are quite excellent and can be readily adapted. An added bonus is that you also have a written description of the architecture handy, which is easier to store and share as well as great from an accessibility standpoint.
 
