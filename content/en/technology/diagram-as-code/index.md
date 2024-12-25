@@ -86,7 +86,7 @@ As names for the elements, please only use the names I supplied, such as VM1 and
 Please check the exact class names for all resources as listed on the official diagrams.mingrammer site here: https://diagrams.mingrammer.com/docs/nodes/azure and https://diagrams.mingrammer.com/docs/nodes/generic . Do not generalize or pluralize. For example, use ApplicationGateway instead of ApplicationGateways. Be as detail oriented and precise as possible. Please correct any mistakes you find.
 ```
 
-
+&nbsp;
 Using these prompts, ChatGPT generated for me the following output:
 ```
 from diagrams import Diagram, Cluster, Edge
