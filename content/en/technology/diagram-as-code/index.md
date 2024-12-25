@@ -15,9 +15,9 @@ To visualize these complex solutions, diagrams are a handy tool and there are a 
 
 Although Visio is fairly workable, its UI can be cumbersome, and getting the diagrams to look *just right* can be a bit of a pain. So what to do if you are facing urgent deadlines but still want to create a visually appealing and clear visual representation of your design? Enter Mingrammer **Diagrams** and **ChatGPT**.
 
-# Mingrammer diagrams
+# Mingrammer Diagrams
 ## What is it and how does it compare to alternatives?
-[Mingrammer diagrams](https://diagrams.mingrammer.com/) is a python library that provides Diagrams as Code (DaC). This places it alongside **Mermaid.js** and **PlantUML**, which also allow the use of code or markup languages to define diagrams, which also allow you to use code/markup language to define diagrams.
+[Mingrammer Diagrams](https://diagrams.mingrammer.com/) is a python library that provides Diagrams as Code (DaC). This places it alongside **Mermaid.js** and **PlantUML**, which also allow the use of code or markup languages to define diagrams, which also allow you to use code/markup language to define diagrams.
 The main differences between these tools are their syntax, the type of diagrams they support and the visuals they create (i.e. their visual elements, what kind of lines they use to connect the elements, colors, etc.). They all have their strength and weaknesses, but from personal experimentation, I prefer using Mermaid.js for use case and flow diagrams and Mingrammer diagrams for architecture / solution designs. 
 
 I had three reasons for choosing Diagrams over the other tools:
@@ -25,6 +25,7 @@ I had three reasons for choosing Diagrams over the other tools:
 - It is fairly easy to setup and use
 - The DaC language is clear and condensed
 
+## How can you use it?
 Let's delve deeper. Mingrammer is fairly easy to set up. On Windows, ensure you have Python version 3.7 or above installed, along with Graphviz, which the Diagrams library uses to create graphics. So the instructions boil down to this:
 1. Download [Graphviz](https://graphviz.gitlab.io/download/), extract the archive, and (if you don't export it to a standard program folder), add the location of the graphviz/bin path to the Windows *PATH* environment variable
 2. Install the Python Diagrams library
@@ -64,9 +65,10 @@ Let's assume the following example:
 - we have an **Application Gateway** *AG1* in front of *VM1* to enable access from outside our intranet
 - the application uses its managed identity to fetch secrets from an **Azure Key Vault** *AKV1*
 
+# Combining Diagrams and ChatGPT
 Once we've documented our design, translating it into a ChatGPT prompt is straightforward. I will be using ChatGPT 4o for this example. We'll split the prompt into two parts, as ChatGPT may have difficulty getting all the class names correct. Reviewing it in a second step works better than combining the instructions into a single prompt.
 
-### Prompt 1
+## Prompt 1
 ```
 I would like to use the python diagrams library to create an Azure solution architecture diagram. Please help me create suitable code. I would like to depict the following: 
 - we have an **application** running on an **Azure Virtual Machine** called *VM1* (e.g. a Java application) 
@@ -81,7 +83,7 @@ As names for the elements, please only use the names I supplied, such as VM1 and
 ```
 
 
-### Prompt 2
+## Prompt 2
 ```
 Please check the exact class names for all resources as listed on the official diagrams.mingrammer site here: https://diagrams.mingrammer.com/docs/nodes/azure and https://diagrams.mingrammer.com/docs/nodes/generic . Do not generalize or pluralize. For example, use ApplicationGateway instead of ApplicationGateways. Be as detail oriented and precise as possible. Please correct any mistakes you find.
 ```
@@ -119,6 +121,7 @@ with Diagram("Example application architecture", show=False):
     vm1 >> Edge(label="Fetches secrets via Private Endpoint") >> akv1_endpoint >> keyvault
 ```
 
+&nbsp;
 Which after pasting the code into a Python file and executing it with Diagrams generates the following image:
 ![Example application architecture](images/example_application_architecture.webp "800px")
 
