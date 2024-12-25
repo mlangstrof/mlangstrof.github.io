@@ -54,18 +54,18 @@ py .\example.py
 ![Example diagram](images/example_diagram.webp "800px")
 
 # ChatGPT
-So now that we set up Diagrams, we have two options:
-- learn the Diagram as Code language and create the images manually
-- use a natural language prompt in ChatGPT so the AI helps us translate our requirements into code instead
+Nun, da wir Diagrams eingerichtet haben, stehen uns zwei Optionen zur Verfügung:
+- Die Diagram-as-Code-Sprache erlernen und die Bilder manuell erstellen.
+- Einen natürlichen Sprach-Prompt in ChatGPT verwenden, damit die KI uns hilft, unsere Anforderungen in Code zu übersetzen.
 
-Given that a good solution architect is always busy, let's opt for option 2 and get our mighty AI overlords to do the heavy lifting. 
-Let's assume the following example:
-- we have an **application** running on an **Azure Virtual Machine** called *VM1* (e.g. a Java application)
-- the Virtual Machine has a **User Assigned Managed Identity (UAMI)** assigned to it
-- the application connects to an **Azure PostgreSQL Flexible Server** database named *PGDB1* as data layer using the UAMI (which is added as EntraID admin on the flexible server)
-- the VM is in *Subnet1* of our **Virtual Network** *VNet1*, the database has a **Private Endpoint** in *Subnet2*, also located in *VNet1*
-- we have an **Application Gateway** *AG1* in front of *VM1* to enable access from outside our intranet
-- the application uses its managed identity to fetch secrets from an **Azure Key Vault** *AKV1*
+Da ein guter Solution Architect immer beschäftigt ist, entscheiden wir uns für Option 2 und lassen unsere mächtigen KI-Lehnsherren die schwere Arbeit erledigen.
+Nehmen wir folgendes Beispiel an:
+- Wir haben eine **Anwendung**, die auf einer **Azure Virtual Machine** namens *VM1* läuft (z.B. eine Java-Anwendung)
+- Die Virtual Machine ist mit einer **User Assigned Managed Identity (UAMI)** assoziiert
+- Die Anwendung verbindet sich zur **Azure PostgreSQL Flexible Server-Datenbank** *PGDB1* als Datenebene unter Verwendung der UAMI (die als EntraID-Administrator auf dem Flexible Server hinzugefügt wurde)
+- Die VM befindet sich in *Subnet1* unseres **Virtual Network** *VNet1*, während die Datenbank einen **Private Endpoint** in *Subnet2* besitzt, der sich ebenfalls in *VNet1* befindet
+- Vor VM1 befindet sich ein **Application Gateway** *AG1*, um den Zugriff von außerhalb unseres Intranets zu ermöglichen
+- Die Anwendung verwendet ihre Managed Identity, um Geheimnisse aus einem **Azure Key Vault** *AKV1* abzurufen.
 
 # Kombinieren von ChatGPT und Diagrams
 Sobald wir unser Design dokumentiert haben, lässt es sich ganz einfach in einen ChatGPT-Prompt übersetzen. Für dieses Beispiel werde ich ChatGPT 4o verwenden.
@@ -93,6 +93,7 @@ Bitte überprüfen Sie die exakten Klassennamen für alle Ressourcen, wie sie au
 ```
 
 &nbsp;
+
 Unter Benutzung dieser Prompts hat ChatGPT für mich den folgenden Code generiert:
 ```
 from diagrams import Diagram, Cluster, Edge
@@ -126,6 +127,7 @@ with Diagram("Example application architecture", show=False):
 ```
 
 &nbsp;
+
 Kopiert man diesen nun wiederum in eine Pythondatei und führt diese aus, wird das folgende Bild generiert:
 ![Example application architecture](images/example_application_architecture.webp "800px")
 

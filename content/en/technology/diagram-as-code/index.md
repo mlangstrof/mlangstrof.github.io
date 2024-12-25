@@ -89,6 +89,7 @@ Please check the exact class names for all resources as listed on the official d
 ```
 
 &nbsp;
+
 Using these prompts, ChatGPT generated for me the following output:
 ```
 from diagrams import Diagram, Cluster, Edge
@@ -122,6 +123,7 @@ with Diagram("Example application architecture", show=False):
 ```
 
 &nbsp;
+
 Which after pasting the code into a Python file and executing it with Diagrams generates the following image:
 ![Example application architecture](images/example_application_architecture.webp "800px")
 
