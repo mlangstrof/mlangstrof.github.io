@@ -26,7 +26,7 @@ I had three reasons for choosing Diagrams over the other tools:
 - The DaC language is clear and condensed
 
 ## How can you use it?
-Let's delve deeper. Mingrammer is fairly easy to set up. On Windows, ensure you have Python version 3.7 or above installed, along with Graphviz, which the Diagrams library uses to create graphics. So the instructions boil down to this:
+Let's delve deeper. Mingrammer is fairly straightforward to set up. On Windows, ensure you have Python version 3.7 or above installed, along with Graphviz, which the Diagrams library uses to create graphics. So the instructions boil down to this:
 1. Download [Graphviz](https://graphviz.gitlab.io/download/), extract the archive, and (if you don't export it to a standard program folder), add the location of the graphviz/bin path to the Windows *PATH* environment variable
 2. Install the Python Diagrams library
 ```
@@ -79,7 +79,7 @@ I would like to use the python diagrams library to create an Azure solution arch
 - the application uses its managed identity to fetch secrets from an **Azure Key Vault** *AKV1*, which has a **Private Endpoint** in *Subnet2*
 - show a client connecting to the application via AG1 from the public internet
 
-As names for the elements, please only use the names I supplied, such as VM1 and AG1 without any additional words or descriptions. The name of the diagram should be *Example applicaton architecture*. Please ensure connections from resources go to private endpoints first if the target resource has a private endpoint associated with it.
+As names for the elements, please only use the names I supplied, such as VM1 and AG1 without any additional words or descriptions. The name of the diagram should be *Example application architecture*. Please ensure connections from resources go to private endpoints first if the target resource has a private endpoint associated with it.
 ```
 
 
