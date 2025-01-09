@@ -8,10 +8,10 @@ other = "Observations about IT and wine"
 other = "Hi I'm Max, I write about modern IT, the cloud, data, AI and wine"
 
 [siteseokeywords]
-other = "SEO keywords"
+other = ["max langstrof", "wine", "zurich", "technology", "it", "ai", "cloud", "blog", "degustationen", "sommelier"]
 
 [siteseodescription]
-other = "SEO description"
+other = "A blog by Max Langstrof"
 
 [search]
 other = "Search"
