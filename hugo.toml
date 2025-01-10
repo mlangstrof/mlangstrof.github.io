@@ -45,7 +45,7 @@ theme = ["Niello", "hugo-shortcode-gallery"]
         languageCode = "de-de"
         LanguageName = "DE"
         contentDir = "content/de"
-        weight = 1
+        weight = 2
         [[languages.de.menus.main]]
             name = 'Home'
             pageRef = '/'
@@ -153,10 +153,6 @@ expiryDate = ["expiryDate"]
   descriptionInPosts = true
   # initialPublish = "Initally Posted on: "
   #human = ["single","posts"]
-  # denyRobots = "noindex, nofollow, noarchive"
-  # allowRobots = "index, follow"
-  # siteNoIndex = false
-  # noIndexPages = ["404 Page not found"]
   # footerHideThemeName = false
   # usesAnimation = true
 
