@@ -60,9 +60,13 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Log all index.html files before modification
+        run: |
+          echo "Finding all index.html files before sed operation..."
+          find public/ -name "index.html" -exec echo "Found file: {}" \; -exec cat {} \; || echo "No index.html files found."
       - name: Remove noindex Meta Tag
         run: |
-          find public/ -name "*.html" -exec sed -i 's/<meta name="robots" content="noindex">//g' {} \;
+          find public/ -name "index.html" -exec sed -i 's/<meta name="robots" content="noindex">//g' {} \;
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
