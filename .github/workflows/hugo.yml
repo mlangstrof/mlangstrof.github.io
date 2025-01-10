@@ -66,7 +66,7 @@ jobs:
           cat public/index.html
       - name: Remove noindex Meta Tag
         run: |
-          sed -i 's/<meta name=robots content="noindex">/<meta name="google-site-verification" content="c6gnx8B3K0vSEMzyJ6-fxkTfZPdMqJ0FWfWL7zEyEWc">/g' public/index.html
+          sed -i 's|<meta name=robots content="noindex">|<meta name="google-site-verification" content="c6gnx8B3K0vSEMzyJ6-fxkTfZPdMqJ0FWfWL7zEyEWc" />|g' public/index.html
       - name: Log index.html file before modification
         run: |
           echo "Printing info for index.html files after sed operation..."
