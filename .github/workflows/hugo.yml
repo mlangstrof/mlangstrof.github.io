@@ -63,7 +63,7 @@ jobs:
       - name: Log all index.html files before modification
         run: |
           echo "Finding all index.html files before sed operation..."
-          find public/ -name "index.html" -exec echo "Found file: {}" \; -exec cat {} \; || echo "No index.html files found."
+          cat public/index.html
       - name: Remove noindex Meta Tag
         run: |
           find public/ -name "index.html" -exec sed -i 's/<meta name="robots" content="noindex">//g' {} \;
