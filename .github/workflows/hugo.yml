@@ -60,6 +60,9 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Remove noindex Meta Tag
+        run: |
+          find public/ -name "*.html" -exec sed -i 's/<meta name="robots" content="noindex">//g' {} \;
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
