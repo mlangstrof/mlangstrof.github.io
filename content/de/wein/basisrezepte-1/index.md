@@ -1,6 +1,6 @@
 +++
 title = 'Essen und Wein - Basisrezepte #1'
-date = 2025-22-01T20:45:03+08:00
+date = 2025-01-22T20:45:03+08:00
 draft = false
 categories = ["wine"]
 featuredImage = "/images/basic_recipes.webp"
