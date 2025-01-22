@@ -2,7 +2,7 @@
 title = 'Diagram as Code'
 date = 2024-12-25T19:00:03+08:00
 draft = false
-categories = ["technology"]
+categories = ["technology","recommendation"]
 featuredImage = "/images/diagram_as_code.webp"
 tags = ["ai","copilot"]
 
