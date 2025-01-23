@@ -23,14 +23,14 @@ A good **quiche** can win over just about anyone, and it’s much simpler to pre
 
 From there, mix the filling ingredients (minus the Parmesan). Roll out the dough so that it lines the inside of a baking dish, then pour in the filling. Finally, sprinkle the Parmesan on top for a lovely crust. Bake it at 180°C for around 30 minutes; the center should be mostly set by then - if not, give it a few more minutes.
 
-Serve it with **Chardonnay** or **Sauvignon Blanc**; a light-bodied red like **Pinot Noir **also works nicely.
+Serve it with **Chardonnay** or **Sauvignon Blanc**; a light-bodied red like **Pinot Noir** also works nicely.
 
 # Ratatouille
 Thanks in part to Disney’s film about an exceptionally talented rat chef, **Ratatouille** has become a household name. While the version in the movie may be fit for a Michelin-starred restaurant, a beginner-friendly Ratatouille is both easy to make and wonderfully healthy. Start by creating a sauce: sauté diced tomatoes (or tomato paste), onions, and garlic until the onions turn translucent, then spread this mixture evenly in an ovenproof dish.
 
 Slice eggplant, zucchini, bell peppers, and tomatoes into rounds about 2–3 mm thick, then layer them in the dish on top of the sauce. Season with salt, pepper, olive oil, and herbs (Herbes de Provence are classic). Bake at 200°C for 50–60 minutes.
 
-You can serve Ratatouille as a main dish - perhaps with fresh baguette or pasta - or as a side. Its veggie-forward, earthy flavors make it a natural match for a medium-bodied **Côtes du Rhône**, a **rosé **from Provence, or a crisp **Vermentino**.
+You can serve Ratatouille as a main dish - perhaps with fresh baguette or pasta - or as a side. Its veggie-forward, earthy flavors make it a natural match for a medium-bodied **Côtes du Rhône**, a **rosé** from Provence, or a crisp **Vermentino**.
 
 # Chocolate Chip Cookies
 Some say dessert is the best part of any meal, but whipping up something fancy can be time-consuming, especially if your main course already demands a lot of effort. A warm **chocolate chip cookie**, on the other hand, is a crowd-pleaser that’s quick to prepare.
