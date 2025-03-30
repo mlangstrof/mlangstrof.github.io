@@ -54,6 +54,18 @@ In summary, this event is both unique and intriguing, and if money is no object,
 
 *Time: March* | *Location: Tonhalle* | *Ticket price: 249 CHF* | *Link: [zurich.robertparker.com](https://www.zurich.robertparker.com/)*
 
+# About Bubbles
+
+For fans of all things sparkling, there is no better place to be than the **About Bubbles** festival in Zurich. For a few days, the rooms at the 25hours Hotel Langstrasse are transformed into ad hoc booths, bustling with sellers and producers of sparkling wines. Since each room typically hosts just one or two booths, the atmosphere is more relaxed compared to other events, making it much easier to strike up conversations with the exhibitors
+
+True to its name, the fair showcases an impressive range of bubbly beverages produced across Europe. You’ll find excellent examples from German and Austrian *Sekt*, Italian *Prosecco*, *Lambrusco*, *Trento*, and *Franciacorta*, as well as Spanish *Cava* and a wide selection of *Crémants* and, of course, *Champagnes* from France. There are also some more niche options, such as Swiss sparkling wines and British sparkling varieties. 
+
+Among my personal highlights was the **Franciacorta Satèn from Bellavista**, which features a lower level of carbonation than typical Franciacorta or most *méthode traditionnelle* sparkling wines, resulting in a silkier mouthfeel. I was equally impressed by the **Champagnes from Drappier**, where the *liqueurs de dosage* for their Brut wines are aged for over 15 years in small casks to develop additional complexity and depth of flavor. Another standout was an intriguing *Petit Meslier*-based Sekt from Swiss producer Tom Litwan. Petit Meslier is an old grape variety originating from Champagne, now rarely cultivated due to its low yield, but it offers a unique and fascinating blend of aromas.
+
+If you’re looking to deepen your appreciation of sparkling wines or add some unique bottles to your cellar, this event is definitely worth a visit!
+
+*Time: February/March* | *Location: 25hours Hotel Langstrasse* | *Ticket price: 80 CHF* | *Link: [about-bubbles.com](https://about-bubbles.com/)*
+
 # Terroir Zürisee
 No roundup of Zurich wine events would be complete without a nod to **Terroir Zürisee**, the charming, lakeside festival celebrating wines from the Lake Zurich region. While you’ll find plenty of familiar favorites like Pinot Noir (Blauburgunder), Sauvignon Blanc, and Chardonnay, the real gems are the local specialties. From the fantastic indigenous grape Räuschling to Swiss classics like Petit Arvine and Heida, there’s a lot to explore.
 
