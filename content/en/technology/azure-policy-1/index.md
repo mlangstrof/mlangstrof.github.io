@@ -2,7 +2,7 @@
 title = 'Advanced Azure Policy Techniques #1: Extend Arrays Using DINE'
 date = 2024-12-15T18:45:03+08:00
 draft = false
-categories = ["technology","recommendation"]
+categories = ["technology"]
 featuredImage = "/images/azure_policy_1.webp"
 tags = ["azure"]
 
