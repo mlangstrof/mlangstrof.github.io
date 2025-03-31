@@ -51,6 +51,18 @@ Unterm Strich ist dieses Event einmalig und faszinierend, und wenn Geld keine Ro
 
 *Zeit: März* | *Ort: Tonhalle* | *Ticketpreis: 249 CHF* | *Link: [zurich.robertparker.com](https://www.zurich.robertparker.com/)*
 
+# About Bubbles
+
+Für Liebhaber von allem, was perlt und prickelt, gibt es keinen besseren Ort als das **About Bubbles** Festival in Zürich. Für ein paar Tage verwandeln sich die Zimmer im 25hours Hotel Langstrasse in improvisierte Stände, die von Verkäufern und Produzenten von Schaumweinen bevölkert werden. Da jedes Zimmer in der Regel nur ein oder zwei Stände beherbergt, ist die Atmosphäre entspannter als bei anderen Veranstaltungen, was es deutlich einfacher macht, mit den Ausstellern ins Gespräch zu kommen.
+
+Getreu seinem Namen bietet die Messe eine beeindruckende Auswahl an schäumenden Köstlichkeiten aus ganz Europa. Sie finden hervorragende Beispiele von deutschem und österreichischem *Sekt*, italienischem *Prosecco*, *Lambrusco*, *Trento* und *Franciacorta* sowie spanischem *Cava* und einer großen Auswahl an *Crémants* und natürlich *Champagner* aus Frankreich. Auch etwas speziellere Tropfen gibt es im Angebot, wie zum Beispiel Schweizer oder britischen Schaumweinen.
+
+Zu meinen persönlichen Highlights gehörte der **Franciacorta Satèn** von Bellavista, der durch eine geringere Kohlensäure im Vergleich zu einem normalen Franciacorta (oder den meisten Schaumweinen nach der *méthode traditionnelle*) ein seidigeres Mundgefühl bietet. Ebenfalls beeindruckt haben mich die **Champagner von Drappier**, bei denen die *Liqueurs de Dosage* für ihre Bruts über 15 Jahre in kleinen Fässern gereift werden, um zusätzliche Aromen zu entwickeln. Eine weitere Besonderheit war der auf **Petit Meslier** basierende Sekt des Schweizer Produzenten Tom Litwan. Petit Meslier ist eine alte Rebsorte aus der Champagne, die heutzutage aufgrund ihres geringen Ertrags kaum noch angebaut wird, aber ein einzigartiges und interessantes Aromenspiel bietet.
+
+Wenn Sie Ihre Kenntnisse über Schaumweine erweitern oder Ihren Weinkeller aufstocken möchten, ist diese Veranstaltung auf jeden Fall einen Besuch wert!
+
+*Zeit: Februar/März* | *Ort: 25hours Hotel Langstrasse* | *Ticketpreis: 80 CHF* | *Link: [about-bubbles.com](https://about-bubbles.com/)*
+
 # Terroir Zürisee
 Keine Liste der Zürcher Weinevents wäre vollständig ohne die Erwähnung des **Terroir Zürisee**, das charmante Festival unweit des Seeufers, das die Weine der Region rund um den Zürichsee feiert. Zwar findet man hier auch vertraute Sorten wie Pinot Noir (Blauburgunder), Sauvignon Blanc und Chardonnay, doch die wirklichen Schätze liegen in den lokalen Spezialitäten. Vom fantastischen Räuschling bis hin zu Schweizer Klassikern wie Petit Arvine und Heida gibt es viel zu entdecken.
 
