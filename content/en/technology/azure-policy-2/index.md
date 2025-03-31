@@ -9,7 +9,7 @@ tags = ["azure"]
 
 +++
 
-In the second post of this series, I want to show you an example of using a function inside a policy definition to restrict the scope. Based on personal experience, **policy functions** are often somewhat neglected but have received significant development over the past few years. As you can see in the [official documentation](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule#policy-functions) Azure policy supports a wide range of functions, including::
+In the second post of this series, I want to show you an example of using a function inside a policy definition to restrict the scope. Based on personal experience, **policy functions** are often somewhat neglected but have received significant development over the past few years. As you can see in the [official documentation](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure-policy-rule#policy-functions) Azure policy supports a wide range of functions, including:
 - copyIndex()
 - dateTimeAdd()
 - dateTimeFromEpoch
@@ -26,7 +26,7 @@ Many of these functions are also available for ARM templates, such as *copyIndex
 
 In short, this function allows the policy to evaluate the current context of the request sent to the Azure Resource API, making it particularly useful for *deny* or *modify* policies.
 
-The main use case I have found for this policy so far is to solve a tricky issue: what if a newer API version of a resource provider introduces an additional property that you want to restrict using a *modify* policy, but 
+The main use case I have found for this function so far is to solve a tricky issue: what if a newer API version of a resource provider introduces an additional property that you want to restrict using a *modify* policy, but:
 - this API version is only available as a preview or not yet available in all regions
 - this API version is not yet used by the Azure portal GUI (i.e. changes you make in the portal are not using this new version yet)
 - your end users may still use old IaC templates or targeting older provider versions
