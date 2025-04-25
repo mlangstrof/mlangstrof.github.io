@@ -7,7 +7,6 @@ featuredImage = "/images/wine_certifications.webp"
 tags = ["wine"]
 +++
 
-# Wine certifications
 The first step of the journey into the world of wine usually begins quite simply - we enjoy a few glasses (or bottles) and decide which wines we liked and which we didn’t. However it usually does not take long to realize that even though we liked this one Cabernet Sauvignon very much, the next one we tried was truly awful - much too sour and tannic for example. 
 
 Should we therefore avoid all Cabernets to be on the safe side? Should we only stick to a particular region or even a specific producer? While that can certainly help, even the same producer will have years that are better and those that are worse, so ordering blindly we could still end up with unenjoyable wine. That's why improving one’s wine knowledge allows us to make much better selections that match our preferred flavor profile.
