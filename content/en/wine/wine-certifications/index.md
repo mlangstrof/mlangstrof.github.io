@@ -11,7 +11,7 @@ Most journeys into the world of wine share the same simple beginning: We enjoy a
 
 Should we therefore forsake all Cabernets to be on the safe side? Should we only stick to a particular region or even a specific producer? While that can certainly help, even the same producer will have vintages that are better and those that are worse, so ordering blindly we could still end up with unenjoyable wine. That's why improving one’s wine knowledge allows us to make much better selections that match our preferred flavor profile.
 
-We also need to consider that even if we found out that we prefer Primitivo from Puglia for example, it might be difficult to extrapolate from this to other wines. Imagine being in a restaurant that does not carry any Primitivos, what wine should we order? Simply telling the waiter that we like Primitivos might help, but based solely on that, they cannot truly deduce what aspects of the wine appeal to us. For example, is it the residual sugar many Primitivos usually have? The low-to-medium acidity? The soft tannins? The (overripe/jammy) fruit aromas? There are many wines that feature some of these characteristics, but only you know what is most important to you.
+We also need to consider that even if we found out that we prefer Primitivo from Puglia for example, it might be difficult to extrapolate from this to other wines. Imagine being in a restaurant that does not carry any Primitivos, what wine should we order? Simply telling the waiter that we like Primitivos might help, but based solely on that, they cannot truly deduce what aspects of the wine appeal to us. For example, is it the residual sugar many Primitivos usually have? The low-to-medium acidity? The soft tannins? The (overripe/jammy) fruit aromas? There are many wines that feature some of these characteristics, but only *you* know what is *most important to you*.
 
 # Diving deeper into wine
 Learning about wine **methodically** allows us to both **understand** and **appreciate** it more deeply. It becomes easier to select the right wine for our palate, mood (and meal), and to **describe** it effectively when communicating with other wine enthusiasts or hospitality professionals. 
@@ -25,7 +25,7 @@ Since I was a bit overwhelmed at first about what kind of programs exist, what t
 # Wine and Spirit Education Trust (WSET)
 The [Wine & Spirit Education Trust](https://www.wsetglobal.com/) is an organization that offers a variety of certifications related to wine and spirits. They offer classes in over 70 countries and their certifications are widely recognized within the wine industry. 
 
-WSET teaches the Systematic Approach to Tasting Wine (SAT), a structured method for evaluating and describing wine based on aspects like color, sweetness, acidity, tannins (for reds), body, alcohol, aromas and their intensity (both on the nose and palate), and the wine’s finish.
+WSET teaches the **Systematic Approach to Tasting Wine (SAT)**, a structured method for evaluating and describing wine based on aspects like color, sweetness, acidity, tannins (for reds), body, alcohol, aromas and their intensity (both on the nose and palate), and the wine’s finish.
 
 They offer the following programs:
 - WSET Award in Wine
@@ -34,10 +34,10 @@ They offer the following programs:
 - WSET Award in Spirits
 
 For wine, WSET differs between the following levels:
-- Level 1 Award in Wine: The level 1 class is only one or two lessons long (so about 6 hours) and teaches the basics, such as the main types and styles of wine, common wine grapes, how to store and serve wine and how to describe wine using the SAT (*note that for level 1 you will only learn a simplified version of the SAT*)
-- Level 2 Award in Wine: Level 2 captures the introduction of level 1 but goes into much more detail (about 18 hours of class room instruction), teaching a more comprehensive version of the SAT and capturing (arguably) all major grapes and the most important wine regions around the world. You also learn about growing grapes and winemaking techniques. 
-- Level 3 Award in Wine: WSET level 3 once again builds upon the content of level 2 but goes into more depth (about 36 hours of training), which means more grapes and regions but also a lot more focus on the wine growing and making factors, for example the climate, soil composition, elevation, direction, bodies of water, winds etc. It also features more sparkling and fortified wines. While level 2 expects you to memorize and understand the information, level 3 will ask you to explain as well (e.g. why left left bank Bordeaux is better for growing Cabernet Sauvignon, while right bank favors Merlot)
-- Level 4 Diploma in Wine: Level 4 is the expert level qualification and you will gain extensive knowledge in wine production, wine business, wines of the world (still, sparkling and fortified) and will need to complete an independent research assignment. This usually comes with 116 hours of class room delivery and 500 hours of study time are expected. The diploma may take up to three years to complete.
+- **Level 1 Award in Wine**: The level 1 class is only one or two lessons long (so about 6 hours) and teaches the basics, such as the main types and styles of wine, common wine grapes, how to store and serve wine and how to describe wine using the SAT (*note that for level 1 you will only learn a simplified version of the SAT*)
+- **Level 2 Award in Wine**: Level 2 captures the introduction of level 1 but goes into much more detail (about 18 hours of class room instruction), teaching a more comprehensive version of the SAT and capturing (arguably) all major grapes and the most important wine regions around the world. You will also gain insights into grape cultivation and the key techniques used in winemaking.
+- **Level 3 Award in Wine**: WSET level 3 once again builds upon the content of level 2 but goes into more depth (about 36 hours of training), which means more grapes and regions but also a lot more focus on the wine growing and making factors, for example the climate, soil composition, elevation, direction, bodies of water, winds etc. It also features more sparkling and fortified wines. While level 2 expects you to memorize and understand the information, level 3 will ask you to reflect and explain cause and effects (e.g. why left left bank Bordeaux is better for growing Cabernet Sauvignon, while right bank favors Merlot)
+- **Level 4 Diploma in Wine**: Level 4 is the expert level qualification and you will gain extensive knowledge in wine production, wine business, wines of the world (still, sparkling and fortified) and will need to complete an independent research assignment. This usually comes with 116 hours of class room delivery and 500 hours of study time are expected. The diploma may take up to three years to complete.
 
 *Please note that in order to take level 4, you need to have successfully passed WSET level 3*
 
@@ -53,7 +53,7 @@ In Zurich there are several providers that offer classes, some also remotely. I 
 - Académie du Vin is taught at the Hotelfachschule near Bahnhof Enge in Zürich while the Zurich Wine Academy is located near Stauffacher. While both locations are quite central, the Zurich Wine Academy offices are better equipped, having maps (a lot of them even three dimensional/topographic) from all the big wine regions, which really helps with the visualization, as well as many different soil samples.
 - If you pass a course with the Zurich Wine Academy, you are (if you want) added to their alumni community and regularly invited to additional events
 
-For WSET level 4, there is currently no school in Switzerland which offers this program, so currently you have only the following options:
+For WSET level 4, since there is currently no school in Switzerland which offers this program, here are some alternative options:
 - Weinakademiker through [Weinakademie Österreich](https://www.weinakademie.at/wakdiploma.php) - similar to WSET level 4 (previously when you received the title of Weinakademiker, you would also get WSET level 4 but it seems the program has split from WSET since a few years and went its own way)
 - WSET level 4 through [WiSP](https://wisp-campus.com/wine-qualifications/wset-4/?lang=en) in France (Paris/Bourdeaux)
 
@@ -61,22 +61,20 @@ For WSET level 4, there is currently no school in Switzerland which offers this 
 The [Wine Scholar Guild](https://www.winescholarguild.com/) is another wine certification provider but pursues a different angle than WSET: It offers a variety of classes that each focus on a specific country (or region), going into much greater detail than WSET. While WSET and other accreditations will focus on the most popular / highest quality wines of each country, the classes of the Wine Scholar Guild go through every area of a country where wine is grown, highlighting especially autochthonous grapes, but also the history of the region, its wine production, local cuisine and customs to give you a truly holistic view of its wines - after all wine is a cultural product and often strongly entwined with its origin.
 Currently the WSG offers courses for the following countries:
 - France: 
- - Beginner: French Wine Essentials (FWE)
- - Advanced: French Wine Scholar (FWS)
- - Specialty: 
-   - Bourgogne Masters
-   - Champagne Masters
-   - Bordeaux Masters
+  - Beginner: French Wine Essentials (FWE)
+  - Advanced: French Wine Scholar (FWS)
+  - Specialty: 
+    - Bourgogne Masters
+    - Champagne Masters
+    - Bordeaux Masters
 - Italy: 
   - Beginner: Italian Wine Essentials (IWE)
   - Advanced: Italian Wine Scholar (IWS)
-  - Specialty: 
-    - Valpolicella Explorer
+  - Specialty: Valpolicella Explorer
 - Spain: 
   - Beginner: Spanish Wine Essentials (SWE)
   - Advanced: Spanish Wine Scholar (SWS)
-  - Specialty: 
-    - Certified Sherry Wine Specialist (CSWS)
+  - Specialty: Certified Sherry Wine Specialist (CSWS)
 - Germany: 
   - Advanced: German Wine Scholar
 
@@ -84,8 +82,8 @@ What really makes the WSG classes so delightful and entertaining is that it feel
 For comparison's sake, I would rate the WSG Essentials classes roughly at WSET level 2 (maybe 2.5) in terms of difficulty / learning effort, while the Scholar is extensive and more on par with WSET level 3. However it is not a completely fair comparison, as WSG Essentials and Scholars are just multiple choice, so there is no tasting or essay section like in WSET 3 or Sommelier classes - the scope however is **much** deeper than WSET 3, so you'll have to keep a lot more facts memorized. 
 
 What level might make sense for you?
-- Essentials are a good choice for those that have already a solid foundation of wine knowledge, particularly like one of the offered countries but have only limited time (or budget) or are more interested in the *"big hitter"* rather than lesser known grapes or wines
-- Scholar level classes are best suited for those that are professionals or passionate hobbyist and want to take a deep dive into **all** of a country's regions and wines, no matter how small or obscure
+- Essentials are a good choice for those that have already a solid foundation of wine knowledge, particularly like one of the offered countries but have only limited time (or budget) or are more interested in the *"big hitters"* (such as Barolo, Amarone and Brunello for Italy) rather than lesser known grapes or wines
+- Scholar level classes are best suited for those that are professionals or passionate hobbyists and want to take a deep dive into **all** of a country's regions and wines, no matter how small or obscure
 
 It should be pointed out that at time of writing the Essentials and Scholar classes differ mainly in scope (or breadth), not in depth. So if a country has 20 regions, the Essentials might cover only 6-8, the Scholar all 20, but for the covered region the depth is fairly similar.
 
