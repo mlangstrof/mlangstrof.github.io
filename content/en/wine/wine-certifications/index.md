@@ -55,7 +55,7 @@ In Zurich there are several providers that offer classes, some also remotely. I 
 
 For WSET level 4, since there is currently no school in Switzerland which offers this program, here are some alternative options:
 - Weinakademiker through [Weinakademie Österreich](https://www.weinakademie.at/wakdiploma.php) - similar to WSET level 4 (previously when you received the title of Weinakademiker, you would also get WSET level 4 but it seems the program has split from WSET since a few years and went its own way)
-- WSET level 4 through [WiSP](https://wisp-campus.com/wine-qualifications/wset-4/?lang=en) in France (Paris/Bourdeaux)
+- WSET level 4 through [WiSP](https://wisp-campus.com/wine-qualifications/wset-4/?lang=en) in France (Paris/Bordeaux)
 
 # Wine Scholar Guild (WSG)
 The [Wine Scholar Guild](https://www.winescholarguild.com/) is another wine certification provider but pursues a different angle than WSET: It offers a variety of classes that each focus on a specific country (or region), going into much greater detail than WSET. While WSET and other accreditations will focus on the most popular / highest quality wines of each country, the classes of the Wine Scholar Guild go through every area of a country where wine is grown, highlighting especially autochthonous grapes, but also the history of the region, its wine production, local cuisine and customs to give you a truly holistic view of its wines - after all wine is a cultural product and often strongly entwined with its origin.
