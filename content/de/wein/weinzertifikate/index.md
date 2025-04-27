@@ -7,7 +7,7 @@ featuredImage = "/images/wine_certifications.webp"
 tags = ["wine"]
 +++
 
-Die meisten Reisen in die Welt des Weins beginnen ganz schlicht: Wir genießen ein paar Gläser (oder Flaschen) und entscheiden, welche Weine uns schmecken und welche nicht. Doch meist dauert es nicht lange, bis wir feststellen, dass wir zwar *diesen *Cabernet Sauvignon großartig fanden, der nächste jedoch grauenhaft war – vielleicht war er viel zu sauer oder hatte unerträglich grobe und raue Tannine.
+Die meisten Reisen in die Welt des Weins beginnen ganz schlicht: Wir genießen ein paar Gläser (oder Flaschen) und entscheiden, welche Weine uns schmecken und welche nicht. Doch meist dauert es nicht lange, bis wir feststellen, dass wir zwar *diesen spezifischen* Cabernet Sauvignon großartig fanden, der nächste jedoch grauenhaft war – vielleicht war er viel zu sauer oder hatte unerträglich grobe und raue Tannine.
 
 Sollten wir also zur Sicherheit alle Cabernets meiden? Uns nur an eine bestimmte Region oder gar einen einzelnen Produzenten halten? Das kann zwar helfen, doch selbst beim gleichen Weingut gibt es Jahrgänge, die besser sind, und solche, die schlechter ausfallen, sodass wir bei einer Blindbestellung trotzdem bei einem enttäuschenden Wein landen können. Deshalb lohnt es sich, sein Weinwissen zu erweitern, um gezielter Weine auszuwählen, die unserem bevorzugten Geschmacksprofil entsprechen.
 
