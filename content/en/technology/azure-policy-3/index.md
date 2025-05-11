@@ -9,7 +9,7 @@ tags = ["azure"]
 
 +++
 
-In the third edition to the series, I would like to explain how we can actually determine when a Policy *can* or *should* be used to achieve our goal.
+In the third edition to the series, I would like to explain how we can actually determine when a policy *can* or *should* be used to achieve our goal.
 
 First, let's recall how Azure Policy works: By interacting with the Azure Resource Manager (ARM) API. This already shows us the first limitation: We will not be able to use a policy to restrict the behavior of an Azure resource or service *if* the level that we want to restrict is not accessible via the ARM API. This includes for example:
 - data plane restrictions (e.g. preventing user or schema changes on databases like MSSQL or PostgreSQL)
