@@ -38,7 +38,7 @@ So now that we have the theory out of the way, what does that mean for us practi
 6. Based on how we answered the questions, we can then either start from scratch or what I recommend, from a copy of a policy targeting the same resource type - this way we can copy the beginning part and overall structure and only need to amend conditions and effects. Of course you can also let AI help you generate the template, though be prepared for hallucinations - best is to feed it all the information you collected during your research (so what properties can be changed and how the structure looks like), which dramatically increases the likelihood of the AI providing you with sensible answers.
 7. Deploy the policy, assign it and create a standard test plan that contains the test cases you want to execute (remember you need *at least* a case targeting a newly created resource and an update to an **preexisting** resource!):
   - **Context**: Scope and business case for the change (i.e. value), description of changes
-  - **Prerequisite**: For example Contributor rights to an Azure subscription as well as ensuring the policy is assigned to that subscription
+  - **Prerequisites**: For example Contributor rights to an Azure subscription as well as ensuring the policy is assigned to that subscription
   - **Steps to reproduce**: What steps need to be followed in order to be able to reproduce the test case
   - **Expected behavior**: The chain of events you expect to see, e.g. policy blocks resource creation (Deny) or updates resource (Modify, DeployIfNotExist)
   - **Actual behavior**: The behavior you actually observed after executing the test case

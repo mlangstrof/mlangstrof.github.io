@@ -30,7 +30,7 @@ Nachdem nun die Theorie aus dem Weg ist, was bedeutet das für uns in der Praxis
 3. Nichts gefunden? Dann selbst bauen. Ausgehend von der offiziellen ARM- bzw. API-Dokumentation der Zielressource – nehmen wir hier alss Beispiel eine virtuelle Maschine – prüfen wir, welche Eigenschaften potenziell exponiert sind und wie das Objekt strukturiert ist.
 4. Anschließend navigieren wir zu [azadvertizer](https://www.azadvertizer.net) und klicken dort auf **Aliases**. Nun können wir noch entsprechende Filter setzen, z. B. Namespace: Microsoft.Compute und ResourceType: virtualMachines. Dies zeigt uns dann eine List von Pfaden, Aliases und Zusatzinfos:
 
-![PostgreSQL extensions 1](images/azaliasadvertizer.PNG "800px")
+![azaliasadvertizer](images/azaliasadvertizer.PNG "800px")
 
 5. Da wir nun die Richtlinienstruktur kennen sowie Informationen darüber haben, welche Eigenschaften modifizierbar sind, müssen wir anschließend die folgenden Fragen beantworten:
 - Sind die für unser Vorhaben benötigten Pfade überhaupt von der Policy-Engine adressierbar?
