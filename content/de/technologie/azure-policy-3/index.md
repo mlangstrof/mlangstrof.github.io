@@ -38,7 +38,6 @@ Nachdem nun die Theorie aus dem Weg ist, was bedeutet das für uns in der Praxis
 - Wie muss die Richtlinie aufgebaut sein (wenn wir eine Unterresource ansteuern wollen, müssen wir erst die Elternressource addressieren, etc.)?
 6. Basierend auf unseren Antworten für die obigen Fragen können wir entweder komplett von Null anfangen oder wir kopieren einfach eine bestehende Policy für denselben Ressourcentyp und passen das Template dann an. AI kann hier auch sehr nützlich sein, aber am besten füttert man sie mit den vorher recherchierten Fakten (Struktur, änderbare Felder), um Halluzinationen zu vermeiden und den Qualitätsgehalt der Antworten zu optimieren.
 7. Richtlinie bereitstellen, zuweisen und einen standardisierten Testplan erstellen – mindestens ein Szenario für eine neu erstellte Ressource und eines für eine bereits vorhandene. Ein Muster:
-Deploy the policy, assign it and create a standard test plan that contains the test cases you want to execute (remember you need *at least* a case targeting a newly created resource and an update to an **preexisting** resource!):
   - **Kontext**: Scope und Business Case der Richtlinie (also welchen Mehrwert sie bietet), Beschreibung der Änderungen
   - **Voraussetzungen**:  z. B. Contributor-Rechte und Policy-Zuweisung auf Subscription-Ebene
   - **Schritte zum Reproduzieren**: Welche Schritte müssen absolviert werden, um den Testcase auszuführen?
