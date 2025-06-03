@@ -2,7 +2,7 @@
 title = 'A wee journey through Fèis Ìle 2025 — Part 1: Making whisky'
 date = 2025-06-02T20:45:03+08:00
 draft = false
-categories = ["wine"]
+categories = ["wine","recommendation"]
 featuredImage = "/images/whisky1.webp"
 tags = ["wine", "basics"]
 +++

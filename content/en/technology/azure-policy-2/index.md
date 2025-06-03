@@ -2,7 +2,7 @@
 title = 'Advanced Azure Policy Techniques #2: Using requestContext to target specific apiVersions'
 date = 2025-03-31T18:45:03+08:00
 draft = false
-categories = ["technology","recommendation"]
+categories = ["technology"]
 featuredImage = "/images/azure_policy_2.webp"
 tags = ["azure"]
 
