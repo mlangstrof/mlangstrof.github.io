@@ -9,13 +9,13 @@ tags = ["wine", "basics"]
 
 Today, let’s step away from the world of wine and dive into another revered liquid: whisky. More specifically, I’d like to take you to **Islay** — a small Island west of Glasgow that is famous for its natural beauty and peated whisky. I had the chance to spend a few unforgettable days on this magical island, just in time for the **Fèis Ìle** whisky festival, that had connoisseurs of the peaty pour come from far and wide in pursuit of the perfect dram.
 
-![islay island location](images/islay_uk.webp "800px")
+![islay island location](images/islay_uk.webp "500px")
 
 ## Whisky and Wine
 
 While production methods, alcohol and taste profiles differ significantly, whisky and wine might be closer than you'd think. Both make use of fermentation to transform their base ingredients in order to add aromas, depth and complexity and both use maturation in casks to further enhance and elevate the liquids. In fact, while whiskies were traditionally matured in bourbon or sherry casks (and the majority still are), today the field is much wider — many producers experiment with tequila, mezcal, cognac or calvados casks and repurposed  wine barrels are also employed at a higher rate — Bruichladdich for example uses old Amarone casks for the Bruichladdich 2010, Kilchoman matures its Muscatel Single Cask in fresh Muscat casks and Ardbeg just released the 3rd edition of its Smoketrails series which aged in barrels that previously contained precious Napa Valley Cabernet Sauvignon! 
 
-![ardbeg smoketrails](images/ardbeg_smoketrail.webp "800px")
+![ardbeg smoketrails](images/ardbeg_smoketrail.webp "500px")
 
 # A short introduction into (Scottish) whisky making
 
@@ -39,7 +39,7 @@ At any rate, the malt is ground by two sets of rolls into a coarse flour called 
 
 The grist looks remarkably similar to oatmeal or granola — and yes, it tastes like it too. It is then transported into a mash tun, where hot water (about 62°C initially, then hotter in subsequent stages) is sprinkled on it to activate the previously mentioned enzymes and break down the starch. The **wort** (the technical term for the resulting malt-water mixture minus the solids, which remain behind) is then sent via pipes into **washbacks** (huge containers either made of wood or steel), where yeast is added and the fermentation is started. Fermentation can take up to three days, resulting in a yellow, beer like liquid called the **wash** that exudes a strong smell reminiscent of bread, brioche, yeast and raw cider. Imagine it as a smoky beer with about 9% ABV — more yeast than finesse, but full of character and potential. The wash is then piped into the distillation room, home to two iconic copper stills: the **wash still** and the **spirit still**. The soon-to-be whisky goes first into the wash still, which separates the alcohol from the solids and increases the alcohol content to about 19-25% ABV. Afterwards the resulting substance is further refined in the spirit still. The shape of the stills has a huge effect on the later flavor profile and mouthfeel of the whisky, with different producers opting for distinctive shapes to achieve their signature style. After further distillation in the spirit still, we have a raw whisky, transparent in color with intense malty notes and, when peated, an unmistakable touch of smoke, brine, and medicininal vapors, clocking in at around 62–70% strength, which is captured in the **spirit safe**. 
 
-![kilchoman new make](images/new_make.webp "800px")
+![kilchoman new make](images/new_make.webp "500px")
 
 ## The Magic of Maturation
 
