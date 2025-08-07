@@ -1,9 +1,9 @@
 +++
 title = 'Advanced Azure Policy Techniques #4: Targeting policies using scopes and tags'
-date = 2025-03-31T18:45:03+08:00
+date = 2025-08-07T18:45:03+08:00
 draft = false
 categories = ["technology","recommendation"]
-featuredImage = "/images/azure_policy_4.webp"
+featuredImage = "/images/azure-policy-4.webp"
 tags = ["azure"]
 
 
