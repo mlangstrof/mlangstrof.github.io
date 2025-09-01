@@ -7,72 +7,72 @@ featuredImage = "/images/whisky2.webp"
 tags = ["wine", "basics"]
 +++
 
-In my [previous post](https://mlangstrof.github.io/en/wine/a-wee-whisky-journey-1/), I set the stage for a deeper dive into Islay whisky by walking you through its production — highlighting the unique conditions, machinery, and techniques that give rise to this sublime spirit. Now that we've covered the ‘how,’ I’d love to take you on a short journey through Islay’s iconic distilleries — sharing personal impressions, curious facts, and perhaps helping you discover which house might best suit your palate
+In my [previous post](https://mlangstrof.github.io/en/wine/a-wee-whisky-journey-1/), I set the stage for a deeper dive into Islay whisky by walking you through its production – highlighting the unique conditions, machinery, and techniques that give rise to this sublime spirit. Now that we've covered the *how*, I’d love to take you on a short journey through Islay’s iconic distilleries while sharing personal impressions, curious facts, and perhaps helping you discover which "house of spirits" might best suit your palate.
 
 # Islay and its whisky
 
 ![islay distilleries](images/islay_distilleries.webp "500px")
 
-Chances are, the first thing to greet you on Islay — whether you arrive by sea or sky — will be brisk winds and perhaps a brief, involuntary shower. Set adrift from the Scottish mainland, the island is sculpted by unrelenting maritime gusts with little in the way of natural protection - while the inland features gentle hills and modest peaks, the coastal areas remain open, flat and exposed. The salty ocean air feels instantly refreshing and rejuvenating and is one of the key elements that imprint a distinctive character onto Islay’s whiskies. 
+Chances are, the first thing to greet you on Islay – whether you arrive by sea or sky – will be brisk winds and perhaps (if you are unlucky) a brief, involuntary shower. Set adrift from the Scottish mainland, the island is sculpted by unrelenting maritime gusts with little in the way of natural protection. While the inland features gentle hills and modest peaks, the coastal areas remain open, flat and exposed. When drawing your first breath, you are greeted by the salty ocean air which conveys a bracing freshness that is among the defining influences shaping the character of Islay’s whiskies.
 
-As you head inland, a landscape of luscious green fields unfolds, that reminded me instantly of the *Emerald Isle*. Our cab driver pointed out that Ireland is not only close by, but that on a clear day, you can even glimpse its coastline with the naked eye. In fact Islay is almost equidistant from Scotland and Ireland and its vegetation certainly reflects that. The vivid green is interspersed with brown spots, which are indicative of the peat that the island is known for - and another crucial aspect that shapes the character of the local whisky. Peat is a unique type of soil formed from partially decomposed plant matter, layered over time into dense, dark slabs that resemble dried earth. Due to the compression that happens over time while layer upon layer gets added to the top, it is quite energy dense and somewhere between wood and coal. Curiously, peat has little to no aroma on its own - its famously smoky character only emerges when it’s set alight. 
+As you head inland, a landscape of luscious green fields unfolds, that reminded me instantly of the *Emerald Isle*. Our cab driver pointed out that Ireland is not only close by, but that on a clear day, you can even glimpse its coastline with the naked eye. In fact Islay is almost equidistant from Scotland and Ireland and its vegetation certainly reflects that. The vivid green is interspersed with brown spots, which are indicative of the peat that the island is known for – and another crucial aspect that shapes the character of the local whisky. Peat is a unique type of soil formed from partially decomposed plant matter, layered over time into dense, dark slabs that resemble dried earth. Due to the compression that happens over time while layer upon layer gets added to the top, it is quite energy dense and as fuel somewhere between wood and coal. Curiously, peat has little to no aroma on its own – its famously smoky character only emerges when it’s set alight. 
 
-Of course the rugged, rural landscape wouldn't be complete without some livestock and you'll often see sheep and cows grazing on the meadows. Rumor has it, even the island’s livestock are whisky enthusiasts - they’re especially fond of *draff*, the protein- and fiber-rich barley residue left behind in the mash tun after mashing. It is rich in protein and fiber, but low in sugar, yet still retains a slightly sweetish taste that the animals rather enjoy. The island is also home to farms that grow hay, silage and barley, the latter being used primarily in the local whisky production. Move your gaze towards the open waters and you might see some fishing boats, catching crabs, lobsters, scallops, oysters or fish from the island's coast, delicacies which you are sure to find on the menu of the restaurants in Port Ellen, Bowmore or Port Charlotte. 
+Of course the rugged, rural landscape wouldn't be complete without some livestock and you'll often see sheep and cows grazing on the meadows. Rumor has it, even the island’s livestock are whisky enthusiasts. They’re especially fond of *draff*, the protein- and fiber-rich barley residue left behind in the mash tun after mashing. While most sugars have been extracted during the fermentation, it still retains a slightly sweetish taste that the animals rather enjoy. The island is also home to farms that grow hay, silage and barley, the latter being used primarily in the local whisky production. If you move your gaze towards the open waters, you might see some fishing boats, catching crabs, lobsters, scallops, oysters or fish from the island's coast, delicacies which you are sure to find on the menu of the restaurants in Port Ellen, Bowmore or Port Charlotte. 
 
-Only around 3,000 people call Islay home year-round, scattered among its villages, farms, and cottages - even fewer are actually born there and are thus allowed to call themselves Ìleach (pronounced *ilach*). The natives are very welcoming, friendly and humble, and even though their whisky has found worldwide acclaim, they still seem very much down to earth. I was pleasantly surprised that even though especially the bigger distilleries have their fixed catalog of whiskies, tours and tasting experiences, not everything is about money and you will often get more than you paid for. If you visit high-profile wineries, it can sometimes feel like an expensive, rushed and highly choreographed experience, far removed from any joy about the actual product. Islay felt more authentic and the inhabitants genuinely proud and excited about their Island and their spirits and eager to share their enthusiasm.
+Islay may not be big, but (partly) due to the whisky tourism still offers a sizeable number of restaurants with excellent food – I can vouch for the seafood, particularly the astoundingly big oysters. Lovers of particularly peaty whisky might also be enticed by the prospect of eating beef that grazed on the famous Octomore fields. Naturally there are also vegetarian options, though ordering a traditional Scottish breakfast is disadvised in that case, as most of the plate will consist of animal products. In terms of quality, I would particularly recommend the Port Charlette Hotel, the food was fresh and cooked to perfection and the staff knowledgeable and friendly. Another plus: It has a decent selection of wine and a great selection of whisky, as well as a bar on the opposite side of the building, so you can easily catch a nightcap after your meal.
+
+Only around 3,000 people call Islay home year-round, scattered among its villages, farms, and cottages – even fewer are actually born there and are thus allowed to call themselves Ìleach (pronounced *ilach*). The natives are very welcoming, friendly and humble, and even though their whisky has found worldwide acclaim, they still seem very much down to earth. I was pleasantly surprised that even though especially the bigger distilleries have their fixed catalog of whiskies, tours and tasting experiences, not everything is about money and you will often get more than you paid for. If you visit high-profile wineries, it can sometimes feel like an expensive, rushed and highly choreographed experience, far removed from any joy about the actual product. Islay felt more authentic and the inhabitants genuinely proud and excited about their island and their spirits and eager to share their enthusiasm.
 
 # The Fèis Ìle festival
 
-[Fèis Ìle](https://feisile.co.uk/) (pronounced roughly  *fesh eel-uh*) is an annual celebration of Islay and its renowned distilleries, taking place during the last week of May. The origins of the festival date back to 1986, making next year (2026) its 40th anniversary. Over the festival’s ten-day run, each day spotlights a different distillery. Expect bustling courtyards brimming with food and drink stalls, live music on central stages, and exclusive behind-the-scenes tours. Many distilleries also offer immersive tasting experiences — from curated flights of rare casks to access to normally off-limits areas, cocktail workshops, blend-your-own classes, or informal meet-and-greets with the head distiller or distillery manager. 
+[Fèis Ìle](https://feisile.co.uk/) (pronounced roughly  *fesh eel-uh*) is an annual celebration of Islay and its renowned distilleries, taking place during the last week of May. The origins of the festival date back to 1986, making next year (2026) its 40th anniversary. Over the festival’s ten-day run, each day spotlights a different distillery. Expect bustling courtyards brimming with food and drink stalls, live music on central stages, and exclusive behind-the-scenes tours. Many distilleries also offer immersive tasting experiences: From curated flights of rare casks to access to normally off-limits areas, cocktail workshops, blend-your-own classes, or informal meet-and-greets with the head distiller or distillery manager. 
 
-Each distillery brings its own flair to the occasion — some, like Bruichladdich, host raucous, high-energy parties, while others, such as Laphroaig, favor a more laid-back, family-friendly atmosphere, complete with historic charm and even activities like archery. Beyond the distilleries, the festival committee organizes a wide range of events — from whisky tasting contests and music-and-dance performances to showcases by independent bottlers. There’s even room for non-whisky related fun, like fishing competitions or community bowling nights.
+Each distillery brings its own flair to the occasion – some, like **Bruichladdich**, host raucous, high-energy parties, while others, such as **Laphroaig**, favor a more laid-back, family-friendly atmosphere, complete with historic charm and even activities like archery. Beyond the distilleries, the festival committee organizes a wide range of events, such as whisky tasting contests, music-and-dance performances or showcases by independent bottlers. There’s even room for non-whisky related fun, like fishing competitions or community bowling nights.
 
-Most distillery days are open to all, often with no ticket required. However, special tastings and committee-run events do book out fast,  so be sure to reserve your spot well in advance.
+Most distillery days are open to all, often with no ticket required. However, special tastings and committee-run events do book out fast,  so be sure to reserve your spot well in advance. Another topic is transportation: It goes without saying that you **should not drink and drive**, but public transportation on the island is irregular and at least in 2025 there were no designated shuttles to most destillery days. Therefore I'd recommend arranging for transport beforehand or expect some waiting time, as cabs will be busy and may take a while to pick you up if you call without prior reservation.
 
 # The distilleries of Islay
 
-Islay is currently home to ten active distilleries, scattered across its wild and windswept terrain. On the southern coast lie **Ardbeg**, **Lagavulin**, **Laphroaig**, and the recently reopened **Port Ellen**; **Bowmore**, **Bruichladdich**, and **Kilchoman** anchor the island’s west, while **Caol Ila**, **Ardnahoe**, and **Bunnahabhain** are tucked along the northwestern shore. Two new sites — **Portintruan** near Port Ellen and **Laggan Bay** near the airport — are already under construction and slated to open soon. The island’s oldest distillery is Bowmore, named after Islay’s capital city, where it was founded shortly after the town itself in 1779. 
+Islay is currently home to ten active distilleries, scattered across its wild and windswept terrain. On the southern coast lie **Ardbeg**, **Lagavulin**, **Laphroaig**, and the recently reopened **Port Ellen** destillery; **Bowmore**, **Bruichladdich**, and **Kilchoman** anchor the island’s west, while **Caol Ila**, **Ardnahoe**, and **Bunnahabhain** are tucked along the northwestern shore. Two new sites – **Portintruan** near Port Ellen and **Laggan Bay** near the airport – are already under construction and slated to open soon. The island’s oldest distillery is Bowmore, named after Islay’s capital city, where it was founded shortly after the town itself in 1779. 
 
-Intriguingly, many distilleries predate their official founding dates, having operated as illicit stills during the days when whisky production was outlawed. That’s why some sites feature hidden rock caverns — once used to stash barrels of moonshine during the prohibition era. According to local lore, some resourceful maltmen even diverted smoke from the kilns and stillhouses into the chimneys of nearby cottages, thus cleverly concealing the telltale signs of their forbidden craft.
+Intriguingly, many distilleries predate their official founding dates, having operated as illicit stills during the days when whisky production was outlawed. That’s why some sites feature hidden rock caverns, that were used to stash barrels of moonshine  during the prohibition era. According to local lore, some resourceful maltmen even diverted smoke from the kilns and stillhouses into the chimneys of nearby cottages, thus cleverly concealing the telltale signs of their forbidden craft.
 
 ## Laphroaig
 
-<img of distillery>
-Laphroaig is the first stop on the aptly named "three distillery walk, that you reach by leaving port ellen and heading east. If you arrive by plane, like I did, and are lucky enough to have a window seat, you can also spot the LAPHROAIG name in big black letters on a pristine white building, just off the island's southern shore. Perhaps you will even spot what might easily be the distillery's biggest fan - a dog belonging to one of the local families, that is often found strolling leisurely around the nearby beach, always on the lookout for someone willing to throw his stick. 
+![islay distilleries](images/laphroaig_destillery.png "500px")
+Laphroaig is the first stop on the aptly named *Three Distillery Walk*, which begins just east of Port Ellen. If you arrive by plane, as I did, and are lucky enough to snag a window seat, you may spot the bold black letters spelling *LAPHROAIG* on a pristine white warehouse along Islay’s southern shore. You might even catch sight of what could be the distillery’s most devoted fan – a dog belonging to one of the local families, that is often found strolling leisurely around the nearby beach, always on the lookout for someone willing to throw his stick.
 
-The producers location is certainly one of the most impressive in Islay with a large inside yard contrasted by brilliant white buildings and a direct view of the coast. When entering the visitor center, you'll find a snall museum just behind the gift shop, showcasing the various stages of the distillery's tumultuous history. It was founded in 1815 by Donald and Alexander Johnston and passed down within the family finally reaching Ian Hunter, a nephew of Sandy Johnston, who bought the land the distillery and farm stood on and focused on increasing Laphroaig's international recognition to push exports. He even succeeded in getting his whisky classified as medicine in north america - no doubt partially due to Laphroaig's unique medicinal aromas - thus circumventing the alcohol ban during the prohibition era. Ian Hunter died childless in 1954 and  was unable to find anyone in his extended family who he felt equipped to continue his vision of the company.  He therefore decided to leave it to his former secretary turned manager, Bessie Williamson, making Laphroaig the first distillery in Islay owned and lead by a woman.
+The producers location is certainly one of the most impressive in Islay with a large central yard flanked by gleaming white buildings and a clear view of the Atlantic just beyond. Inside the visitor centre, past the gift shop, you'll find a small museum chronicling the distillery’s long and eventful history. Founded in 1815 by Donald and Alexander Johnston, Laphroaig remained a family-run operation until it eventually passed to Ian Hunter, the visionary nephew of Sandy Johnston. It was Hunter who purchased the land beneath the distillery and its adjoining farm and shifted focus to building Laphroaig’s international reputation and increasing exports. In a clever gambit, he even succeeded in getting his whisky classified as medicine in the United States – no doubt partially due to Laphroaig's characteristic medicinal aromas – thus bypassing the harsh restrictions on alcohol during the Prohibition era. Hunter died childless in 1954 and was unable to find anyone in his extended family who he felt equipped to continue his vision of the company.  He therefore decided to leave it to his former secretary turned manager, Bessie Williamson, making Laphroaig the first distillery in Islay to be owned and led by a woman.
 
-Branded as “the most richly flavoured of all Scotch whiskies”, Laphroaig is famed for intense peat smoke, medicinal iodine, seaweed brine, and a creamy, oily mouthfeel  .
+Branded as *“the most richly flavoured of all Scotch whiskies,”* Laphroaig is known for its unapologetically intense flavor profile: billows of peat smoke, medicinal iodine, seaweed brine paired with a creamy, oily mouthfeel. The spirit is made using heavily peated malt (around 40 ppm) and tall copper stills with narrow necks that encourage reflux, yielding a full-bodied yet surprisingly elegant dram. The distillery leans into its polarizing reputation, most famously with the “*Opinions Welcome*” campaign, in which drinkers were invited (and encouraged) to share their honest and unfiltered opinions. True to its image, many reviews were used as part of the campaign: the good, the bad, and the hilariously hostile. What other brand would proudly embrace the tagline: *“Tastes like burning hospital”?*
 
-It uses heavily peated barley and distinctive tall pot stills with narrow necks designed to maximize reflux, resulting in a full-bodied yet refined spirit  .
+Another distinctive initiative is the *Friends of Laphroaig* club. Many bottles include a registration code that entitles you to become a Friend, which makes you the ceremonial owner of a square foot of land on Islay. While you won’t be collecting rent, you are entitled to one free dram per year, payable at the distillery itself, giving you yet another incentive to visit the facilities!
 
+Fun fact: Laphroaig is the only distillery officially approved by royalty, in this case former HRH The Prince Of Wales, King Charles III, who upon visiting Laphroaig and tasting their whisky granted the appointment. Even today, this approval is still proudly printed on the label of each bottle.
 
-Laphroaig is also known for its friends of laphroaig, beatiful oceanside visible from plane Fun Fact: Laphroaig fans can legally own a square foot of land on Islay—plus a dram each year if they register as "Friends of Laphroaig." Fancy land ownership? Here's your dram incentive.
+Currently Laphroaig's core range consists of the following editions:
 
+| Name                          | Age              | Maturation                                         | Peat level | Alcohol | Aromas                                                                  |
+| ----------------------------- | ---------------- | -------------------------------------------------- | ---------- | ------- | ----------------------------------------------------------------------- |
+| Oak Select                    | NAS              | Blend:Oloroso, ex-Bourbon, P.X.; virgin oak finish | ~40-45 ppm | 40%     | earthy with sweet honey, peat smoke, seaweed, Marzipan                  |
+| 10 Year Old                   | 10 years         | Ex-bourbon                                         | ~40 ppm    | 40%     | Iodine, seaweed, medicinal smoke, peat, long dry finish                 |
+| 10 Year Old Sherry Oak Finish | 10 years         | Ex-bourbon, Oloroso finish                         | ~40 ppm    | 48%     | Rich dried fruits, chocolate, smoked bacon, deep smoke                  |
+| Quarter Cask                  | NAS (5-11 years) | Ex-Bourbon + quarter-size oak cask finish          | ~40 ppm    | 48%     | Creamy vanilla, medicinal, toasted oak, malt, boosted peat presence     |
+| The Cask Lore                 | NAS (7-21 years) | Blend: Ex-Bourbon, refill, Oloroso, quarter casks  | ~40-45 ppm | 48%     | Deep layers of smoke, spice, cocoa, brine                               |
+| 18 Year Old                   | 25 years         | Ex-bourbon                                         | ~40-45 ppm | ~48%    | Mature peat with vanilla, spice, tobacco, leather, oily texture         |
+| 30 Year Old                   | 30 years         | American oak + European ex-sherry                  | ~40-45 ppm | 45.8%   | Tropical fruits, lime zest, sea salt, gentle smouldering campfire smoke |
 
+Additionally, like most producers, Laphroaig regularly releases special editions, be it for festivals, like the Islay Jazz Festival or Fèis Ìle, to commemorate milestones in the distillery’s history, or as the result of experimentation (both intentional **and** unintentional). I had the opportunity to take part in a guided tasting of Laphroaig’s *Elements* series, which showcases exactly that: deliberate trials as well as fortunate mistakes.
 
-Fun fact: Laphroaig is the only distillery officially approved by royalty, in this case former HRH The Prince Of Wales, King Charles III, who upon visiting Laphroaig and tasting their whisky granted the appointment
+The first release, **Elements 1.0**, introduced a variation in the mashing process. In addition to the two standard 5.5-tonne mash tuns, an older 8.5-tonne tun was brought back into use. The wort was created using a 50/50 blend of cloudy and semi-cloudy runoff, aiming to influence the flavor profile at an early stage. Fermentation proceeded along the usual 55-hour cycle. This produced a complex whisky with notes of spicy pepper, charred pineapple, and tangy liquorice, offering bold and tropical-toned flavors layered over the signature medicinal peat.
 
-| Name           | Age      | Maturation       | Peat level | Alcohol | Aromas                                                                      |
-| -------------- | -------- | ---------------- | ---------- | ------- | ----------------------------------------------------------------------------|
-| Oak Select | NAS | Blend:Oloroso, ex-Bourbon, P.X.; virgin oak finish | ~40-45 ppm    | 40%  | earthy with sweet honey, peat smoke, seaweed, Marzipan  |
-| 10 Year Old | 10 years | Ex-bourbon | ~40 ppm    | 40%   | Iodine, seaweed, medicinal smoke, peat, long dry finish                                      |
-| 10 Year Old Sherry Oak Finish| 10 years | Ex-bourbon, Oloroso finish | ~40 ppm    | 48%   | Rich dried fruits, chocolate, smoked bacon, deep smoke|
-| Quarter Cask | NAS (5-11 years)      | Ex-Bourbon + quarter-size oak cask finish | ~40 ppm     | 48%   | Creamy vanilla, medicinal, toasted oak, malt, boosted peat presence     |
-| The Cask Lore | NAS (7-21 years) | Blend: Ex-Bourbon, refill, Oloroso, quarter casks           | ~40-45 ppm    | 48%   | Deep layers of smoke, spice, cocoa, brine                    |
-| 18 Year Old | 25 years | Ex-bourbon       | ~40-45 ppm   | ~48%   | Mature peat with vanilla, spice, tobacco, leather, oily texture |
-| 30 Year Old | 30 years | American oak + European ex-sherry        | ~40-45 ppm   | 45.8%   | Tropical fruits, lime zest, sea salt, gentle smouldering campfire smoke|
+**Elements 2.0** took another approach: Returning to the standard mash tuns and wort clarity but this time dialing up the fermentation time from the default 55 hours all the way up to 115 hours. The result is intensely aromatic and fruit-forward, with delicate smoke, soft peat, yeasty undertones, and a gentle sweetness. The trial was reportedly so successful that Laphroaig is now considering increasing the fermentation time for its core expressions to 72 hours.
 
+Finally, **Elements 3.0** was born from a mistake – or as the late Bob Ross would put it, a *happy little accident*. One of the kiln fires was left burning for longer and at a higher temperature than intended, which would usually render the malt unsuitable for further processing. Instead, the distillery team took a chance, distilled it, and filled it into designated casks rather than blending it with the core range. Their gamble paid off: the prolonged, elevated heat imparted chocolate, coffee, and sweet, smoky notes, resulting in a unique, roasted character in the final spirit.
 
-Laphroaig ten, quarter cask ... 
+My personal favorite was Elements 2.0, but sadly I am not alone in that assessment and as a consequence of its popularity, the price has gotten a bit prohibitive. Alas, a man can dream.
 
-special editions
-Special mention should be given to the Elements series
-
-![laphroaig sample](images/lophraig_sample.png "500px")
-
-
-<img of calderas edition>
+![islay distilleries](images/laphroaig_bottles.png "500px")
 
 ## Lagavulin
 
@@ -94,22 +94,18 @@ Known for slow distillation: first pass ~5 hours, second ~9 hours, with wide cut
 
 Flavor is marked by deep peat smoke, iodine, seaweed, and Lapsang Souchong-style notes, layered with spice, dried fruit, and coastal salinity
 
-| Name                | Age              | Maturation       | Peat level | Alcohol                                  | Aromas                                         |
-| ------------------- | ---------------- | ---------------- | ---------- | ---------------------------------------- | ---------------------------------------------- |
-| 8 Year Old         | 8 years | refill European oak + American oak casks|  35 ppm     | 48% |  smoke, citrus, vanilla, and medium-bodied peat presence|
-| 16 Year Old        | 16 years | ex-Bourbon           |  35 ppm    | 43%                                   | Peat smoke, iodine, gentle sweetness, sea-salt, vanilla, spice    |
-| Distiller's Edition | NAS              | refill European oak + American oak casks, PX sherry |  35 ppm     | 43%        | Peat smoke with dark fruit, chocolate, sweet spice |
+| Name                | Age      | Maturation                                          | Peat level | Alcohol | Aromas                                                         |
+| ------------------- | -------- | --------------------------------------------------- | ---------- | ------- | -------------------------------------------------------------- |
+| 8 Year Old          | 8 years  | refill European oak + American oak casks            | 35 ppm     | 48%     | smoke, citrus, vanilla, and medium-bodied peat presence        |
+| 16 Year Old         | 16 years | ex-Bourbon                                          | 35 ppm     | 43%     | Peat smoke, iodine, gentle sweetness, sea-salt, vanilla, spice |
+| Distiller's Edition | NAS      | refill European oak + American oak casks, PX sherry | 35 ppm     | 43%     | Peat smoke with dark fruit, chocolate, sweet spice             |
 
 For most people, the Lagavulin 16 is the first whiskey of the producer they come into contact with - it's certainly their most iconic and most widely available rendition. <add description>. Originally made as a special edition but since then having found great acclaim has the Lagavulin 5 also joined the distillery's "main cast". It is ... Finally there is the Lagavulin distillery exclusive, which shares many aspects with the 16 years old but ...
 
 Fun Fact: Their iconic 16‑Year‑Old sticks around so long because they ferment for a staggering 55 hours—longer than a Lord of the Rings marathon.
 
-
-
 special editions
 Variety of single casks, special editions for the jazz festival and feis ile.
-
-
 
 ## Ardbeg
 
@@ -119,21 +115,19 @@ style
 
 core range
 
-| Name         | Age              | Maturation       | Peat level | Alcohol                                  | Aromas                                         |
-| ------------ | ---------------- | ---------------- | ---------- | ---------------------------------------- | ---------------------------------------------- |
-| Ardbeg TEN   | 10 years | Ex-Bourbon  | 45 ppm          | 46%      | smoke, brine, caramel chocolate                                                 |
-| Wee Beastie  | 5 years              | Ex-Bourbon & Oloroso           | ~40 ppm     | 47.4%                       | chocolate, tar, savoury meats, black pepper, smoke   |
-| An Oa        | NAS              | Bourbon, P.X. & virgin charred oak | ~50 ppm     | 46.6%                                    | peat, dark chocolate, aniseed, butterscotch, black pepper |
-| Uigeadail    | NAS              | Ex-Bourbon & Oloroso  | ~50 ppm     | 54.2%                                    | smoke, walnuts, peat, caramel, malt, black pepper |
-| Corryvreckan | NAS              | Ex-Bourbon & French oak | ~55 ppm     | 57.1%                                    | dark chocolate, blackcurrants muscovado sugar, cherries pine needles, sea spray|
+| Name         | Age      | Maturation                         | Peat level | Alcohol | Aromas                                                                          |
+| ------------ | -------- | ---------------------------------- | ---------- | ------- | ------------------------------------------------------------------------------- |
+| Ardbeg TEN   | 10 years | Ex-Bourbon                         | 45 ppm     | 46%     | smoke, brine, caramel chocolate                                                 |
+| Wee Beastie  | 5 years  | Ex-Bourbon & Oloroso               | ~40 ppm    | 47.4%   | chocolate, tar, savoury meats, black pepper, smoke                              |
+| An Oa        | NAS      | Bourbon, P.X. & virgin charred oak | ~50 ppm    | 46.6%   | peat, dark chocolate, aniseed, butterscotch, black pepper                       |
+| Uigeadail    | NAS      | Ex-Bourbon & Oloroso               | ~50 ppm    | 54.2%   | smoke, walnuts, peat, caramel, malt, black pepper                               |
+| Corryvreckan | NAS      | Ex-Bourbon & French oak            | ~55 ppm    | 57.1%   | dark chocolate, blackcurrants muscovado sugar, cherries pine needles, sea spray |
 
 special editions
 Committee‑collab releases: Eureka! (2023, fan-developed blend PX & bourbon casks) 
 Ardbeg Spectacular (2024 Day Release), Vintage Y2K 23 Y (2024), The Abyss 34 Y x Tradd Moore (2024), Smokiverse (2025 Day Release)
 
 Fun Fact: In 2018, Ardbeg sent tiny vials of whisky to the ISS to study the effects of aging in space—so somewhere out there, an astronaut is enjoying space-aged smoke!
-
-
 
 ## Ardnahoe
 
@@ -151,19 +145,16 @@ Features unique worm-tub condensers (the only ones on Islay) and long lyne arms 
 
 Typical maturation split: ~80% ex-bourbon American oak and 20% ex-European Oloroso sherry casks  .
 
-| Name         | Age              | Maturation       | Peat level | Alcohol                                  | Aromas                                         |
-| ------------ | ---------------- | ---------------- | ---------- | ---------------------------------------- | ---------------------------------------------- |
-| Ardnahoe Inaugural Release   | 5 years | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm          | 50%      | shortbread, baked apple, coastal peat, custard, ginger, lemon zest |                                                |
-| Bholsa  | NAS              | Ex-bourbon and **ex-Oloroso sherry** | ~40 ppm    | 50%                                    | red fruits, walnuts, orange zest, raisins, dates, peat   |
-| Infinite Loch    | NAS              | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm    | 50%                                    | sea-spray, peat dark chocolate, menthol, fresh fruits, bonfire |
-| Ardnahoe Society 2024       | 5 years              | ex-Oloroso and PX quarter casks | 40 ppm     | 59.1%                                    | dark chocolate, raisins, honey, malt, peat smoke  |
+| Name                       | Age     | Maturation                           | Peat level | Alcohol | Aromas                                                             |
+| -------------------------- | ------- | ------------------------------------ | ---------- | ------- | ------------------------------------------------------------------ |
+| Ardnahoe Inaugural Release | 5 years | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm    | 50%     | shortbread, baked apple, coastal peat, custard, ginger, lemon zest |
+| Bholsa                     | NAS     | Ex-bourbon and **ex-Oloroso sherry** | ~40 ppm    | 50%     | red fruits, walnuts, orange zest, raisins, dates, peat             |
+| Infinite Loch              | NAS     | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm    | 50%     | sea-spray, peat dark chocolate, menthol, fresh fruits, bonfire     |
+| Ardnahoe Society 2024      | 5 years | ex-Oloroso and PX quarter casks      | 40 ppm     | 59.1%   | dark chocolate, raisins, honey, malt, peat smoke                   |
 
-
-Signature Style	Coastal smoke, mid-peat, rich mouthfeel from worm-tubs and long lyne arms 
-Inaugural Release	5 Y, 50%, 40 ppm, bourbon + Oloroso, tasting: salty caramel, custard, smoke 
-Stillhouse Setup	1 wash & 1 spirit still, worm-tub condenser, 600k L capacity 
-
-
+Signature Style    Coastal smoke, mid-peat, rich mouthfeel from worm-tubs and long lyne arms 
+Inaugural Release    5 Y, 50%, 40 ppm, bourbon + Oloroso, tasting: salty caramel, custard, smoke 
+Stillhouse Setup    1 wash & 1 spirit still, worm-tub condenser, 600k L capacity 
 
 ---
 
@@ -171,12 +162,9 @@ Stillhouse Setup	1 wash & 1 spirit still, worm-tub condenser, 600k L capacity
 
 1. First new Islay distillery since 2005, offering a fresh yet traditional approach  .
 
-
 2. Worm-tub condensers deliver a meaty, textured spirit rare on Islay  .
 
-
 3. Iconic setting, perched above the Sound of Islay with sweeping maritime views  .
-
 
 style
 
@@ -190,17 +178,16 @@ the distillery
 Founded by Anthony Wills in 2005, Kilchoman became the first new distillery on Islay in over 120 years, starting production in December 2005, with the inaugural release arriving in 2009
 Located on Rockside Farm in northwest Islay—Kilchoman is unique as an Islay farm distillery, growing around 30% of its barley on-site, malting it in-house (using traditional floor maltings), and handling distillation, maturation, and bottling all on one farm 
 
-
 Fun Fact: As a farm-to-bottle distillery, Kilchoman grows barley, malts it onsite, and distills it—all on Islay. One day a guide joked, “If you get lost, just follow the barley to the bottle.”
 
-| Name         | Age              | Maturation       | Peat level | Alcohol                                  | Aromas                                         |
-| ------------ | ---------------- | ---------------- | ---------- | ---------------------------------------- | ---------------------------------------------- |
-| Machir Bay   | NAS | **Ex-bourbon** & ex-Oloroso sherry | ~20-25 ppm          | 46%      | coastal peat, citrus zest, vanilla, honeyed malt, dried fruit, black pepper |                                                |
-| Batch Strength  | NAS              | Red wine casks, ex-bourbon & ex-Oloroso sherry| ~50 ppm    | 57%       | like Machir Bay but richer smoke, butterscotch oak, dark fruits, oily mouthfeel   |
-| Sanaig   | NAS              | **Sherry** & Ex-Bourbon | ~50 ppm    | 46%                                    | rich, fruity, balanced smoke with fig, berry, spice, caramel, and chocolate notes |
-| Loch Gorm   | 10 years              | Ex-Oloroso | 50 ppm     | 46%                                    | honey custard, sticky toffee, roasted coffee, smoky figs, clove spice  |
-| 100% Islay Range   | 5 years              | **Ex-bourbon** & ex-Oloroso sherry | 20 ppm     | 50%                                    | floral citrus, prune and apple, baked spice, subtle smoke |
-| Kilchoman 16 Year Old  | 16 years              | **Ex-bourbon** & ex-Oloroso sherry | 50 ppm     | 50%                                    | oak spice, deep peat, dried fruit, coastal salinity  |
+| Name                  | Age      | Maturation                                     | Peat level | Alcohol | Aromas                                                                            |
+| --------------------- | -------- | ---------------------------------------------- | ---------- | ------- | --------------------------------------------------------------------------------- |
+| Machir Bay            | NAS      | **Ex-bourbon** & ex-Oloroso sherry             | ~20-25 ppm | 46%     | coastal peat, citrus zest, vanilla, honeyed malt, dried fruit, black pepper       |
+| Batch Strength        | NAS      | Red wine casks, ex-bourbon & ex-Oloroso sherry | ~50 ppm    | 57%     | like Machir Bay but richer smoke, butterscotch oak, dark fruits, oily mouthfeel   |
+| Sanaig                | NAS      | **Sherry** & Ex-Bourbon                        | ~50 ppm    | 46%     | rich, fruity, balanced smoke with fig, berry, spice, caramel, and chocolate notes |
+| Loch Gorm             | 10 years | Ex-Oloroso                                     | 50 ppm     | 46%     | honey custard, sticky toffee, roasted coffee, smoky figs, clove spice             |
+| 100% Islay Range      | 5 years  | **Ex-bourbon** & ex-Oloroso sherry             | 20 ppm     | 50%     | floral citrus, prune and apple, baked spice, subtle smoke                         |
+| Kilchoman 16 Year Old | 16 years | **Ex-bourbon** & ex-Oloroso sherry             | 50 ppm     | 50%     | oak spice, deep peat, dried fruit, coastal salinity                               |
 
 A true farm distillery, controlling everything from barley seed to bottling 
 Uses long fermentation and small stills for a signature clean yet fruity spirit; the high PPM barley is often softened by their process 
@@ -215,7 +202,6 @@ Distillation: Uses compact bold stills with tall necks and reflux bulbs to creat
 
 Primarily 1st-fill bourbon casks (~90%), supplemented with ex-Oloroso sherry for richer notes; casks are usually discarded after two fills to maintain oak potency 
 
-
 core range
 
 special editions
@@ -229,18 +215,17 @@ Founded in 1881 by the Harvey brothers, Bruichladdich was designed as a state-of
 It was mothballed multiple times (1907–18, 1929–35, 1941–45, 1994–2000) until reopened in 2001 by Mark Reynier and Jim McEwan, prioritizing terroir, local barley, and experimentation over marketing clichés 
 Acquired by Rémy Cointreau in 2012, the distillery today emphasizes Scottish provenance, working with farmers and even naming specific fields on packaging 
 
-
 Fun Fact: Bruichladdich once distilled a 90% ABV whisky dubbed “perilous usquebaugh‑baul”—the Top Gear crew even used some to fuel a car!
 
-| Name         | Age              | Maturation       | Peat level | Alcohol                                  | Aromas                                         |
-| ------------ | ---------------- | ---------------- | ---------- | ---------------------------------------- | ---------------------------------------------- |
-| The Classic Laddie   | 10 years | **Ex-bourbon**  | ~3-5 ppm          | 50%      | honey, floral cereals, citrus zest, tropical fruit, gentle oak, clean finish |                                                |
-| Islay Barley  | 8 years              | **Ex-bourbon**, wine and sherry casks | ~3-5 ppm      | 50%                                    | grain-forward, orchard fruits, light spice, purity over peat   |
-| Eighteen Aged Years     | 18 years              | **Ex-bourbon**, Sauternes & Port | ~3-5 ppm      | 50%                                    | rich body with honey, butterscotch, orange, tropical fruits, mellow oak |
-| Port Charlotte 10      | 10 years              | **Ex-bourbon** & french wine casks | 40 ppm     | 50%                                    | honey, hazelnut, salted caramel and dry peat smoke  |
-| Port Charlotte Islay Barley     | 7 years              | **Ex-bourbon**, virgin oak and wine casks | 40 ppm     | 50%                                    | malt, honey,vanilla, toffee, citrus, fruits, tobacco, BBQ smoke  |
-| Octomore 15.1 | 5 years              | Ex-bourbon & re-charred ex-bourbon | 108 ppm    | 59.1%               | Raw peat, charred oak, smooth vanilla, ripe acidity  |
-| Octomore 15.3 | 5 years              | Ex-bourbon & Oloroso | 307 ppm     | 61.3%                                 | Extreme peat, fruit acidity, oak depth  |
+| Name                        | Age      | Maturation                                | Peat level | Alcohol | Aromas                                                                       |
+| --------------------------- | -------- | ----------------------------------------- | ---------- | ------- | ---------------------------------------------------------------------------- |
+| The Classic Laddie          | 10 years | **Ex-bourbon**                            | ~3-5 ppm   | 50%     | honey, floral cereals, citrus zest, tropical fruit, gentle oak, clean finish |
+| Islay Barley                | 8 years  | **Ex-bourbon**, wine and sherry casks     | ~3-5 ppm   | 50%     | grain-forward, orchard fruits, light spice, purity over peat                 |
+| Eighteen Aged Years         | 18 years | **Ex-bourbon**, Sauternes & Port          | ~3-5 ppm   | 50%     | rich body with honey, butterscotch, orange, tropical fruits, mellow oak      |
+| Port Charlotte 10           | 10 years | **Ex-bourbon** & french wine casks        | 40 ppm     | 50%     | honey, hazelnut, salted caramel and dry peat smoke                           |
+| Port Charlotte Islay Barley | 7 years  | **Ex-bourbon**, virgin oak and wine casks | 40 ppm     | 50%     | malt, honey,vanilla, toffee, citrus, fruits, tobacco, BBQ smoke              |
+| Octomore 15.1               | 5 years  | Ex-bourbon & re-charred ex-bourbon        | 108 ppm    | 59.1%   | Raw peat, charred oak, smooth vanilla, ripe acidity                          |
+| Octomore 15.3               | 5 years  | Ex-bourbon & Oloroso                      | 307 ppm    | 61.3%   | Extreme peat, fruit acidity, oak depth                                       |
 
 style
 Bruichladdich is known for its unpeated, elegant, floral spirit—unusual on Islay—as their malt typically measures just 3–5 ppm, making it very light on smoke 
@@ -251,8 +236,6 @@ Terroir‑focused ethos, naming farm, field, and vintage in core bottlings.
 Innovative experimentation, through Octomore and Port Charlotte, pushing peat to its limits without losing finesse.
 Strong sense of identity and design, rejecting whisky clichés and embracing honesty and clarity both in spirit and presentation 
 
-
-
 ## Bowmore
 
 the distillery
@@ -261,9 +244,7 @@ The distillery sits in the village of Bowmore on the south-eastern shore of Loch
 Runs a traditional floor maltings, providing around 30% of its malt — peat kilned to ~25 ppm — with the remainder from external maltsters 
 Annual production sits at ~1.7–2 million liters, using two wash stills and two spirit stills 
 
-
 In Skyfall, Bowmore 1964 is the whisky served in James Bond’s ancestral home. That is no accident: Bowmore has a long-standing partnership with Aston Martin, offering limited releases like “Black Bowmore DB5 1964” (a £50,000 collector’s piece housed inside a functioning Aston Martin engine block).
-
 
 style
 Bowmore’s whisky is medium-peated, typically around 25–30 ppm phenols — less intense than its southern Islay neighbors yet smoky enough to be distinct 
@@ -293,7 +274,6 @@ McLaren
 
 the distillery
 Fun Fact: The peat they use comes from the Castlehill bog—rightly named, because it gives their whisky a briny, “seaside bandage” character you can practically taste.
-
 
 style
 
@@ -345,8 +325,8 @@ During its tenure the distillery was known as a pioneer and innovator: It was re
 
 Independent bottlers added to the legend, releasing coveted editions like the 1979 37‑year‑old, the ethereal “Eidolon” 40‑year, and a 1983 32‑year—each greeted with rave reviews.
 
-
 # A whisky for every palate
+
 So now that we talked about the various houses and their signature style, where does that leave us? Which bottle should you choose next? Below you can find a short summary and directions:
 
 <create an infographic based on the following input:
