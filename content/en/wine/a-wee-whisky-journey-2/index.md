@@ -76,23 +76,15 @@ My personal favorite was Elements 2.0, but sadly I am not alone in that assessme
 
 ## Lagavulin
 
-Edged in between Laphroaig and Ardbeg and crossed by a small creek lies the Lagavulin distillery, one of Islay's most renowned distilleries and personal favorite of actor Nick Offerman (incidentally it was also Ron Swanson's whiskey of choice, the role he played on the sitcom "Parks and Recreation" and heavily featured in the series). He was hardly the first to cherish their whiskies - Lagavulin has a long history, having been founded in 1816 by John Johnston on the site of an earlier illicit distilling operation (dating all the way back to 1742). The name derives from the Gaelic "Lag a’ Mhuilinn" meaning "hollow of the mill" 
+![islay distilleries](images/laphroaig_bottles.png "500px")
 
-Stepping inside their shop feels like traveling back in time - white wood panneled walls are juxtaposed by sage green racks and chestnut brown bookshelves lending a maritime flair. Stepping further into the building you'll find rooms dominated by solid maroon wood giving off an antique vibe but well maintained and radiating the kind of warmth that usually reserved to ancient pubs, like the ones in Edinburgh's old town. Another highlight was the distillery's bar, which overlooks one of the tasting rooms and offers a wide selection of distillery exclusives as well as mainland whiskies (though why you would go all the way to the distillery to taste non-Lagavulin whiskies I cannot answer). The barkeeper was very knowledgeable and in addition to the many excellent fixed tasting packages, was also happy to create a bespoke one just for us. The production tour was interesting and well structured but not particularly special, the tasting we had featured mainly their core range plus one jazz edition, with the distillery exclusive standing out to us. 
-Small core range
+Edged in between Laphroaig and Ardbeg, crossed by a small creek and hemmed in by coastline, lies the Lagavulin distillery, one of Islay's most iconic names, and a personal favorite of actor Nick Offerman (incidentally it was also it was also the whisky of choice for Ron Swanson, the character he played on the sitcom "Parks and Recreation", in which Lagavulin was featured prominently in several episodes). But Offerman was hardly the first to cherish their whiskies – Lagavulin has a long history. Its origins trace back to 1816, when it was formally founded by John Johnston on the site of an earlier illicit distilling operation. Its name stems from the Gaelic *Lag a’ Mhuilinn*, meaning “hollow of the mill.” After Johnston’s death, the distillery passed through several owners before landing in the hands of Peter Mackie in the late 19th century. A key figure in whisky history, Mackie expanded Lagavulin’s reach and, after losing distribution rights for neighboring Laphroaig, famously built the *Malt Mill* distillery next door in 1908 as a sort of competitive counterpoint. Under his stewardship, Lagavulin became a key malt in the *White Horse* blend, boosting its commercial prominence. Following Mackie’s death and various corporate consolidations, ownership eventually passed to **Distillers Company Limited (DCL)**, a forerunner of today’s **Diageo**, which absorbed Lagavulin into its broader portfolio.
 
-Operates with two wash stills (11,000 L) and two spirit stills (~12,500 L), producing about 1.4–2.4 million L/year 
+Stepping inside their little visitor shop feels like traveling back in time: white wood-panneled walls are juxtaposed by sage green racks and chestnut-toned bookshelves lending the room a maritime flair. Stepping further into the building you'll find rooms dominated by solid maroon wood giving off well-preserved antique charm and radiating the kind of quiet warmth that is usually reserved to historic, weathered pubs, like the ones in Edinburgh's old town. Another highlight was the distillery's bar, which overlooks one of the tasting rooms and offers a wide selection of distillery exclusives as well as mainland whiskies (though why you would go all the way to the distillery to taste non-Lagavulin whiskies I cannot say). The barkeeper was very knowledgeable and in addition to the many excellent fixed tasting packages, was also happy to create a bespoke selection just for us. The production tour was interesting and well structured but not particularly special, the tasting we had featured mainly their core range plus one Jazz edition, with the distillery exclusive standing out to us. 
 
-Ownership transitioned to Diageo
+Lagavulin operates two wash stills (11,000 L) and two spirit stills (~12,500 L), giving it an annual capacity of between 1.4 and 2.4 million litres, making it one of the larger operations on the island. Its malt, peated to around 35 ppm, sits below Ardbeg and Laphroaig in intensity, yet the whisky is anything but restrained. Thanks to its signature slow distillation – with the first run lasting around five hours and the second close to nine – combined with wide spirit cuts and minimal copper contact, the resulting spirit is weighty, oily, and layered. The flavor is marked by deep peat smoke, iodine, seaweed wrapped in notes of black tea, dried fruit, spice, and coastal salinity.
 
-the distillery
-history, location, impression
-
-Peat level: malted to 35 ppm—a mid-range peat intensity for Islay 
-
-Known for slow distillation: first pass ~5 hours, second ~9 hours, with wide cuts and minimal copper contact—resulting in heavier, oily spirit 
-
-Flavor is marked by deep peat smoke, iodine, seaweed, and Lapsang Souchong-style notes, layered with spice, dried fruit, and coastal salinity
+For most whisky drinkers, the Lagavulin 16 is their first encounter with the distillery — and rightly so. It remains the most iconic and widely available expression in the range, offering a deep, smoky introduction to the house style. Originally conceived as a limited release, the Lagavulin 8 has since earned permanent status in the core lineup, serving as the younger, brasher sibling to the 16: leaner, livelier, and more raw in character. Finally there is the Distillers Edition, closely related to the 16 in age and DNA, but given an extra layer of refinement through secondary maturation. The current Distillers Edition undergoes a finishing period in Pedro Ximénez (PX) sherry-seasoned casks, giving it a softer texture, longer finish and aromas of dark fruit, chocolate, spices and a touch of sweetness.
 
 | Name                | Age      | Maturation                                          | Peat level | Alcohol | Aromas                                                         |
 | ------------------- | -------- | --------------------------------------------------- | ---------- | ------- | -------------------------------------------------------------- |
@@ -100,12 +92,9 @@ Flavor is marked by deep peat smoke, iodine, seaweed, and Lapsang Souchong-style
 | 16 Year Old         | 16 years | ex-Bourbon                                          | 35 ppm     | 43%     | Peat smoke, iodine, gentle sweetness, sea-salt, vanilla, spice |
 | Distiller's Edition | NAS      | refill European oak + American oak casks, PX sherry | 35 ppm     | 43%     | Peat smoke with dark fruit, chocolate, sweet spice             |
 
-For most people, the Lagavulin 16 is the first whiskey of the producer they come into contact with - it's certainly their most iconic and most widely available rendition. <add description>. Originally made as a special edition but since then having found great acclaim has the Lagavulin 5 also joined the distillery's "main cast". It is ... Finally there is the Lagavulin distillery exclusive, which shares many aspects with the 16 years old but ...
+Beyond the standard lineup, Lagavulin also releases regular special editions. As the lead sponsor of the annual Islay Jazz Festival, it’s no surprise that the limited bottlings created for the event receive particular attention. In my experience, these festival editions tend to be among the most experimental and intriguing expressions the distillery produces and if you ever get the chance to try one, I strongly recommend you take it.
 
-Fun Fact: Their iconic 16‑Year‑Old sticks around so long because they ferment for a staggering 55 hours—longer than a Lord of the Rings marathon.
-
-special editions
-Variety of single casks, special editions for the jazz festival and feis ile.
+![islay distilleries](images/laphroaig_bottles.png "500px")
 
 ## Ardbeg
 
