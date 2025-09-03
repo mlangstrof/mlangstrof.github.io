@@ -76,7 +76,7 @@ My personal favorite was Elements 2.0, but sadly I am not alone in that assessme
 
 ## Lagavulin
 
-![islay distilleries](images/laphroaig_bottles.png "500px")
+![islay distilleries](images/lagavulin_destillery2.png "500px")
 
 Edged in between Laphroaig and Ardbeg, crossed by a small creek and hemmed in by coastline, lies the Lagavulin distillery, one of Islay's most iconic names, and a personal favorite of actor Nick Offerman (incidentally it was also it was also the whisky of choice for Ron Swanson, the character he played on the sitcom "Parks and Recreation", in which Lagavulin was featured prominently in several episodes). But Offerman was hardly the first to cherish their whiskies – Lagavulin has a long history. Its origins trace back to 1816, when it was formally founded by John Johnston on the site of an earlier illicit distilling operation. Its name stems from the Gaelic *Lag a’ Mhuilinn*, meaning “hollow of the mill.” After Johnston’s death, the distillery passed through several owners before landing in the hands of Peter Mackie in the late 19th century. A key figure in whisky history, Mackie expanded Lagavulin’s reach and, after losing distribution rights for neighboring Laphroaig, famously built the *Malt Mill* distillery next door in 1908 as a sort of competitive counterpoint. Under his stewardship, Lagavulin became a key malt in the *White Horse* blend, boosting its commercial prominence. Following Mackie’s death and various corporate consolidations, ownership eventually passed to **Distillers Company Limited (DCL)**, a forerunner of today’s **Diageo**, which absorbed Lagavulin into its broader portfolio.
 
@@ -94,7 +94,7 @@ For most whisky drinkers, the Lagavulin 16 is their first encounter with the dis
 
 Beyond the standard lineup, Lagavulin also releases regular special editions. As the lead sponsor of the annual Islay Jazz Festival, it’s no surprise that the limited bottlings created for the event receive particular attention. In my experience, these festival editions tend to be among the most experimental and intriguing expressions the distillery produces and if you ever get the chance to try one, I strongly recommend you take it.
 
-![islay distilleries](images/laphroaig_bottles.png "500px")
+![islay distilleries](images/lagavulin_tasting.png "500px")
 
 ## Ardbeg
 
