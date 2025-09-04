@@ -98,11 +98,17 @@ Beyond the standard lineup, Lagavulin also releases regular special editions. As
 
 ## Ardbeg
 
-the distillery
+![islay distilleries](images/ardbeg_distillery.png "500px")
 
-style
+The third distillery on Islay’s southern shore is Ardbeg. While it shares a similarly long history with its neighbors Laphroaig and Lagavulin, it projects a markedly different character: younger, wilder, and more rebellious. In fact I would say that while Laphroaig and Lagavulin convey an image of maturity and refinement, like a dignified married couple in their fifties, Ardbeg screams raw power and excess, like their teenage son whose room is decorated with vintage movie posters and who loudly plays his self-composed rock songs on his electical guitar. 
 
-core range
+Visiting the distillery, you get the sense that Ardbeg leans deliberately into this contrast, walking a tightrope between heritage and irreverence, tradition and bold experimentation. From the outside, you're greeted by its iconic Celtic-inspired logo and the preserved whitewashed buildings, including the famous kiln pagoda. But step inside, and you’ll find a slick modern visitor centre, bold design choices, and an unapologetic embrace of being different. Ardbeg’s branding reflects this duality: tongue-in-cheek humour, absurdly inventive limited edition names, and colorful, vivid imagery.
+
+The distillery was founded in 1815 by John McDougall, and over time developed a reputation for producing one of the island’s most powerfully peated malts. Like many Islay distilleries, it struggled in the 20th century, closing for a time in the 1980s and only operating intermittently until its revival in 1997, when it was acquired by Glenmorangie PLC (now under LVMH ownership). Since then, Ardbeg has undergone a dramatic renaissance, re-establishing itself as a cult favourite among peat lovers worldwide.
+
+The company is best known for its heavily peated single malts and is in fact the peatest among the "Southern Trio". Their malt sits typically at around 55 ppm, though special editions like the Supernova (100 ppm) and the Hypernova (170 ppm) go well beyond that and rival the peat level of Bruichladdich's legendary Octomore (up to over 300 ppm). This is where Ardbeg works its magic: While pronounced peatiness can easily dominate and overwhelm a good Scotch, Ardbeg's signature style is able to balance intensity with complexity. We can often find a heady mix of soot, brine, diesel smoke, charcoal, lemon zest, and medicinal undertones, frequently layered over sweet malt, roasted coffee, and subtle spice. This complexity is in part due to long fermentation times and the use of purifiers on the spirit stills, which return heavier vapours back into the pot, creating a more refined final spirit. The result is a whisky that is big and bold, but also unexpectedly nuanced and fresh, yet still true to its origin.
+
+In a true Ardbeg fashion, their core range features a wide variety of flavor profiles: 
 
 | Name         | Age      | Maturation                         | Peat level | Alcohol | Aromas                                                                          |
 | ------------ | -------- | ---------------------------------- | ---------- | ------- | ------------------------------------------------------------------------------- |
@@ -112,11 +118,21 @@ core range
 | Uigeadail    | NAS      | Ex-Bourbon & Oloroso               | ~50 ppm    | 54.2%   | smoke, walnuts, peat, caramel, malt, black pepper                               |
 | Corryvreckan | NAS      | Ex-Bourbon & French oak            | ~55 ppm    | 57.1%   | dark chocolate, blackcurrants muscovado sugar, cherries pine needles, sea spray |
 
-special editions
-Committee‑collab releases: Eureka! (2023, fan-developed blend PX & bourbon casks) 
-Ardbeg Spectacular (2024 Day Release), Vintage Y2K 23 Y (2024), The Abyss 34 Y x Tradd Moore (2024), Smokiverse (2025 Day Release)
+Beyond its regular special editions, one of Ardbeg’s most distinctive ventures is its series of *Committee* releases: collaborative bottlings created for, and sometimes with, the global fan club known as the Ardbeg Committee. Founded in 2000, the Committee gives its members early or exclusive access to limited releases. In some cases, such as the recent *Eureka!* edition, members have even been invited to take part in the blending process.
 
-Fun Fact: In 2018, Ardbeg sent tiny vials of whisky to the ISS to study the effects of aging in space—so somewhere out there, an astronaut is enjoying space-aged smoke!
+Notable recent releases include:
+
+- Ardbeg *Spectacular* (2024 Day Release)
+
+- Ardbeg Vintage Y2K 23 Year Old (2024)
+
+- Ardbeg The Abyss 34 Year Old × Tradd Moore (2024, artist collaboration)
+
+- Ardbeg Smokiverse (2025 Day Release)
+
+Ever the innovator, Ardbeg even decided to go extraterrestial in 2011 and sent small vials of new-make spirit and charred oak shavings to the International Space Station. The goal was to study how microgravity influences the interaction between spirit and wood. While the experiment wasn’t designed to create drinkable whisky, the samples returned safely to Earth in 2014 and offered some unusual insights into maturation chemistry.
+
+![islay distilleries](images/ardbeg_bottle.png "500px")
 
 ## Ardnahoe
 
