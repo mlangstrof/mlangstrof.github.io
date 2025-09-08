@@ -136,19 +136,19 @@ Ever the innovator, Ardbeg even decided to go extraterrestial in 2011 and sent s
 
 ## Ardnahoe
 
-the distillery
+![islay distilleries](images/ardbeg_bottle.png "500px")
 
-Ardnahoe is the new kid on the block, having only been founded in 2017 and opening in 2019 and aiming at bridging tradition and modernity. It is situated in the north-east corner of Islay near Port Askaig, between Bunnahabhain and Caol Ila, the distillery seemingly perched upon a ledge, offering a magnificent view over the Sound of Islay and Paps of Jura. The facilities offer a stark contrast to those of the incumbent producers, eschewing the traditional white stone and pitched slate roofs for geometric, almost brutalistic cement buildings crowned by grey metal roofs. 
+Ardnahoe is the new kid on the block, having been founded in 2017 and officially opening its doors to the public in 2019. From the outset, its ambition has been clear: to bridge tradition and modernity. Located on Islay’s rugged northeastern coast, near Port Askaig and nestled between the established titans Bunnahabhain and Caol Ila, the distillery seems almost perched on a ledge, commanding breathtaking views over the Sound of Islay and the distant, brooding Paps of Jura. The facilities offer a stark contrast to those of the incumbent producers, eschewing the traditional white stone and pitched slate roofs for geometric, almost brutalistic cement buildings crowned by grey metal roofs. 
 
-Hidden inside the buildings are a 2.5 ton mash tun, four Oregon pine washbacks, one wash still (~13 000 L) and one spirit still (~11 000 L), providing a combined capacity  for up to 600 000 L/year. 
+Inside, however, the setup is distinctly craft-oriented: a 2.5-ton mash tun, four Oregon pine washbacks, and a pair of stills - one wash still (~13,000 L) and one spirit still (~11,000 L) - yielding an annual capacity of up to 600,000 liters. Modest by industrial standards, but perfectly suited to focused, quality-driven production.
 
-Even though we might need to wait a bit longer for new releases, many locals were already highly impressed by the distillery so far and were projecting a great future, so stay in the lookout, especially while early editions may still be comparatively cheap!
+So far there have only been a few releases and naturally we need to practice a bit more patience before we're able to hold onto a bottle that demonstrates Ardnahoe's full maturation potential, such as a 10, 15 or even 30 year aged liquid, but early feedback has been promising - even our cabbie was convinced the distillery had a great future ahead and encouraged us to buy bottle while the price was still accessible. I tried the **Inaugural Release** and was indeed impressed by its complexity and depth, even though at 5 years old it felt still a bit untamed and rough around the edges.
 
-Peat levels range from 5 ppm (lightly peated) up to 40 ppm, with a focus on mid-range peat offering coastal richness at approachable intensity  .
+It’s admittedly too soon to speak definitively about Ardnahoe’s future house style, as the distillery continues to explore and refine its direction. So far, peat levels have ranged from gentle (around 5 ppm, akin to unpeated Bruichladdich) to moderately smoky (up to 40 ppm, comparable to Lagavulin). The sweet spot seems to be a mid-range peat expression, offering coastal richness without overpowering intensity.
 
-Features unique worm-tub condensers (the only ones on Islay) and long lyne arms (7.5 m), which promote reflux and create a fuller, meaty mouthfeel  .
+What does stand out across releases is the full-bodied, muscular mouthfeel, a result largely attributed to Ardnahoe’s use of traditional **worm-tub condensers** (the only distillery on Islay to do so) and long, downward-sloping lyne arms (measuring 7.5 meters), which encourage substantial reflux and a weightier spirit.
 
-Typical maturation split: ~80% ex-bourbon American oak and 20% ex-European Oloroso sherry casks  .
+Most expressions are matured in a combination of **ex-bourbon American oak casks (80%)** and **European ex-Oloroso sherry casks (20%)**, which are vatted together prior to bottling. Tasting notes typically reveal a faint coastal haze, reminicent of brine, driftwood and seawee, layered over a sweet backbone of custard, orchard fruits, or milk chocolate. Spice, herbs, and gentle smoke round out the experience, giving Ardnahoe’s early whiskies a well-composed complexity.
 
 | Name                       | Age     | Maturation                           | Peat level | Alcohol | Aromas                                                             |
 | -------------------------- | ------- | ------------------------------------ | ---------- | ------- | ------------------------------------------------------------------ |
@@ -157,25 +157,7 @@ Typical maturation split: ~80% ex-bourbon American oak and 20% ex-European Oloro
 | Infinite Loch              | NAS     | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm    | 50%     | sea-spray, peat dark chocolate, menthol, fresh fruits, bonfire     |
 | Ardnahoe Society 2024      | 5 years | ex-Oloroso and PX quarter casks      | 40 ppm     | 59.1%   | dark chocolate, raisins, honey, malt, peat smoke                   |
 
-Signature Style    Coastal smoke, mid-peat, rich mouthfeel from worm-tubs and long lyne arms 
-Inaugural Release    5 Y, 50%, 40 ppm, bourbon + Oloroso, tasting: salty caramel, custard, smoke 
-Stillhouse Setup    1 wash & 1 spirit still, worm-tub condenser, 600k L capacity 
-
----
-
-🔎 Why It Stands Out
-
-1. First new Islay distillery since 2005, offering a fresh yet traditional approach  .
-
-2. Worm-tub condensers deliver a meaty, textured spirit rare on Islay  .
-
-3. Iconic setting, perched above the Sound of Islay with sweeping maritime views  .
-
-style
-
-core range
-
-special editions
+![islay distilleries](images/ardnahoe.png "500px")
 
 ## Kilchoman
 
