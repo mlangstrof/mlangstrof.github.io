@@ -35,13 +35,14 @@ Save it as a .txt file so I can use it for wine pairing lookups later.
 
 ChatGPT should convert your data into an improved format and provide you a link to download it:
 
-![data conversion](images/data_conversion.PNG "500px")
+![data conversion](images/data_conversion.PNG "600px")
 
 ## The agent
 
 With the groundwork done, it’s time to create the agent itself. On the ChatGPT website or app, click on the "New project" button. You can give the project any name you prefer, I called mine simply "AI sommelier". Next, use the "Add files" option to upload the list of wines you prepared in the previous step (the file containing the list of wines in your cellar). 
 
-{{< gallery match="images/new_project*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
+![data conversion](images/new_project.webp "600px")
+![data conversion](images/new_project2.webp "600px")
 
 Close the file dialog, then open the submenu (the three dots in the top right corner) and select "Edit instructions". Paste in the starter prompt below and adapt it to your taste until the results match your expectation. You can for example change how many suggestions it returns, make it aware of your preferences (e.g. favoring white over red) or format the output in a table or diagram.
 
@@ -68,6 +69,6 @@ Guardrails
 
 Now let's take it for a spin:
 
-{{< gallery match="images/chatgpt_prompt.PNG" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
+![data conversion](images/chatgpt_prompt.PNG "600px")
 
 Et voilà, your personal AI sommelier is ready — and hopefully just in time for dinner. Bon appétit!
