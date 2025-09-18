@@ -33,7 +33,7 @@ Wine | Vintage | Region | Varietal | Producer
 Save it as a .txt file so I can use it for wine pairing lookups later.
 ```
 
-ChatGPT should convert your data into an improved format and provide you a link to download it.
+ChatGPT should convert your data into an improved format and provide you a link to download it:
 
 ![data conversion](images/data_conversion.PNG "500px")
 
@@ -43,7 +43,7 @@ With the groundwork done, it’s time to create the agent itself. On the ChatGPT
 
 {{< gallery match="images/new_project*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
-Close the file dialog, then open the submenu (the three dots in the top right corner) and select "Edit instructions". Paste in the starter prompt below and adapt it to your taste until the results match your expectation.
+Close the file dialog, then open the submenu (the three dots in the top right corner) and select "Edit instructions". Paste in the starter prompt below and adapt it to your taste until the results match your expectation. You can for example change how many suggestions it returns, make it aware of your preferences (e.g. favoring white over red) or format the output in a table or diagram.
 
 ```
 System role
@@ -66,7 +66,7 @@ Guardrails
 - If no suitable wine exists in the list, state this clearly and explain why.
 ```
 
-Of course you are free to adapt the prompt to your liking until you get the results you want. You can for example adapt how many suggestions you get, adapt it to your preferences (e.g. favoring white over red) or format the output in a table or diagram. Now let's take it for a spin:
+Now let's take it for a spin:
 
 ![data conversion](images/chatgpt_prompt.PNG "500px")
 
