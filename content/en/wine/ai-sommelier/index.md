@@ -68,6 +68,6 @@ Guardrails
 
 Now let's take it for a spin:
 
-![data conversion](images/chatgpt_prompt.PNG "500px")
+{{< gallery match="images/chatgpt_prompt.PNG" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 Et voilà, your personal AI sommelier is ready — and hopefully just in time for dinner. Bon appétit!
