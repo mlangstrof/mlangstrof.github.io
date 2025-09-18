@@ -3,7 +3,7 @@ title = 'AI sommellier'
 date = 2025-09-17T20:45:03+08:00
 draft = false
 categories = ["wine","recommendation"]
-featuredImage = "/images/whisky1.webp"
+featuredImage = "/images/ai_sommelier.webp"
 tags = ["wine", "basics", "ai"]
 +++
 

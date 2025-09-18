@@ -9,11 +9,11 @@ tags = ["azure"]
 
 +++
 
-Hello again! Today, I want to shine a light on a powerful but often overlooked Azure Policy mechanism: resource tags. While widely available, they're rarely used to their full potential, especially when it comes to policy scoping. What do Azure resource tags have to do with policies you might ask - the short answer is that since tags can be described as both meta and child resources that are available on every Azure resource and service offering, this makes them a prime candidate for laser-focused policy scoping. 
+Hello again! Today, I want to shine a light on a powerful but often overlooked Azure Policy mechanism: resource tags. While widely available, they're rarely used to their full potential, especially when it comes to policy scoping. What do Azure resource tags have to do with policies you might ask – the short answer is that since tags can be described as both meta and child resources that are available on every Azure resource and service offering, this makes them a prime candidate for laser–focused policy scoping. 
 
 In fact we can (and have to) use policies twofold for this to work: On the one hand to enforce a predetermined set of mandatory tags and allowed tag values and on the other hand to scope policies in accordance with these tag mappings.
 
-But why do we need this technique in the first place when we can already scope policies on management group, subscription and resource group level and also define exclusions for specified resource groups or resources? If we recap, we have - at the moment of writing - the following options to restrict the area of effect of a policy:
+But why do we need this technique in the first place when we can already scope policies on management group, subscription and resource group level and also define exclusions for specified resource groups or resources? If we recap, we have – at the moment of writing – the following options to restrict the area of effect of a policy:
 
 - **Scope**: management group, subscription, resource group
 - **Exclusions**: list of resource groups or resources the policy will ignore
@@ -24,7 +24,7 @@ So as we can see, we have an extensive set of levers and knobs with which we can
 
 Let’s consider a real-world scenario: We want to create a policy that disables access key based authentication for storage accounts but only for subscriptions that are considered "production", for applications processing and storing confidential data, however our HR app needs to be excluded tactically  ...  how do you set the scope? Of course we could use nested management groups, but in this kind of multi-dimensional challenge, these would be difficult to maintain and too rigid for our requirements.
 
-Tags give us a convenient way to provide an additional layer of scoping without the need to manually adopt the scope or change the composition of management groups, which ideally should reflect the organization's structure and therefore remain relatively stable. It also allows us to easily roll-out changes, something I will be exploring in greater detail in a future post. For example, you could roll out a v2 of a policy scoped only to subscriptions tagged as "dev", while keeping v1 active everywhere else -  this provides a simple yet effective and low-risk approach on how to deploy changes through your environments. 
+Tags give us a convenient way to provide an additional layer of scoping without the need to manually adopt the scope or change the composition of management groups, which ideally should reflect the organization's structure and therefore remain relatively stable. It also allows us to easily roll-out changes, something I will be exploring in greater detail in a future post. For example, you could roll out a v2 of a policy scoped only to subscriptions tagged as "dev", while keeping v1 active everywhere else – this provides a simple yet effective and low-risk approach on how to deploy changes through your environments. 
 
 If that all sounded a bit too vague, don't worry, I'll walk you through a practical example. Let's pay another visit to our dear old friend, Fabricorp. The client tells us they're launching a joint venture with ACME Inc., requiring a new, independent Azure environment. We are to set up the tenant and initial subscriptions, and, more importantly, also design and configure the security and compliance baseline.
 
@@ -213,4 +213,4 @@ Finally after having defined and enforced our obligatory tags and setup inherita
 }
 ```
 
-But like I said, we could easily extend this template and filter based on any number of tags, such as data sensitivity, product, OE or other specialized tags. And that's basically the short version of how we can use policies to implement a cogent, comprehensive tagging strategy **and** use the tags to target our policies more accurately. Stay tuned for the next post where I'll go deeper into how we can version and continuously deploy policies in a complex enterprise environment.
+But like I said, we could easily extend this template and filter based on any number of tags, such as data sensitivity, product, OE or other specialized tags. And that's basically the short version of how we can use policies to implement a cogent, comprehensive tagging strategy *and* use the tags to target our policies more accurately. Stay tuned for the next post where I'll go deeper into how we can version and continuously deploy policies in a complex enterprise environment.
