@@ -27,6 +27,7 @@ Der nächste Schritt ist der Export Ihrer Rohdaten. Falls Sie Ihre Weine bereits
 - Land (eng. Country)
 
 Sobald Sie die Rohdaten haben, achten Sie darauf, dass sie in einem Format vorliegen, das ChatGPT (oder eine andere Plattform Ihrer Wahl) problemlos verarbeiten kann. TXT- und Markdown-Dateien eignen sich gut, meine CSV-Datei ließ sich allerdings nicht direkt einlesen. Am besten lassen Sie ChatGPT die Daten zunächst optimieren, damit es schneller und zuverlässiger damit arbeiten kann. Starten Sie dazu eine neue Unterhaltung, laden Sie Ihre Datei hoch und verwenden Sie die folgende Anweisung:
+
 **Falls Deutsch: **
 ```
 Bitte konvertiere meine hochgeladene Keller-CSV in eine einfache Textliste, bei der jeder Wein in einer Zeile steht im Format:
