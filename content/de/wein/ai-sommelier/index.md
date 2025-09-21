@@ -1,74 +1,81 @@
 +++
 title = 'AI sommellier'
 date = 2025-09-17T20:45:03+08:00
-draft = true
+draft = false
 categories = ["wine","recommendation"]
 featuredImage = "/images/ai_sommelier.webp"
 tags = ["wine", "basics", "ai"]
 +++
 
-Hello everybody, have you ever been in the middle of preparing your dinner, juggling multiple pots and pans, and suddenly wondered what wine might best accompany your meal? This happened to me today, and while it’s usually a fun little challenge to mentally browse my cellar and figure out the perfect match, when tired and hungry (or *hangry*) it can just as easily feel like a bit of a chore.
+Hallo zusammen! Haben Sie sich schon einmal mitten beim Kochen, während Sie mit mehreren Töpfen und Pfannen jonglieren, gefragt, welcher Wein wohl am besten zu Ihrem Essen passt? Genau das ist mir heute passiert. Normalerweise ist es ein nettes, kleines Gedankenspiel, mental durch meinen Keller zu stöbern und die perfekte Kombination zu finden. Doch wenn man müde und/oder hungrig ist, kann sich diese Suche auch schnell wie eine lästige Pflicht anfühlen.
 
-Luckily, we live in the age of AI. So instead of dessert, why not whip up an AI sommelier? Certainly fewer calories in that! Let me walk you through one way of setting up such an agent and a quick one at that — you'll be done in under 10 minutes. So feel free to set up a pot of water and by the time your pasta is done, your personal AI sommelier will be up and running, providing you with the perfect pairing suggestion. 
+Zum Glück leben wir im Zeitalter der KI. Warum also nicht statt eines Desserts einfach mal einen KI-Sommelier zusammen mixen? Definitiv kalorienärmer! Ich zeige Ihnen, wie man in weniger als 10 Minuten so einen Agenten einrichtet. Also setzen Sie ruhig schon mal einen Topf Wasser auf – bis die Pasta fertig ist, ist Ihr persönlicher KI-Sommelier startklar und serviert Ihnen die perfekte Weinempfehlung.
 
-## The basics
-For this tutorial, I’ll be using ChatGPT, but any AI platform with agent capabilities (such as Copilot for example), will work equally well. If you don’t yet have a ChatGPT account, simply visit the [website](https://chatgpt.com/) (or download the app) and sign up. The free tier is sufficient for our experiment, there’s no need to subscribe to Plus or Premium. Once your account is set up, just log in, and we can dive right in.
+## Die Grundlagen
+Für dieses Tutorial verwende ich ChatGPT, aber jede andere KI-Plattform mit Agentenfunktionen (z. B. Copilot) eignet sich genauso gut. Falls Sie noch kein ChatGPT-Konto besitzen, gehen Sie einfach auf die  [Webseite](https://chatgpt.com/) (oder laden Sie die App herunter) und registrieren Sie sich. Die kostenlose Version reicht für unser Experiment völlig aus, ein Plus- oder Premium-Abo ist nicht notwendig. Sobald Ihr Konto eingerichtet ist, loggen Sie sich ein, und los geht’s.
 
-## The data
-If you own a substantial wine collection, it’s worth tracking it. Tools range from a humble text file or Excel sheet to full-fledged inventory services like [Vivino](https://www.vivino.com/) or [Cellartracker](https://www.cellartracker.com/). I personally favor CellarTracker — it has been around for almost 20 years (at time of writing), is constantly improving, and even the free tier (which I currently use) covers all the essentials. Premium membership unlocks extras such as drinkability reports, estimated total value of your collection, and more detailed tasting notes. If these features sound appealing to you, consider a subscription, otherwise stick with the basic tier.
+## Die Daten
+Wenn Sie eine größere Weinsammlung besitzen, lohnt es sich, diese zu inventorisieren. Dafür stehen viele Optionen zur Verfügung: Von einer einfachen Textdatei oder Excel-Tabelle bis hin zu spezialisierten Inventardiensten wie [Vivino](https://www.vivino.com/) oder  [Cellartracker](https://www.cellartracker.com/). Ich persönlich bevorzuge CellarTracker – die Plattform existiert seit fast 20 Jahren (Stand heute), wird kontinuierlich verbessert, und selbst die kostenlose Version (die ich aktuell nutze) deckt alle wichtigen Funktionen ab. Mit einer Premium-Mitgliedschaft erhalten Sie Zusatzfeatures wie Trinkreifeberichte, Schätzungen zum Gesamtwert Ihrer Sammlung oder detailliertere Verkostungsnotizen. Falls das für Sie interessant klingt, kann sich ein Upgrade vielleicht lohnen, ansonsten reicht die Basisversion völlig aus.
 
-The next step is to export your raw data. If you already keep your wines in a text document or Excel table, you’re good to go. If you’re using CellarTracker, head to the [website](https://www.cellartracker.com/), log in, then navigate to "Wine in My Cellar" → "Export" (top right corner). Choose “Comma Separated Values” and select the columns you’d like to include. I recommend the following:
-- Type
-- Color
-- Category
-- Vintage
-- Wine
-- Producer
-- Country 
+Der nächste Schritt ist der Export Ihrer Rohdaten. Falls Sie Ihre Weine bereits in einer Text- oder Excel-Datei pflegen, sind Sie schon bestens vorbereitet. Wenn Sie CellarTracker nutzen, gehen Sie auf die [Webseite](https://www.cellartracker.com/), loggen Sie sich ein, und navigieren Sie zu „Wine in My Cellar“ → „Export“ (oben rechts). Wählen Sie „Comma Separated Values“ und bestimmen Sie die gewünschten Spalten. Ich empfehle die folgenden Selektionen:
+- Typ (eng. Type)
+- Farbe (eng. Color)
+- Kategorie (eng. Category)
+- Jahrgang (eng. Vintage)
+- Wein (eng. Wine)
+- Produzent (eng. Producer)
+- Land (eng. Country)
 
-Once you have the raw data, ensure it’s in a format ChatGPT (or whichever AI platform you prefer) can easily process. TXT and Markdown files work well, but the chatbot was unable to parse my CSV successfully. In any way it is better to let ChatGPT optimize the data format first, so it can look through your data set faster and with higher confidence. To process the initial wine inventory data, start a new ChatGPT conversation, upload your file, and provide the following prompt:
+Sobald Sie die Rohdaten haben, achten Sie darauf, dass sie in einem Format vorliegen, das ChatGPT (oder eine andere Plattform Ihrer Wahl) problemlos verarbeiten kann. TXT- und Markdown-Dateien eignen sich gut, meine CSV-Datei ließ sich allerdings nicht direkt einlesen. Am besten lassen Sie ChatGPT die Daten zunächst optimieren, damit es schneller und zuverlässiger damit arbeiten kann. Starten Sie dazu eine neue Unterhaltung, laden Sie Ihre Datei hoch und verwenden Sie die folgende Anweisung:
+**Falls Deutsch: **
+```
+Bitte konvertiere meine hochgeladene Keller-CSV in eine einfache Textliste, bei der jeder Wein in einer Zeile steht im Format:
+Wein | Jahrgang | Region | Rebsorte | Produzent
+Speichere das Ergebnis als .txt-Datei, damit ich es später für Weinempfehlungen nutzen kann.
+```
+**Falls Englisch:**
 ```
 Please convert my uploaded cellar CSV into a plain text list where each wine is shown on a single line in the format:
 Wine | Vintage | Region | Varietal | Producer
 Save it as a .txt file so I can use it for wine pairing lookups later.
 ```
 
-ChatGPT should convert your data into an improved format and provide you a link to download it:
+ChatGPT sollte daraufhin die Daten umwandeln und Ihnen einen Download-Link zur Verfügung stellen.
 
 ![data conversion](images/data_conversion.PNG "600px")
 
-## The agent
+## Der Agent
 
-With the groundwork done, it’s time to create the agent itself. On the ChatGPT website or app, click on the "New project" button. You can give the project any name you prefer, I called mine simply "AI sommelier". Next, use the "Add files" option to upload the list of wines you prepared in the previous step (the file containing the list of wines in your cellar). 
+Nun da die Vorarbeit getan ist, können wir endlich den Agenten erstellen. Öffnen Sie die ChatGPT-Website oder -App und klicken Sie auf „Neues Projekt“. Geben Sie dem Projekt einen beliebigen Namen – meinen taufte ich schlicht „AI Sommelier“. Nutzen Sie anschließend die Option „Dateien hinzufügen“, um die zuvor vorbereitete Weinliste (Ihre Kellerdatei) hochzuladen.
 
 ![data conversion](images/new_project.webp "600px")
 ![data conversion](images/new_project2.webp "600px")
 
-Close the file dialog, then open the submenu (the three dots in the top right corner) and select "Edit instructions". Paste in the starter prompt below and adapt it to your taste until the results match your expectation. You can for example change how many suggestions it returns, make it aware of your preferences (e.g. favoring white over red) or format the output in a table or diagram.
+Schließen Sie den Dateidialog, öffnen Sie dann das Untermenü (die drei Punkte oben rechts) und wählen Sie „Anweisungen bearbeiten“. Fügen Sie den untenstehenden Starter-Prompt ein und passen Sie ihn nach Belieben an. Sie können zum Beispiel festlegen, wie viele Vorschläge zurückgegeben werden, Ihre persönlichen Vorlieben hinterlegen (z.B. Präferenz für Weißwein) oder das Ergebnis als Tabelle oder Diagramm ausgeben lassen.
 
 ```
-System role
-- You are a professional sommelier. Your role is to recommend the most suitable wine pairing for the user’s dish, preferences, and context.
+Systemrolle
+- Du bist ein professioneller Sommelier. Deine Aufgabe ist es, den bestmöglichen Wein zu Gericht, Vorlieben und Kontext des Nutzers zu empfehlen.
 
-Process
-- Begin by politely gathering all essential details (dish ingredients, preparation, seasoning, occasion, user’s taste/style preferences, budget, etc.).
-- Ask only for missing or critical details that influence the pairing—avoid unnecessary questions.
-- Once enough context is available, evaluate options and select the single best recommendation.
-- All wine recommendations must come exclusively from the attached wine list. Do not invent or suggest wines outside that list.
-- If multiple good options exist, briefly explain why and suggest the top choice as well as the two runner ups. The two runner ups should differ from the top choice in at least one aspect (e.g. bolder, milder, more fruity, more structured). 
+Vorgehen
+- Beginne damit, höflich alle wesentlichen Informationen zu erfragen (Zutaten, Zubereitung, Würzung, Anlass, Geschmacksvorlieben, Budget usw.).
+- Frage nur nach fehlenden oder kritischen Details, die die Empfehlung beeinflussen – vermeide unnötige Fragen.
+- Sobald genügend Kontext vorhanden ist, wähle die beste Empfehlung aus.
+- Alle Weinempfehlungen müssen ausschließlich aus der hochgeladenen Liste stammen. Keine erfundenen oder externen Vorschläge.
+- Wenn mehrere gute Optionen existieren, erkläre kurz warum, und nenne eine Hauptempfehlung sowie zwei Alternativen, die sich in mindestens einem Aspekt unterscheiden (z. B. kräftiger, leichter, fruchtiger, strukturierter).
 
-Output
-- Present the recommended wine clearly: name, style, region, and why it matches.
-- Keep the explanation concise but persuasive, emphasizing harmony with the food and occasion.
-- If key information is missing, ask exactly one clarifying question before proceeding.
+Ausgabe
+- Präsentiere die Empfehlung klar: Name, Stil, Region und Begründung.
+- Halte die Erklärung kurz, aber überzeugend, mit Fokus auf Harmonie von Speise und Anlass.
+- Wenn wichtige Informationen fehlen, stelle genau eine klärende Rückfrage, bevor du fortfährst.
 
-Guardrails
-- Do not hallucinate wines not present in the attached document.
-- If no suitable wine exists in the list, state this clearly and explain why.
+Leitplanken
+- Erfinde keine Weine, die nicht in der Liste enthalten sind.
+- Falls kein passender Wein vorhanden ist, sage dies klar und erläutere warum.
 ```
 
-Now let's take it for a spin:
+Und nun die Probe aufs Exempel:
 
 ![data conversion](images/chatgpt_prompt.PNG "600px")
 
-Et voilà, your personal AI sommelier is ready — and hopefully just in time for dinner. Bon appétit!
+Et voilà – Ihr persönlicher KI-Sommelier ist startklar. Und hoffentlich gerade rechtzeitig zum Essen. Guten Appetit!

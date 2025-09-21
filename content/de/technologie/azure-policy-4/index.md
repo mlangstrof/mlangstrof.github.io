@@ -53,9 +53,9 @@ Nachdem wir die Zusammensetzung unserer Tagging-Strategie definiert haben, müss
 
 - Dokumentieren der obligatorischen Tags in den relevanten Architekturdokumenten oder internen Wikis
 - Anpassen interner IaC-Templates (ARM, Bicep, Terraform) sowie CI/CD-Deployment-Pipelines, sodass Tags standardmäßig gesetzt werden – dies ist besonders wichtig in automatisierten Pipelines zur Erstellung neuer Subscriptions (also Pipelines, die automatisch neue Subscriptions erstellen und konfigurieren)
-- Erstellung von Policies, die sicherstellen, dass (1) keine Ressource ohne die verpflichtenden Tags erstellt werden kann und die für die spezifischen Tags gesetzten Werte zulässig sind (deny), und (2) verpflichtende Tags automatisch vererbt werden, falls sie nicht explizit gesetzt wurden (modify)
+- Erstellung von Policies, die sicherstellen, dass (1) keine Ressource ohne die obligatorischen Tags erstellt werden kann und die für die spezifischen Tags gesetzten Werte zulässig sind (deny), und (2) obligatorische Tags automatisch vererbt werden, falls sie nicht explizit gesetzt wurden (modify)
 
-## Verhindern der Erstellung von Ressourcen ohne verpflichtende Tags
+## Verhindern der Erstellung von Ressourcen ohne obligatorische Tags
 
 Mit einer Policy wie der folgenden lässt sich unterbinden, dass eine Resource Group oder Ressource erstellt wird, wenn ein erforderliches Tag fehlt oder ein unerlaubter Wert gesetzt wurde (z. B. erlauben wir nur „dev“ und „prod“ als Umgebungswerte, damit unser Ressourcenbestand einheitlich bleibt).
 ```
