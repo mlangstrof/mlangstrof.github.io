@@ -1,5 +1,5 @@
 +++
-title = 'AI sommellier'
+title = 'AI sommelier'
 date = 2025-09-17T20:45:03+08:00
 draft = false
 categories = ["wine","recommendation"]
