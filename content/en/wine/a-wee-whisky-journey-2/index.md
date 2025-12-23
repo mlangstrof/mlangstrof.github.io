@@ -136,7 +136,7 @@ Ever the innovator, Ardbeg even decided to go extraterrestial in 2011 and sent s
 
 ## Ardnahoe
 
-![islay distilleries](images/ardbeg_bottle.png "500px")
+![islay distilleries](images/ardnahoe_destillery.png "500px")
 
 Ardnahoe is the new kid on the block, having been founded in 2017 and officially opening its doors to the public in 2019. From the outset, its ambition has been clear: to bridge tradition and modernity. Located on Islay’s rugged northeastern coast, near Port Askaig and nestled between the established titans Bunnahabhain and Caol Ila, the distillery seems almost perched on a ledge, commanding breathtaking views over the Sound of Islay and the distant, brooding Paps of Jura. The facilities offer a stark contrast to those of the incumbent producers, eschewing the traditional white stone and pitched slate roofs for geometric, almost brutalistic cement buildings crowned by grey metal roofs. 
 
@@ -157,7 +157,7 @@ Most expressions are matured in a combination of **ex-bourbon American oak casks
 | Infinite Loch              | NAS     | **Ex-bourbon** and ex-Oloroso sherry | ~40 ppm    | 50%     | sea-spray, peat dark chocolate, menthol, fresh fruits, bonfire     |
 | Ardnahoe Society 2024      | 5 years | ex-Oloroso and PX quarter casks      | 40 ppm     | 59.1%   | dark chocolate, raisins, honey, malt, peat smoke                   |
 
-![islay distilleries](images/ardnahoe.png "500px")
+![islay distilleries](images/ardnahoe_bottle.png "500px")
 
 ## Kilchoman
 
