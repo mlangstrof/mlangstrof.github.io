@@ -121,7 +121,7 @@ expiryDate = ["expiryDate"]
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
-  copyright = "&#xA9; 2025 Max Langstrof. All Rights Reserved."
+  copyright = "&#xA9; 2026 Max Langstrof. All Rights Reserved."
   noindex = false
 
 
