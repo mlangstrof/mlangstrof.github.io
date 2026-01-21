@@ -34,7 +34,7 @@ For more information, you can refer to the [official announcement](https://techc
 
 # Custom Policy Versioning
 
-Of course built-in policies are only one part of the equation - more than likely you'll also be using custom policies. So how do we deal with versioning those?
+Of course built-in policies are only one part of the equation – more than likely you'll also be using custom policies. So how do we deal with versioning those?
 
 Unlike built-in policies, Azure Policy does not enforce or interpret semantic versions for custom definitions, which forces us to think of an alternative approach.
 
@@ -42,9 +42,9 @@ First of all we need to ensure that we know which versions of our policies exist
 
 If you want to keep your environment even simpler, you could also adopt a blue/green-style approach. In this model, your currently active policy remains **Deny-SAPublicAccess**, while the updated version is introduced as **Deny-SAPublicAccess-New**. Once testing and rollout are complete, the original definition is updated with the validated content, and the temporary policy can be unassigned or removed until the next iteration.
 
-*Important note:  Make sure to keep your policy estate clean, i.e. minimize the number of policy definitions and assignment. The more policies you have, the slower operations (such as loading the list of your policies) can take and the more cluttered your environment looks. So only keep those policies that are currently actively assigned or will be assigned soon.*
+*Important note:  Make sure to keep your policy estate clean, i.e. minimize the number of policy definitions and assignments. The more policies you have, the slower operations (such as loading the list of your policies) can take and the more cluttered your environment looks. So only keep those policies that are currently actively assigned or will be assigned soon.*
 
-Another word of advice here is to always deploy policies via CI/CD pipelines using infrastructure as code (IaC) templates for the policies itself, i.e. ARM or Bicep. Following the approach above with using naming convention based versioning and cleaning up unused policies only works if we keep the policies definitions and assignments in a repository, as this will allow us to see the different previous policy versions and the changes between them - thus maintaining a rigorous audit trail.
+Another word of advice here is to always deploy policies via CI/CD pipelines using infrastructure as code (IaC) templates for the policies itself, i.e. ARM or Bicep. Following the approach above with using naming convention based versioning and cleaning up unused policies only works if we keep the policy definitions and assignments in a repository, as this will allow us to see the different previous policy versions and the changes between them – thus maintaining a rigorous audit trail.
 
 Secondly, we need to ensure that the different policy versions are assigned in a non-overlapping fashion. To understand how policies can be scoped, please refer to my [previous blog article](https://www.cloudandcabernet.com/en/technology/azure-policy-4/) on that subject.
 
@@ -56,12 +56,12 @@ For the actual rollout we just need to *marry* our naming approach with our scop
 
 2. We then ensure that the original policy, in our example **Deny-SAPublicAccess-V1**, is scoped so that it is not active for our development (or test) subscription(s)
 
-3. Next we assign **Deny-SAPublicAccess-V2** in the opposite fashion, i.e. ensuring it is active for our development subscription(s) but not any other subscriptions
+3. Next we assign **Deny-SAPublicAccess-V2** in the opposite fashion, i.e. ensuring it is active for our development subscription(s), but not any other subscriptions
 
 4. Now we can execute our test cases against the development subscription(s) for which we have scoped **Deny-SAPublicAccess-V2** and validate if our changes had the intended effect
 
-5. After we tested, verified and documented our tests, we unassign policy **Deny-SAPublicAccess-V1** and update the policy assignment scope of **Deny-SAPublicAccess-V2** to cover all non-development subscriptions (i.e. the same scope as Deny-SAPublicAccess-V1)
+5. After we tested, verified and documented our tests, we unassign policy **Deny-SAPublicAccess-V1** and update the policy assignment scope of **Deny-SAPublicAccess-V2** to cover all non-development subscriptions (i.e. the same scope as Deny-SAPublicAccess-V1). Optionally we can also delete the policy definition of our version 1.
 
-And that is one possibility of how to create a straight-forward SDLC process for Azure policy. As a sidenote, it is also a good practice to describe the changes between versions in the comment field of the policy (or perhaps even better, to keep an internal, central documentation page of all your custom policies and their versions and add a link to the policy definition, this makes understanding what was changed and why the change was done much easier). 
+And that is one possibility of how to create a straight-forward SDLC process for Azure policies. As a sidenote, it is also a good practice to describe the changes between versions in the comment field of the policy (or perhaps even better, to keep an internal, central documentation page of all your custom policies and their versions and add a link to the policy definition; this makes understanding what was changed and why the change was done much easier). 
 
 I hope this article was useful to you and all the best for your next policy rollout.
