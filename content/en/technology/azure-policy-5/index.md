@@ -3,7 +3,7 @@ title = 'Advanced Azure Policy Techniques #5: Versioning and rollout'
 date = 2026-01-20T18:45:03+08:00
 draft = false
 categories = ["technology","recommendation"]
-featuredImage = "/images/azure_policy_5.webp"
+featuredImage = "/images/azure-policy-5.webp"
 tags = ["azure"]
 
 
