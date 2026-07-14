@@ -320,6 +320,105 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
 }
 
 /*
+ * Search overlay (ticket #11). Opened from the top bar; results come from the
+ * per-language JSON index and are rendered by main.js. Hidden (display:none)
+ * until opened; the fade is only applied when motion is allowed.
+ */
+body.is-search-open {
+  overflow: hidden;
+}
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(1rem, 10vh, 8rem) 1rem 1rem;
+}
+.search-overlay.is-open {
+  display: flex;
+}
+.search-overlay__backdrop {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in oklab, var(--color-base-100) 8%, rgb(0 0 0 / 70%));
+}
+.search-overlay__panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  max-height: 80vh;
+  overflow: hidden;
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-box);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+}
+.search-overlay__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--color-base-300);
+}
+.search-overlay__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.05rem;
+  color: var(--color-base-content);
+}
+.search-overlay__close {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--color-base-content);
+  opacity: 0.6;
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  cursor: pointer;
+}
+.search-overlay__status {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: color-mix(in oklab, var(--color-base-content) 60%, transparent);
+}
+.search-overlay__results {
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  overflow-y: auto;
+}
+.search-overlay__result-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-field);
+  text-decoration: none;
+  color: var(--color-base-content);
+}
+.search-overlay__result:hover .search-overlay__result-link,
+.search-overlay__result.is-active .search-overlay__result-link {
+  background: var(--color-base-200);
+}
+.search-overlay__result-title {
+  font-weight: 600;
+  line-height: 1.3;
+}
+.search-overlay__result-meta {
+  font-size: 0.8rem;
+  color: color-mix(in oklab, var(--color-base-content) 55%, transparent);
+  text-transform: capitalize;
+}
+
+/*
  * Table of contents (ticket #10). Hugo emits <nav id="TableOfContents"> with a
  * nested list; style it to match the muted sidebar aesthetic.
  */
@@ -369,6 +468,17 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
     pointer-events: none;
   }
   .zoom-overlay.is-open {
+    opacity: 1;
+  }
+  .search-overlay {
+    transition: opacity 0.2s ease;
+  }
+  .search-overlay:not(.is-open) {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .search-overlay.is-open {
     opacity: 1;
   }
 }

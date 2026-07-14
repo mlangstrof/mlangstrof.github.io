@@ -229,4 +229,199 @@
             });
         }
     }
+
+    // Site search overlay. Fetches the per-language JSON index (scoped by the
+    // build), filters client-side, and renders instant results. Keyboard:
+    // "/" opens, Escape closes, Arrow keys move the selection, Enter opens it.
+    var searchOverlay = document.querySelector("[data-search-overlay]");
+    var searchOpeners = document.querySelectorAll("[data-search-open]");
+    if (searchOverlay && searchOpeners.length) {
+        var searchInput = searchOverlay.querySelector("[data-search-input]");
+        var searchResults = searchOverlay.querySelector("[data-search-results]");
+        var searchStatus = searchOverlay.querySelector("[data-search-status]");
+        var searchClosers = searchOverlay.querySelectorAll("[data-search-close]");
+        var indexUrl = searchOverlay.getAttribute("data-index");
+        var labelSearching = searchOverlay.getAttribute("data-l-searching") || "";
+        var labelNoMatch = searchOverlay.getAttribute("data-l-nomatch") || "";
+        var labelHint = searchOverlay.getAttribute("data-l-hint") || "";
+
+        var searchDocs = null;
+        var searchLoading = false;
+        var searchLastFocused = null;
+        var activeIndex = -1;
+
+        var capitalize = function (value) {
+            if (!value) {
+                return "";
+            }
+            return value.charAt(0).toUpperCase() + value.slice(1);
+        };
+
+        var setActive = function (index) {
+            var items = searchResults.querySelectorAll("[role=option]");
+            if (!items.length) {
+                activeIndex = -1;
+                return;
+            }
+            if (index < 0) {
+                index = items.length - 1;
+            }
+            if (index >= items.length) {
+                index = 0;
+            }
+            activeIndex = index;
+            Array.prototype.forEach.call(items, function (item, i) {
+                var current = i === activeIndex;
+                item.classList.toggle("is-active", current);
+                item.setAttribute("aria-selected", current ? "true" : "false");
+                if (current) {
+                    item.scrollIntoView({ block: "nearest" });
+                }
+            });
+        };
+
+        var renderResults = function (query) {
+            searchResults.innerHTML = "";
+            activeIndex = -1;
+            var trimmed = query.trim().toLowerCase();
+            if (!trimmed) {
+                searchStatus.textContent = labelHint;
+                searchStatus.hidden = false;
+                return;
+            }
+            if (!searchDocs) {
+                searchStatus.textContent = labelSearching;
+                searchStatus.hidden = false;
+                return;
+            }
+            var matches = searchDocs.filter(function (doc) {
+                var haystack = [doc.title, doc.summary, doc.section, (doc.tags || []).join(" ")]
+                    .join(" ").toLowerCase();
+                return haystack.indexOf(trimmed) !== -1;
+            }).slice(0, 12);
+
+            if (!matches.length) {
+                searchStatus.textContent = labelNoMatch;
+                searchStatus.hidden = false;
+                return;
+            }
+            searchStatus.hidden = true;
+            matches.forEach(function (doc) {
+                var li = document.createElement("li");
+                li.setAttribute("role", "option");
+                li.setAttribute("aria-selected", "false");
+                li.className = "search-overlay__result";
+
+                var link = document.createElement("a");
+                link.href = doc.url;
+                link.className = "search-overlay__result-link";
+
+                var title = document.createElement("span");
+                title.className = "search-overlay__result-title";
+                title.textContent = doc.title;
+
+                var meta = document.createElement("span");
+                meta.className = "search-overlay__result-meta";
+                var metaParts = [];
+                if (doc.section) {
+                    metaParts.push(capitalize(doc.section));
+                }
+                if (doc.date) {
+                    metaParts.push(doc.date);
+                }
+                meta.textContent = metaParts.join(" \u00b7 ");
+
+                link.appendChild(title);
+                link.appendChild(meta);
+                li.appendChild(link);
+                searchResults.appendChild(li);
+            });
+        };
+
+        var loadIndex = function () {
+            if (searchDocs || searchLoading || !indexUrl) {
+                return;
+            }
+            searchLoading = true;
+            fetch(indexUrl).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                searchDocs = Array.isArray(data) ? data : [];
+                searchLoading = false;
+                if (searchOverlay.classList.contains("is-open")) {
+                    renderResults(searchInput.value);
+                }
+            }).catch(function () {
+                searchLoading = false;
+            });
+        };
+
+        var openSearch = function () {
+            if (searchOverlay.classList.contains("is-open")) {
+                return;
+            }
+            searchLastFocused = document.activeElement;
+            searchOverlay.classList.add("is-open");
+            searchOverlay.setAttribute("aria-hidden", "false");
+            document.body.classList.add("is-search-open");
+            loadIndex();
+            renderResults(searchInput.value);
+            searchInput.focus();
+            searchInput.select();
+        };
+
+        var closeSearch = function () {
+            if (!searchOverlay.classList.contains("is-open")) {
+                return;
+            }
+            searchOverlay.classList.remove("is-open");
+            searchOverlay.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("is-search-open");
+            if (searchLastFocused && searchLastFocused.focus) {
+                searchLastFocused.focus();
+            }
+        };
+
+        Array.prototype.forEach.call(searchOpeners, function (opener) {
+            opener.addEventListener("click", openSearch);
+        });
+        Array.prototype.forEach.call(searchClosers, function (closer) {
+            closer.addEventListener("click", closeSearch);
+        });
+
+        searchInput.addEventListener("input", function () {
+            renderResults(searchInput.value);
+        });
+
+        searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowDown") {
+                event.preventDefault();
+                setActive(activeIndex + 1);
+            } else if (event.key === "ArrowUp") {
+                event.preventDefault();
+                setActive(activeIndex - 1);
+            } else if (event.key === "Enter") {
+                var items = searchResults.querySelectorAll("[role=option] a");
+                if (activeIndex >= 0 && items[activeIndex]) {
+                    event.preventDefault();
+                    window.location.href = items[activeIndex].href;
+                }
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                closeSearch();
+                return;
+            }
+            if (event.key === "/" && !searchOverlay.classList.contains("is-open")) {
+                var tag = (document.activeElement && document.activeElement.tagName) || "";
+                var editable = document.activeElement && document.activeElement.isContentEditable;
+                if (tag !== "INPUT" && tag !== "TEXTAREA" && tag !== "SELECT" && !editable) {
+                    event.preventDefault();
+                    openSearch();
+                }
+            }
+        });
+    }
 })();

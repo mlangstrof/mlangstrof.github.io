@@ -20,6 +20,12 @@
         </nav>
 
         <div class="flex items-center gap-1">
+            <button type="button" data-search-open class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary" aria-label="{{ i18n "search" }}" aria-haspopup="dialog">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+            </button>
             {{ partial "lang-switcher.html" . }}
             <span aria-hidden="true" class="mx-1 h-5 w-px bg-base-300"></span>
             <button type="button" data-theme-toggle class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary" aria-label="{{ i18n "toggletheme" | default "Toggle theme" }}">
