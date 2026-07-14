@@ -271,7 +271,7 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
 .prose-basic .highlight {
   position: relative;
 }
-.prose-basic .code-copy {
+.prose-basic .highlight .code-copy {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
@@ -287,10 +287,10 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
   transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 .prose-basic .highlight:hover .code-copy,
-.prose-basic .code-copy:focus-visible {
+.prose-basic .highlight .code-copy:focus-visible {
   opacity: 1;
 }
-.prose-basic .code-copy.is-copied {
+.prose-basic .highlight .code-copy.is-copied {
   color: var(--color-success);
   border-color: var(--color-success);
 }
