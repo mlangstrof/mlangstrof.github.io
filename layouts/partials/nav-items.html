@@ -1,0 +1,12 @@
+{{- /*
+  Renders the top-bar primary nav links from the `top` menu. Called by both the
+  desktop and mobile navs; the caller passes the link classes so each context
+  keeps its own layout.
+    page - the current page (for active-item detection)
+    base - link CSS classes shared by every item in this context
+*/ -}}
+{{- $page := .page -}}
+{{- $base := .base -}}
+{{- range site.Menus.top }}
+<a href="{{ .URL }}" class="{{ $base }}{{ if $page.IsMenuCurrent "top" . }} text-primary{{ else }} text-base-content/80{{ end }}">{{ .Name }}</a>
+{{- end }}

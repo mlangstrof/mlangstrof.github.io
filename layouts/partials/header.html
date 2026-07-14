@@ -16,9 +16,7 @@
         </a>
 
         <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">
-            {{- range site.Menus.top }}
-            <a href="{{ .URL }}" class="text-sm font-medium transition-colors hover:text-primary{{ if $.IsMenuCurrent "top" . }} text-primary{{ else }} text-base-content/80{{ end }}">{{ .Name }}</a>
-            {{- end }}
+            {{- partial "nav-items.html" (dict "page" . "base" "text-sm font-medium transition-colors hover:text-primary") }}
         </nav>
 
         <div class="flex items-center gap-1">
@@ -41,9 +39,7 @@
 
     <nav id="mobile-nav" data-mobile-nav hidden class="border-t border-base-300 md:hidden" aria-label="Primary">
         <div class="mx-auto flex max-w-7xl flex-col px-4 py-2">
-            {{- range site.Menus.top }}
-            <a href="{{ .URL }}" class="rounded-field px-2 py-2 text-base font-medium transition-colors hover:bg-base-200 hover:text-primary{{ if $.IsMenuCurrent "top" . }} text-primary{{ else }} text-base-content/80{{ end }}">{{ .Name }}</a>
-            {{- end }}
+            {{- partial "nav-items.html" (dict "page" . "base" "rounded-field px-2 py-2 text-base font-medium transition-colors hover:bg-base-200 hover:text-primary") }}
         </div>
     </nav>
 </header>
