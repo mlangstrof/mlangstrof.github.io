@@ -342,7 +342,6 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
   color: var(--color-base-content);
   opacity: 0.7;
   text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
 }
 .toc-nav a:hover,
 .toc-nav a:focus-visible {
@@ -357,6 +356,9 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+  .toc-nav a {
+    transition: color 0.2s ease, opacity 0.2s ease;
   }
   .zoom-overlay {
     transition: opacity 0.2s ease;

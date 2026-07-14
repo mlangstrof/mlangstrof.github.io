@@ -10,6 +10,9 @@
 */}}
 {{- $toc := "" -}}
 {{- if and (gt .WordCount 400) (strings.Contains .TableOfContents "<ul") -}}
-    {{- $toc = .TableOfContents -}}
+    {{/* Strip Hugo's <nav id="TableOfContents"> wrapper so the markup can be
+         placed in both the mobile and desktop TOC without duplicate IDs or
+         nested <nav> elements; callers add their own single wrapper. */}}
+    {{- $toc = .TableOfContents | replaceRE `</?nav[^>]*>` "" | safeHTML -}}
 {{- end -}}
 {{- return $toc -}}
