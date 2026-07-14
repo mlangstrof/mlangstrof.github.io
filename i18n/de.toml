@@ -62,6 +62,12 @@ other = "Schlagwort"
 [alltags]
 other = "Alle Schlagwörter"
 
+[featured]
+other = "Empfohlen"
+
+[viewall]
+other = "Alle ansehen"
+
 [technology]
 other = "Technologie"
 

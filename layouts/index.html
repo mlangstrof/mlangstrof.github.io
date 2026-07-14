@@ -1,15 +1,108 @@
 {{ define "main" }}
-<section class="py-12">
-    <h1 class="text-3xl font-semibold tracking-tight text-primary">{{ i18n "sitename" | default site.Title }}</h1>
-    <p class="mt-2 text-base-content/70">{{ i18n "siteslogan" | default site.Params.description }}</p>
+{{/* Resolve the two content sections in a fixed order (Technology first, then
+     Wine) in a language-aware way: only the current language's path resolves. */}}
+{{- $tech := "" -}}
+{{- range (slice "/technology" "/technologie") }}{{ with site.GetPage . }}{{ $tech = . }}{{ end }}{{ end -}}
+{{- $wine := "" -}}
+{{- range (slice "/wine" "/wein") }}{{ with site.GetPage . }}{{ $wine = . }}{{ end }}{{ end -}}
+{{- $techPages := slice -}}{{ with $tech }}{{ $techPages = .Pages }}{{ end -}}
+{{- $winePages := slice -}}{{ with $wine }}{{ $winePages = .Pages }}{{ end -}}
+{{- $posts := sort (union $techPages $winePages) "Date" "desc" -}}
+{{/* Featured post: first pinned/featured post, else the most recent. */}}
+{{- $featured := "" -}}
+{{- range $posts }}{{ if and (eq $featured "") (or .Params.featured .Params.pinned) }}{{ $featured = . }}{{ end }}{{ end -}}
+{{- if and (eq $featured "") (gt (len $posts) 0) }}{{ $featured = index $posts 0 }}{{ end -}}
+{{- $featuredPermalink := "" -}}{{ with $featured }}{{ $featuredPermalink = .Permalink }}{{ end -}}
+{{- $about := "" -}}
+{{- range (slice "/about" "/ueber-mich") }}{{ with site.GetPage . }}{{ $about = . }}{{ end }}{{ end -}}
+{{- $tagsPage := site.GetPage "/tags" -}}
 
-    <ul class="mt-8 divide-y divide-base-300">
-        {{ range first 10 site.RegularPages }}
-        <li class="py-3">
-            <a class="font-medium text-primary underline underline-offset-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ partial "date.html" . }}
-        </li>
-        {{ end }}
-    </ul>
+<section class="border-b border-base-300 py-10 md:py-14">
+    <h1 class="text-3xl font-bold tracking-tight text-primary md:text-4xl">{{ i18n "sitename" | default site.Title }}</h1>
+    <p class="mt-3 max-w-2xl text-lg text-base-content/70">{{ i18n "slogan" | default site.Params.description }}</p>
 </section>
+
+<div class="grid grid-cols-1 gap-10 py-10 lg:grid-cols-3 lg:gap-12">
+    <div class="flex flex-col gap-12 lg:col-span-2">
+        {{ with $featured }}
+        <section>
+            <h2 class="mb-4 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "featured" }}</h2>
+            {{ partial "card.html" (dict "page" . "featured" true) }}
+        </section>
+        {{ end }}
+
+        {{ range (slice $tech $wine) }}
+        {{ with . }}
+        <section>
+            <div class="mb-4 flex items-baseline justify-between gap-4">
+                <h2 class="text-xl font-bold tracking-tight md:text-2xl">{{ .Title }}</h2>
+                <a href="{{ .RelPermalink }}" class="shrink-0 text-sm font-medium text-primary transition-colors hover:text-primary/70">{{ i18n "viewall" }} &rarr;</a>
+            </div>
+            {{ $rowPosts := first 3 (where .Pages "Permalink" "!=" $featuredPermalink) }}
+            {{ with $rowPosts }}
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                {{ range . }}
+                {{ partial "card.html" . }}
+                {{ end }}
+            </div>
+            {{ else }}
+            <p class="text-base-content/60">{{ i18n "noposts" }}</p>
+            {{ end }}
+        </section>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    <aside class="flex flex-col gap-8">
+        <section class="rounded-lg border border-base-300 bg-base-100 p-6">
+            {{ $avatar := resources.Get "images/about.webp" }}
+            <div class="flex items-center gap-4">
+                {{ with $avatar }}
+                {{ $a := .Fill "128x128 webp q85" }}
+                <img src="{{ $a.RelPermalink }}" width="64" height="64" alt="{{ site.Params.author.name }}" loading="lazy" decoding="async" class="h-16 w-16 shrink-0 rounded-full object-cover">
+                {{ end }}
+                <div>
+                    <p class="text-lg font-semibold tracking-tight">{{ site.Params.author.name }}</p>
+                    <p class="text-sm text-base-content/60">{{ i18n "siteslogan" | default site.Params.description }}</p>
+                </div>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-base-content/70">{{ i18n "slogan" }}</p>
+            {{ with $about }}
+            <a href="{{ .RelPermalink }}" class="mt-4 inline-flex items-center text-sm font-medium text-primary transition-colors hover:text-primary/70">{{ i18n "about" }} &rarr;</a>
+            {{ end }}
+        </section>
+
+        {{ with first 5 $posts }}
+        <section class="rounded-lg border border-base-300 bg-base-100 p-6">
+            <h2 class="mb-4 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "topost" }}</h2>
+            <ul class="flex flex-col divide-y divide-base-300">
+                {{ range . }}
+                <li class="py-2.5 first:pt-0 last:pb-0">
+                    <a href="{{ .RelPermalink }}" class="group block">
+                        <span class="block font-medium leading-snug text-base-content transition-colors group-hover:text-primary">{{ .Title }}</span>
+                        {{ if not .Date.IsZero }}
+                        <time datetime="{{ .Date.Format `2006-01-02` }}" class="mt-0.5 block text-xs text-base-content/50">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+                        {{ end }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </section>
+        {{ end }}
+
+        {{ with site.Taxonomies.tags }}
+        <section class="rounded-lg border border-base-300 bg-base-100 p-6">
+            <h2 class="mb-4 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "toptag" }}</h2>
+            <div class="flex flex-wrap gap-2">
+                {{ range .ByCount }}
+                <a href="{{ .Page.RelPermalink }}" class="rounded-full bg-base-200 px-3 py-1 text-xs text-base-content/70 transition-colors hover:bg-primary hover:text-primary-content">#{{ .Page.Title }}</a>
+                {{ end }}
+            </div>
+            {{ with $tagsPage }}
+            <a href="{{ .RelPermalink }}" class="mt-4 inline-flex items-center text-sm font-medium text-primary transition-colors hover:text-primary/70">{{ i18n "alltags" }} &rarr;</a>
+            {{ end }}
+        </section>
+        {{ end }}
+    </aside>
+</div>
 {{ end }}

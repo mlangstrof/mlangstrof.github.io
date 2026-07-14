@@ -62,6 +62,12 @@ other = "Tagged"
 [alltags]
 other = "All tags"
 
+[featured]
+other = "Featured"
+
+[viewall]
+other = "View all"
+
 [technology]
 other = "On technology"
 
