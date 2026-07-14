@@ -4,7 +4,7 @@ date = 2024-11-16T10:00:03+08:00
 draft = false
 categories = ["technology"]
 featuredImage = "/images/tag_email.webp"
-tags = ["Kommunikation","Email","Grundlagen"]
+tags = ["Kommunikation","E-Mail","Grundlagen"]
 
 
 +++

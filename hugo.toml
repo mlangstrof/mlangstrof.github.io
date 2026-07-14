@@ -2,9 +2,12 @@ baseURL = "https://mlangstrof.github.io/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = 'Max Langstrof'
-# Generate /robots.txt from the layouts/robots.txt template (crawl config lives
-# in Hugo, not in a deploy-time script).
-enableRobotsTXT = true
+# Serve /robots.txt from static/robots.txt (a repo file, not a deploy-time
+# script). enableRobotsTXT is off so Hugo does not also emit a generated one.
+enableRobotsTXT = false
+# Use the literal section name for auto-generated list titles ("Technology",
+# "Wine") instead of Hugo's default pluralisation ("Technologies", "Wines").
+pluralizeListTitles = false
 # Rendering is provided by the custom theme in the repository root (layouts/ + assets/).
 # hugo-shortcode-gallery remains for the `gallery` shortcode used in recipe posts.
 theme = ["hugo-shortcode-gallery"]
@@ -223,7 +226,6 @@ expiryDate = ["expiryDate"]
   # usesAnimation = true
 
 [outputs]
-  # HTML for pages, JSON for the search index, robots for /robots.txt. The
-  # robots format must be listed explicitly because customising home outputs
-  # overrides Hugo's default set (enableRobotsTXT alone would be dropped).
-  home = ["HTML", "JSON", "robots"]
+  # HTML for pages, JSON for the search index. robots.txt is served statically
+  # from static/robots.txt, so it is not a home output format here.
+  home = ["HTML", "JSON"]

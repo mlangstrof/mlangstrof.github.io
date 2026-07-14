@@ -4,7 +4,7 @@ date = 2025-12-06T11:45:03+08:00
 draft = false
 categories = ["wine","recommendation"]
 featuredImage = "/images/ai_wine_tour_guide.webp"
-tags = ["wine", "basics", "ai"]
+tags = ["Wein", "Grundlagen", "KI"]
 +++
 
 *Vorbemerkung: Dieser Artikel wurde ursprünglich in Englisch verfasst und anschließend übersetzt, die Prompts wurden jedoch im Englischen belassen.*

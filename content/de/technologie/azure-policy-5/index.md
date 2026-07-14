@@ -4,7 +4,7 @@ date = 2026-01-20T18:45:03+08:00
 draft = false
 categories = ["technology","recommendation"]
 featuredImage = "/images/azure-policy-5.webp"
-tags = ["azure"]
+tags = ["Azure"]
 
 
 +++

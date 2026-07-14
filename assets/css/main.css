@@ -129,11 +129,14 @@
    * Minimal readable defaults for rendered Markdown. Rich single-post
    * typography (code highlighting, TOC, zoom, etc.) arrives in a later ticket.
    */
-  .prose-basic :is(h2, h3, h4) {
+  .prose-basic :is(h1, h2, h3, h4) {
     font-weight: 600;
     line-height: 1.25;
     margin-top: 1.6em;
     margin-bottom: 0.5em;
+  }
+  .prose-basic h1 {
+    font-size: 1.75rem;
   }
   .prose-basic h2 {
     font-size: 1.5rem;

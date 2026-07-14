@@ -116,6 +116,12 @@ other = "Kompetenzen"
 [certifications]
 other = "Zertifizierungen"
 
+[certificationsit]
+other = "IT-Zertifizierungen"
+
+[certificationswine]
+other = "Wein-Zertifizierungen"
+
 [experience]
 other = "Berufserfahrung"
 

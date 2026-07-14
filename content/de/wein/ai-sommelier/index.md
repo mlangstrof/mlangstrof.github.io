@@ -4,7 +4,7 @@ date = 2025-09-17T20:45:03+08:00
 draft = false
 categories = ["wine","recommendation"]
 featuredImage = "/images/ai_sommelier.webp"
-tags = ["wine", "basics", "ai"]
+tags = ["Wein", "Grundlagen", "KI"]
 +++
 
 Hallo zusammen! Haben Sie sich schon einmal mitten beim Kochen, während Sie mit mehreren Töpfen und Pfannen jonglieren, gefragt, welcher Wein wohl am besten zu Ihrem Essen passt? Genau das ist mir heute passiert. Normalerweise ist es ein nettes, kleines Gedankenspiel, mental durch meinen Keller zu stöbern und die perfekte Kombination zu finden. Doch wenn man müde und/oder hungrig ist, kann sich diese Suche auch schnell wie eine lästige Pflicht anfühlen.

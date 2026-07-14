@@ -4,7 +4,7 @@ date = 2025-04-25T12:50:03+08:00
 draft = false
 categories = ["wine"]
 featuredImage = "/images/wine_certifications.webp"
-tags = ["wine"]
+tags = ["Wein"]
 +++
 
 Die meisten Reisen in die Welt des Weins beginnen ganz schlicht: Wir genießen ein paar Gläser (oder Flaschen) und entscheiden, welche Weine uns schmecken und welche nicht. Doch meist dauert es nicht lange, bis wir feststellen, dass wir zwar *diesen spezifischen* Cabernet Sauvignon großartig fanden, der nächste jedoch grauenhaft war – vielleicht war er viel zu sauer oder seine Tannine fühlten sich zu grob und rau an und trübten so den Weingenuss.

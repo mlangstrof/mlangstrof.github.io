@@ -7,7 +7,7 @@ featuredImage = "/images/whisky2.webp"
 tags = ["wine", "basics"]
 +++
 
-In my [previous post](https://mlangstrof.github.io/en/wine/a-wee-whisky-journey-1/), I set the stage for a deeper dive into Islay whisky by walking you through its production – highlighting the unique conditions, machinery, and techniques that give rise to this sublime spirit. Now that we've covered the *how*, I’d love to take you on a short journey through Islay’s iconic distilleries while sharing personal impressions, curious facts, and perhaps helping you discover which "house of spirits" might best suit your palate.
+In my [previous post]({{< relref "a-wee-whisky-journey-1" >}}), I set the stage for a deeper dive into Islay whisky by walking you through its production – highlighting the unique conditions, machinery, and techniques that give rise to this sublime spirit. Now that we've covered the *how*, I’d love to take you on a short journey through Islay’s iconic distilleries while sharing personal impressions, curious facts, and perhaps helping you discover which "house of spirits" might best suit your palate.
 
 # Islay and its whisky
 

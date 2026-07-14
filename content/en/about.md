@@ -7,7 +7,8 @@ layout = "about"
 featuredImage = "/images/about.webp"
 role = "Solution Architect & DevSecOps Engineer"
 skills = ["Azure architecture", "DevSecOps", "Infrastructure as Code", "Cloud security", "AI & data"]
-certifications = ["WSET Level 3 Award in Wines", "Italian Wine Scholar"]
+certificationsIt = ["Azure Solutions Architect (AZ-305)", "Cybersecurity Architect (SC-100)", "Azure DevOps Engineer (AZ-400)", "Azure AI Engineer (AI-102)", "TOGAF"]
+certificationsWine = ["WSET Level 3 Award in Wines", "Italian Wine Scholar", "French Wine Scholar"]
 [ _build ]
   list = false
 +++

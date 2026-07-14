@@ -7,7 +7,7 @@ featuredImage = "/images/basic_recipes.webp"
 tags = ["Wein", "Grundlagen"]
 +++
 
-Wie ich in meinen [vorigen Beitrag](https://mlangstrof.github.io/de/wein/grundlagen-essen-und-wein/) erklärt habe, kann eine perfekte *Vermählung* von Essen und Wein beides verbessern und eine neue Stufe kulinarischen Vergnügens erschließen. Der Start kann jedoch etwas schwierig wirken: Welche Weine passen zu welchen Gerichten? 
+Wie ich in meinen [vorigen Beitrag]({{< relref "grundlagen-essen-und-wein" >}}) erklärt habe, kann eine perfekte *Vermählung* von Essen und Wein beides verbessern und eine neue Stufe kulinarischen Vergnügens erschließen. Der Start kann jedoch etwas schwierig wirken: Welche Weine passen zu welchen Gerichten? 
 
 Ich bin zwar kein Meisterkoch, aber ich habe hier ein paar meiner Lieblingsrezepte zusammengestellt, die leicht und unkompliziert sind. Außerdem findet ihr passende Weinempfehlungen, um allen, die ähnliche kulinarische Wege gehen, einen einfachen Einstieg zu bieten.
 

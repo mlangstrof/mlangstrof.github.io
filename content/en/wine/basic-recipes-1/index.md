@@ -7,7 +7,7 @@ featuredImage = "/images/basic_recipes.webp"
 tags = ["wine", "basics"]
 +++
 
-As I explained in my [previous post](https://mlangstrof.github.io/en/wine/food-and-wine-basics/), a perfect *marriage* of food and wine can elevate both and unlock a whole new level of culinary enjoyment. But starting out can seem like a daunting task. What wines match with which recipes? 
+As I explained in my [previous post]({{< relref "food-and-wine-basics" >}}), a perfect *marriage* of food and wine can elevate both and unlock a whole new level of culinary enjoyment. But starting out can seem like a daunting task. What wines match with which recipes? 
 
 I’m by no means a master chef, but I’ve written down a few of my favorite recipes - easy and straightforward to make - and included some suggested wine pairings to help anyone else exploring this path.
 

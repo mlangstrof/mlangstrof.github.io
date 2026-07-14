@@ -116,6 +116,12 @@ other = "Skills"
 [certifications]
 other = "Certifications"
 
+[certificationsit]
+other = "IT certifications"
+
+[certificationswine]
+other = "Wine certifications"
+
 [experience]
 other = "Experience"
 
