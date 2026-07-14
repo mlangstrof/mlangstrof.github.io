@@ -16,6 +16,10 @@
 
     function applyTheme(theme) {
         root.setAttribute("data-theme", theme);
+        var themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+            themeColor.setAttribute("content", theme === DARK ? "#14110e" : "#faf7f2");
+        }
         try {
             localStorage.setItem(STORAGE_KEY, theme);
         } catch (e) {
@@ -456,4 +460,25 @@
             window.print();
         });
     });
+
+    // Quiet scroll-entrance fades. Only enabled when the visitor hasn't asked to
+    // reduce motion and IntersectionObserver is available; otherwise the marked
+    // elements stay in their default (visible) state. The CSS start state is
+    // additionally gated behind html.js-reveal + prefers-reduced-motion.
+    var reveals = document.querySelectorAll("[data-reveal]");
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reveals.length && !reduceMotion && "IntersectionObserver" in window) {
+        root.classList.add("js-reveal");
+        var revealObserver = new IntersectionObserver(function (entries) {
+            Array.prototype.forEach.call(entries, function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: "0px 0px -10% 0px", threshold: 0.08 });
+        Array.prototype.forEach.call(reveals, function (el) {
+            revealObserver.observe(el);
+        });
+    }
 })();

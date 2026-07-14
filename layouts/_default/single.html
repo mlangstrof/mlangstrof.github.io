@@ -27,7 +27,7 @@
          the focus on the text while giving the post a visual anchor. */}}
     {{- $lead := .Resize "1600x webp q82" -}}
     {{- $small := .Resize "800x webp q82" -}}
-    <figure class="mb-10">
+    <figure class="mb-10" data-reveal>
         <img src="{{ $small.RelPermalink }}"
              srcset="{{ $small.RelPermalink }} 800w, {{ $lead.RelPermalink }} 1600w"
              sizes="(min-width: 768px) 768px, 100vw"

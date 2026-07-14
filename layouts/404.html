@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{- /*
+  Styled 404 served for unknown URLs. GitHub Pages serves the site-root
+  /404.html (default language). Reuses the search overlay present in baseof via
+  the data-search-open button, and the shared design tokens.
+*/ -}}
+<section class="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-4 py-20 text-center" data-reveal>
+    <p class="text-7xl font-bold tracking-tight text-primary sm:text-8xl">404</p>
+    <h1 class="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">{{ i18n "missing404title" }}</h1>
+    <p class="mt-3 max-w-md text-base-content/70">{{ i18n "missing404body" }}</p>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="{{ site.Home.RelPermalink }}" class="inline-flex items-center rounded-field bg-primary px-4 py-2 text-sm font-semibold text-primary-content transition-colors hover:bg-primary/90">{{ i18n "home" }}</a>
+        <button type="button" data-search-open aria-haspopup="dialog" class="inline-flex items-center gap-2 rounded-field border border-base-300 px-4 py-2 text-sm font-medium transition-colors hover:border-primary/40 hover:text-primary">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            {{ i18n "search" }}
+        </button>
+    </div>
+</section>
+{{ end }}

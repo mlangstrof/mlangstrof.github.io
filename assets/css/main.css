@@ -481,6 +481,22 @@ body.is-search-open {
   .search-overlay.is-open {
     opacity: 1;
   }
+  /*
+   * Quiet scroll-entrance fades. Elements are visible by default; the hidden
+   * start state only applies once main.js adds html.js-reveal, and main.js only
+   * does so when motion is allowed — so this whole effect is inert under
+   * prefers-reduced-motion and when JS is unavailable.
+   */
+  html.js-reveal [data-reveal] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: opacity, transform;
+  }
+  html.js-reveal [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*

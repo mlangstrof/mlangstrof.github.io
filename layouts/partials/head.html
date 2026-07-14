@@ -14,6 +14,10 @@
                 t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "cc-dark" : "cc-light";
             }
             document.documentElement.setAttribute("data-theme", t);
+            var m = document.createElement("meta");
+            m.name = "theme-color";
+            m.content = t === "cc-dark" ? "#14110e" : "#faf7f2";
+            document.head.appendChild(m);
         } catch (e) {}
     })();
 </script>
@@ -27,4 +31,10 @@
 {{- end }}
 {{ partial "seo.html" . }}
 {{ partial "schema.html" . }}
+{{- /* Favicons, touch icon and installable web manifest. The theme-color meta
+  is created by the bootstrap script above so it matches the resolved theme. */ -}}
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 {{ partial "css.html" . }}
