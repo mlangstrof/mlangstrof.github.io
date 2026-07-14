@@ -34,6 +34,12 @@ other = "Home"
 [about]
 other = "About"
 
+[toggletheme]
+other = "Toggle light and dark theme"
+
+[menu]
+other = "Menu"
+
 [technology]
 other = "On technology"
 

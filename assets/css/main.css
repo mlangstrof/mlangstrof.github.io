@@ -186,3 +186,42 @@
     margin: 1.5em 0;
   }
 }
+
+/*
+ * Theme toggle icon: show the icon for the palette the click would switch TO
+ * (moon while light, sun while dark). Kept outside @layer base so it wins over
+ * utility display classes.
+ */
+[data-theme-toggle] [data-icon-sun] {
+  display: none;
+}
+[data-theme-toggle] [data-icon-moon] {
+  display: block;
+}
+html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-sun] {
+  display: block;
+}
+html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
+  display: none;
+}
+
+/* Cross-fade the palette on theme switch; disabled under reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body,
+  header[data-topbar],
+  footer,
+  .prose-basic pre,
+  .prose-basic blockquote {
+    transition: background-color 0.3s ease, border-color 0.3s ease,
+      color 0.3s ease;
+  }
+}
+
+/*
+ * Hide-on-scroll state for the sticky top bar. Defined explicitly (rather than
+ * a JS-injected Tailwind utility) so it survives Tailwind content scanning.
+ */
+[data-topbar].is-hidden {
+  transform: translateY(-100%);
+}

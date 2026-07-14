@@ -1,8 +1,49 @@
-{{- /* Skeleton header. The full sticky top bar (nav, search, language and theme controls) arrives in a later ticket. */ -}}
-<header class="border-b border-base-300">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
-        <a href="{{ `/` | relLangURL }}" class="text-lg font-semibold tracking-tight text-primary">
-            {{ i18n "sitename" | default site.Title }}
+{{- /*
+  Sticky top bar: brand wordmark (links home), primary nav (Technology, Wine,
+  About from the `top` menu), and a right-hand control cluster with a theme
+  toggle. On mobile the nav collapses behind a menu button while the theme
+  toggle stays directly reachable. Scroll hide/reveal and toggle behavior live
+  in main.js; the bar degrades gracefully without JS.
+*/ -}}
+{{- $home := "/" | relLangURL -}}
+<header data-topbar class="sticky top-0 z-40 border-b border-base-300 bg-base-100/90 backdrop-blur transition-transform duration-300 will-change-transform">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
+        <a href="{{ $home }}" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-primary" aria-label="{{ i18n "sitename" | default site.Title }}">
+            <svg class="h-7 w-7 shrink-0" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M9 4h14a5 5 0 0 1 3 9l-6 5v6h4v2H8v-2h4v-6L6 13a5 5 0 0 1 3-9Z" fill="currentColor" opacity="0.9" />
+            </svg>
+            <span>{{ i18n "sitename" | default site.Title }}</span>
         </a>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">
+            {{- range site.Menus.top }}
+            <a href="{{ .URL }}" class="text-sm font-medium transition-colors hover:text-primary{{ if $.IsMenuCurrent "top" . }} text-primary{{ else }} text-base-content/80{{ end }}">{{ .Name }}</a>
+            {{- end }}
+        </nav>
+
+        <div class="flex items-center gap-1">
+            <button type="button" data-theme-toggle class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary" aria-label="{{ i18n "toggletheme" | default "Toggle theme" }}">
+                <svg data-icon-sun class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+                <svg data-icon-moon class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                </svg>
+            </button>
+            <button type="button" data-nav-toggle class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary md:hidden" aria-label="{{ i18n "menu" | default "Menu" }}" aria-expanded="false" aria-controls="mobile-nav">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
     </div>
+
+    <nav id="mobile-nav" data-mobile-nav hidden class="border-t border-base-300 md:hidden" aria-label="Primary">
+        <div class="mx-auto flex max-w-7xl flex-col px-4 py-2">
+            {{- range site.Menus.top }}
+            <a href="{{ .URL }}" class="rounded-field px-2 py-2 text-base font-medium transition-colors hover:bg-base-200 hover:text-primary{{ if $.IsMenuCurrent "top" . }} text-primary{{ else }} text-base-content/80{{ end }}">{{ .Name }}</a>
+            {{- end }}
+        </div>
+    </nav>
 </header>

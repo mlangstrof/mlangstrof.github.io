@@ -34,6 +34,12 @@ other = "Home"
 [about]
 other = "Über mich"
 
+[toggletheme]
+other = "Zwischen hellem und dunklem Design wechseln"
+
+[menu]
+other = "Menü"
+
 [technology]
 other = "Technologie"
 

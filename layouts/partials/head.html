@@ -1,4 +1,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{- /*
+  No-flash theme bootstrap: applied synchronously before first paint so the
+  correct palette is set before the body renders. Honors a stored choice, then
+  the OS prefers-color-scheme, falling back to light. Full toggle logic lives in
+  the deferred main.js.
+*/ -}}
+<script>
+    (function () {
+        try {
+            var t = localStorage.getItem("theme");
+            if (t !== "cc-light" && t !== "cc-dark") {
+                t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "cc-dark" : "cc-light";
+            }
+            document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+    })();
+</script>
 <title>{{ if .IsHome }}{{ i18n "sitename" | default site.Title }}{{ else }}{{ .Title }} · {{ i18n "sitename" | default site.Title }}{{ end }}</title>
 {{ partial "css.html" . }}

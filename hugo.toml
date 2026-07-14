@@ -42,6 +42,19 @@ theme = ["hugo-shortcode-gallery"]
             name = 'Tags'
             pageRef = '/tags'
             weight = 5
+        # Primary top-bar navigation (redesign): Technology, Wine, About.
+        [[languages.en.menus.top]]
+            name = 'Technology'
+            pageRef = '/technology'
+            weight = 1
+        [[languages.en.menus.top]]
+            name = 'Wine'
+            pageRef = '/wine'
+            weight = 2
+        [[languages.en.menus.top]]
+            name = 'About'
+            pageRef = '/about'
+            weight = 3
   [languages.de]
         title = "Max Langstrof"
         languageCode = "de-de"
@@ -68,6 +81,19 @@ theme = ["hugo-shortcode-gallery"]
             name = 'Tags'
             pageRef = '/tags'
             weight = 5
+        # Primaere Top-Bar-Navigation (Redesign): Technologie, Wein, Ueber mich.
+        [[languages.de.menus.top]]
+            name = 'Technologie'
+            pageRef = '/technologie'
+            weight = 1
+        [[languages.de.menus.top]]
+            name = 'Wein'
+            pageRef = '/wein'
+            weight = 2
+        [[languages.de.menus.top]]
+            name = 'Über mich'
+            pageRef = '/ueber-mich'
+            weight = 3
  
 languageCode = "en-us"
 
