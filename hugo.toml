@@ -138,6 +138,10 @@ expiryDate = ["expiryDate"]
 [params.author]
   name = "Max Langstrof"
   about = "about"
+  # Contact details surfaced on the About/CV pages. Placeholders (RFC 2606
+  # example.com / a sample handle) - replace with the real values to populate.
+  email = "max.langstrof@example.com"
+  linkedin = "https://www.linkedin.com/in/example"
 
 #[blackfriday]
   # hrefTargetBlank = true

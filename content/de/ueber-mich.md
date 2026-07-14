@@ -3,8 +3,11 @@ title = 'Über mich'
 date = 2024-11-15T09:16:03+08:00
 draft = false
 categories = ["about"]
-layout = "single"
+layout = "about"
 featuredImage = "/images/about.webp"
+role = "Solution Architect & DevSecOps Engineer"
+skills = ["Azure-Architektur", "DevSecOps", "Infrastructure as Code", "Cloud-Sicherheit", "KI & Daten"]
+certifications = ["WSET Level 3 Award in Wines", "Italian Wine Scholar"]
 [ _build ]
   list = false
 +++

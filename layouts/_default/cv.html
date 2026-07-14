@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{- $about := partial "first-page.html" (slice "/about" "/ueber-mich") -}}
+{{- $email := site.Params.author.email -}}
+{{- $linkedin := site.Params.author.linkedin -}}
+<article class="cv mx-auto max-w-3xl py-10 md:py-14">
+    <header class="flex flex-col gap-6 border-b border-base-300 pb-8 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+            <p class="text-sm font-semibold uppercase tracking-widest text-primary">{{ site.Params.author.name }}</p>
+            <h1 class="mt-2 text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+            {{- with .Params.summary }}
+            <p class="mt-3 max-w-2xl text-base-content/70">{{ . }}</p>
+            {{- end }}
+            <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-base-content/70">
+                {{- with $email }}<a href="mailto:{{ . }}" class="hover:text-primary">{{ . }}</a>{{- end }}
+                {{- with $linkedin }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-primary">LinkedIn</a>{{- end }}
+            </div>
+        </div>
+        <div class="no-print flex shrink-0 gap-2">
+            {{- with $about }}
+            <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-field border border-base-300 px-3 py-2 text-sm font-medium transition-colors hover:border-primary/40 hover:text-primary">{{ i18n "about" }}</a>
+            {{- end }}
+            <button type="button" data-print class="inline-flex items-center gap-2 rounded-field bg-primary px-3 py-2 text-sm font-semibold text-primary-content transition-colors hover:bg-primary/90">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+                {{ i18n "printcv" }}
+            </button>
+        </div>
+    </header>
+
+    {{- with .Params.experience }}
+    <section class="cv__section mt-10">
+        <h2 class="cv__section-title text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "experience" }}</h2>
+        <div class="mt-5 flex flex-col gap-6">
+            {{- range . }}
+            <div class="cv__entry">
+                <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+                    <h3 class="text-base font-semibold">{{ .role }}{{ with .org }} <span class="font-normal text-base-content/70">&middot; {{ . }}</span>{{ end }}</h3>
+                    {{- with .period }}<span class="text-sm text-base-content/60">{{ . }}</span>{{- end }}
+                </div>
+                {{- with .location }}<p class="text-sm text-base-content/60">{{ . }}</p>{{- end }}
+                {{- with .points }}
+                <ul class="mt-2 flex list-disc flex-col gap-1 pl-5 text-sm text-base-content/80">
+                    {{- range . }}<li>{{ . }}</li>{{- end }}
+                </ul>
+                {{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </section>
+    {{- end }}
+
+    {{- with .Params.skills }}
+    <section class="cv__section mt-10">
+        <h2 class="cv__section-title text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "skills" }}</h2>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            {{- range . }}
+            <div class="cv__entry">
+                <h3 class="text-sm font-semibold">{{ .group }}</h3>
+                {{- with .items }}
+                <ul class="mt-2 flex flex-wrap gap-2">
+                    {{- range . }}<li class="rounded-field bg-base-200 px-2.5 py-1 text-sm">{{ . }}</li>{{- end }}
+                </ul>
+                {{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </section>
+    {{- end }}
+
+    {{- with .Params.certifications }}
+    <section class="cv__section mt-10">
+        <h2 class="cv__section-title text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "certifications" }}</h2>
+        <ul class="mt-5 flex flex-col gap-3">
+            {{- range . }}
+            <li class="cv__entry flex flex-wrap items-baseline justify-between gap-x-4">
+                <span class="font-medium">{{ .name }}{{ with .issuer }} <span class="font-normal text-base-content/70">&middot; {{ . }}</span>{{ end }}</span>
+                {{- with .year }}<span class="text-sm text-base-content/60">{{ . }}</span>{{- end }}
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+
+    {{- with .Params.wineCredentials }}
+    {{/* Wine credentials kept as a distinct section, per the ticket. */}}
+    <section class="cv__section mt-10">
+        <h2 class="cv__section-title text-sm font-semibold uppercase tracking-widest text-accent">{{ i18n "winecredentials" }}</h2>
+        <ul class="mt-5 flex flex-col gap-3">
+            {{- range . }}
+            <li class="cv__entry flex flex-wrap items-baseline justify-between gap-x-4">
+                <span class="font-medium">{{ .name }}{{ with .issuer }} <span class="font-normal text-base-content/70">&middot; {{ . }}</span>{{ end }}</span>
+                {{- with .year }}<span class="text-sm text-base-content/60">{{ . }}</span>{{- end }}
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+
+    {{- with .Params.education }}
+    <section class="cv__section mt-10">
+        <h2 class="cv__section-title text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "education" }}</h2>
+        <ul class="mt-5 flex flex-col gap-3">
+            {{- range . }}
+            <li class="cv__entry flex flex-wrap items-baseline justify-between gap-x-4">
+                <span class="font-medium">{{ .qualification }}{{ with .institution }} <span class="font-normal text-base-content/70">&middot; {{ . }}</span>{{ end }}</span>
+                {{- with .period }}<span class="text-sm text-base-content/60">{{ . }}</span>{{- end }}
+            </li>
+            {{- end }}
+        </ul>
+    </section>
+    {{- end }}
+</article>
+{{ end }}

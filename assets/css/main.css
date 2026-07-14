@@ -665,3 +665,38 @@ html[data-theme="cc-dark"] .chroma .p {
 html[data-theme="cc-dark"] .chroma .err {
   color: #e59a9a;
 }
+
+/*
+ * Print stylesheet (ticket #12). Used for the CV page's browser print /
+ * save-as-PDF, so no separate PDF file is maintained. Strips chrome and
+ * interactive-only controls and keeps CV entries from breaking across pages.
+ */
+@media print {
+  [data-topbar],
+  footer,
+  [data-nt-notice],
+  .search-overlay,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  main {
+    max-width: none;
+    padding: 0;
+  }
+  .cv {
+    max-width: none;
+    padding: 0;
+  }
+  .cv__section,
+  .cv__entry {
+    break-inside: avoid;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

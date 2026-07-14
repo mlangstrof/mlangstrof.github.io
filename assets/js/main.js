@@ -447,4 +447,13 @@
             }
         });
     }
+
+    // Print button on the CV page: hand off to the browser's print / save-as-PDF
+    // (no separately maintained PDF file). The print stylesheet lives in CSS.
+    var printButtons = document.querySelectorAll("[data-print]");
+    Array.prototype.forEach.call(printButtons, function (button) {
+        button.addEventListener("click", function () {
+            window.print();
+        });
+    });
 })();

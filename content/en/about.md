@@ -3,8 +3,11 @@ title = 'About'
 date = 2024-11-15T09:16:03+08:00
 draft = false
 categories = ["about"]
-layout = "single"
+layout = "about"
 featuredImage = "/images/about.webp"
+role = "Solution Architect & DevSecOps Engineer"
+skills = ["Azure architecture", "DevSecOps", "Infrastructure as Code", "Cloud security", "AI & data"]
+certifications = ["WSET Level 3 Award in Wines", "Italian Wine Scholar"]
 [ _build ]
   list = false
 +++

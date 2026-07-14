@@ -110,6 +110,33 @@ other = "Nächster"
 [contents]
 other = "Inhalt"
 
+[skills]
+other = "Kompetenzen"
+
+[certifications]
+other = "Zertifizierungen"
+
+[experience]
+other = "Berufserfahrung"
+
+[education]
+other = "Ausbildung"
+
+[winecredentials]
+other = "Weinqualifikationen"
+
+[viewcv]
+other = "Vollständigen Lebenslauf ansehen"
+
+[emailme]
+other = "E-Mail schreiben"
+
+[connectlinkedin]
+other = "Auf LinkedIn vernetzen"
+
+[printcv]
+other = "Drucken / PDF"
+
 [technology]
 other = "Technologie"
 
