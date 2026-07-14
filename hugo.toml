@@ -2,10 +2,27 @@ baseURL = "https://mlangstrof.github.io/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = 'Max Langstrof'
-staticDir = ["static", "themes/Niello/static"]
 # Rendering is provided by the custom theme in the repository root (layouts/ + assets/).
 # hugo-shortcode-gallery remains for the `gallery` shortcode used in recipe posts.
 theme = ["hugo-shortcode-gallery"]
+
+# Explicit module mounts (replaces the deprecated staticDir). The default
+# assets and static roots are re-declared, plus static/images is mounted into
+# the asset pipeline so featured images can be processed (responsive/WebP)
+# while still being served statically at /images/.
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "themes/Niello/static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
 
 # [outputs]
 #   home = ['html', 'rss']

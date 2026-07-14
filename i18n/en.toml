@@ -46,6 +46,19 @@ other = "This page isn't available in English yet - showing the related section 
 [dismiss]
 other = "Dismiss"
 
+[readingtime]
+other = "{{ .Count }} min read"
+
+[postcount]
+one = "{{ .Count }} post"
+other = "{{ .Count }} posts"
+
+[noposts]
+other = "No posts here yet."
+
+[tagged]
+other = "Tagged"
+
 [technology]
 other = "On technology"
 

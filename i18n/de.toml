@@ -46,6 +46,19 @@ other = "Diese Seite ist noch nicht auf Deutsch verfügbar - stattdessen wird de
 [dismiss]
 other = "Schließen"
 
+[readingtime]
+other = "{{ .Count }} Min. Lesezeit"
+
+[postcount]
+one = "{{ .Count }} Beitrag"
+other = "{{ .Count }} Beiträge"
+
+[noposts]
+other = "Hier gibt es noch keine Beiträge."
+
+[tagged]
+other = "Schlagwort"
+
 [technology]
 other = "Technologie"
 
