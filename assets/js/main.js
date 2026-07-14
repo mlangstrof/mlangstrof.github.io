@@ -166,6 +166,8 @@
                     shareCopy.setAttribute("title", originalTitle);
                     shareCopy.setAttribute("aria-label", originalTitle);
                 }, 2000);
+            }).catch(function () {
+                /* Clipboard denied/unavailable: leave the button unchanged. */
             });
         });
     }

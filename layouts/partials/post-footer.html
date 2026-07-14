@@ -82,7 +82,7 @@
     <nav class="mt-12 flex flex-col gap-6" aria-label="{{ i18n "postnav" }}">
         {{- with .CurrentSection }}
         <a href="{{ .RelPermalink }}" class="inline-flex items-center text-sm font-medium text-primary transition-colors hover:text-primary/70">
-            {{ i18n "morefrom" (dict "Section" ($.Section | humanize)) }} &rarr;
+            {{ i18n "morefrom" (dict "Section" (.Section | humanize)) }} &rarr;
         </a>
         {{- end }}
 
