@@ -40,6 +40,12 @@ other = "Toggle light and dark theme"
 [menu]
 other = "Menu"
 
+[notranslation]
+other = "This page isn't available in English yet - showing the related section instead."
+
+[dismiss]
+other = "Dismiss"
+
 [technology]
 other = "On technology"
 

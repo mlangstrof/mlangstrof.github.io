@@ -1,0 +1,14 @@
+{{- /*
+  EN/DE language switcher for the top-bar control cluster. The current language
+  is shown static; each alternate is a link resolved by lang-alternates.html. A
+  fallback link (no direct translation) carries `?nt=1` so main.js can surface a
+  dismissible notice on arrival.
+*/ -}}
+{{- $alts := partial "lang-alternates.html" . -}}
+<div class="flex items-center gap-1.5 text-sm" aria-label="Language">
+    <span class="font-semibold text-primary">{{ site.Language.LanguageName | default (upper site.Language.Lang) }}</span>
+    {{- range $alts }}
+    <span aria-hidden="true" class="text-base-content/30">/</span>
+    <a href="{{ .url }}{{ if .missing }}?nt=1{{ end }}" hreflang="{{ .lang }}" class="font-medium text-base-content/70 transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
+    {{- end }}
+</div>

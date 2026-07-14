@@ -6,6 +6,7 @@
 
 <body class="min-h-screen bg-base-100 text-base-content antialiased">
     {{ partial "header.html" . }}
+    {{ partial "lang-notice.html" . }}
 
     <main id="main" class="mx-auto w-full max-w-7xl px-4 md:px-8">
         {{ block "main" . }}{{ end }}

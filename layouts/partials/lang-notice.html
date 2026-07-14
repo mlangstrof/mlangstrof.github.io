@@ -1,0 +1,15 @@
+{{- /*
+  Missing-translation notice. Rendered hidden on every page; main.js reveals it
+  only when the visitor arrived via a fallback language link (`?nt=1`), then
+  strips the flag from the URL. Dismissible via the close button.
+*/ -}}
+<div data-nt-notice hidden role="status" class="border-b border-base-300 bg-base-200 text-base-content">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 text-sm md:px-8">
+        <span>{{ i18n "notranslation" | default "This page isn't available in this language yet - showing the related section instead." }}</span>
+        <button type="button" data-nt-dismiss class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-field text-base-content/70 transition-colors hover:bg-base-300 hover:text-primary" aria-label="{{ i18n "dismiss" | default "Dismiss" }}">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+</div>

@@ -6,10 +6,10 @@
 <footer class="mt-16 border-t border-base-300">
     <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-8 text-sm text-base-content/60 md:flex-row md:items-center md:justify-between md:px-8">
         <div>{{ with site.Params.copyright }}{{ . | safeHTML }}{{ end }}</div>
-        {{- with .Translations }}
+        {{- with partial "lang-alternates.html" . }}
         <nav class="flex items-center gap-3" aria-label="Languages">
             {{- range . }}
-            <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" class="transition-colors hover:text-primary">{{ .Language.LanguageName | default (upper .Language.Lang) }}</a>
+            <a href="{{ .url }}{{ if .missing }}?nt=1{{ end }}" hreflang="{{ .lang }}" class="transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
             {{- end }}
         </nav>
         {{- end }}

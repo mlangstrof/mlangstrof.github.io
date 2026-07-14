@@ -88,4 +88,32 @@
             { passive: true }
         );
     }
+
+    // Missing-translation notice: shown when the visitor arrived via a fallback
+    // language link (?nt=1). The flag is stripped from the URL so it never
+    // persists on reload or when the link is shared.
+    var notice = document.querySelector("[data-nt-notice]");
+    if (notice) {
+        var params = new URLSearchParams(window.location.search);
+        if (params.has("nt")) {
+            notice.removeAttribute("hidden");
+            params.delete("nt");
+            var qs = params.toString();
+            var clean =
+                window.location.pathname +
+                (qs ? "?" + qs : "") +
+                window.location.hash;
+            try {
+                window.history.replaceState(null, "", clean);
+            } catch (e) {
+                /* replaceState unavailable — the flag simply remains in the URL */
+            }
+        }
+        var dismiss = notice.querySelector("[data-nt-dismiss]");
+        if (dismiss) {
+            dismiss.addEventListener("click", function () {
+                notice.setAttribute("hidden", "");
+            });
+        }
+    }
 })();

@@ -40,6 +40,12 @@ other = "Zwischen hellem und dunklem Design wechseln"
 [menu]
 other = "Menü"
 
+[notranslation]
+other = "Diese Seite ist noch nicht auf Deutsch verfügbar - stattdessen wird der zugehörige Bereich angezeigt."
+
+[dismiss]
+other = "Schließen"
+
 [technology]
 other = "Technologie"
 

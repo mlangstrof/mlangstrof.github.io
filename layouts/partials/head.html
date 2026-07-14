@@ -18,4 +18,11 @@
     })();
 </script>
 <title>{{ if .IsHome }}{{ i18n "sitename" | default site.Title }}{{ else }}{{ .Title }} · {{ i18n "sitename" | default site.Title }}{{ end }}</title>
+{{- /* hreflang alternates for genuine language counterparts (fallbacks are excluded). */ -}}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- range partial "lang-alternates.html" . }}
+{{- if not .missing }}
+<link rel="alternate" hreflang="{{ .lang }}" href="{{ .url | absURL }}">
+{{- end }}
+{{- end }}
 {{ partial "css.html" . }}
