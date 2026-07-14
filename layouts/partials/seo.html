@@ -23,7 +23,7 @@
 
 <meta name="description" content="{{ $description }}">
 <link rel="canonical" href="{{ .Permalink }}">
-{{- if or .Params.noindex site.Params.noindex }}
+{{- if or .Params.noindex site.Params.noindex (eq .Kind "404") }}
 <meta name="robots" content="noindex, nofollow">
 {{- else }}
 <meta name="robots" content="index, follow">

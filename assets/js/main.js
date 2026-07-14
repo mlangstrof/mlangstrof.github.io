@@ -17,9 +17,12 @@
     function applyTheme(theme) {
         root.setAttribute("data-theme", theme);
         var themeColor = document.querySelector('meta[name="theme-color"]');
-        if (themeColor) {
-            themeColor.setAttribute("content", theme === DARK ? "#14110e" : "#faf7f2");
+        if (!themeColor) {
+            themeColor = document.createElement("meta");
+            themeColor.name = "theme-color";
+            document.head.appendChild(themeColor);
         }
+        themeColor.setAttribute("content", theme === DARK ? "#14110e" : "#faf7f2");
         try {
             localStorage.setItem(STORAGE_KEY, theme);
         } catch (e) {
@@ -477,6 +480,8 @@
                 }
             });
         }, { rootMargin: "0px 0px -10% 0px", threshold: 0.08 });
+        // Reveal once ~8% of the element is in view, with a 10% bottom-edge
+        // buffer so it fires just before the element is fully on screen.
         Array.prototype.forEach.call(reveals, function (el) {
             revealObserver.observe(el);
         });
