@@ -1,20 +1,17 @@
 {{ define "main" }}
 {{/* Resolve the two content sections in a fixed order (Technology first, then
      Wine) in a language-aware way: only the current language's path resolves. */}}
-{{- $tech := "" -}}
-{{- range (slice "/technology" "/technologie") }}{{ with site.GetPage . }}{{ $tech = . }}{{ end }}{{ end -}}
-{{- $wine := "" -}}
-{{- range (slice "/wine" "/wein") }}{{ with site.GetPage . }}{{ $wine = . }}{{ end }}{{ end -}}
+{{- $tech := partial "first-page.html" (slice "/technology" "/technologie") -}}
+{{- $wine := partial "first-page.html" (slice "/wine" "/wein") -}}
 {{- $techPages := slice -}}{{ with $tech }}{{ $techPages = .Pages }}{{ end -}}
 {{- $winePages := slice -}}{{ with $wine }}{{ $winePages = .Pages }}{{ end -}}
 {{- $posts := sort (union $techPages $winePages) "Date" "desc" -}}
 {{/* Featured post: first pinned/featured post, else the most recent. */}}
 {{- $featured := "" -}}
-{{- range $posts }}{{ if and (eq $featured "") (or .Params.featured .Params.pinned) }}{{ $featured = . }}{{ end }}{{ end -}}
-{{- if and (eq $featured "") (gt (len $posts) 0) }}{{ $featured = index $posts 0 }}{{ end -}}
+{{- range $posts }}{{ if and (not $featured) (or .Params.featured .Params.pinned) }}{{ $featured = . }}{{ end }}{{ end -}}
+{{- if and (not $featured) (gt (len $posts) 0) }}{{ $featured = index $posts 0 }}{{ end -}}
 {{- $featuredPermalink := "" -}}{{ with $featured }}{{ $featuredPermalink = .Permalink }}{{ end -}}
-{{- $about := "" -}}
-{{- range (slice "/about" "/ueber-mich") }}{{ with site.GetPage . }}{{ $about = . }}{{ end }}{{ end -}}
+{{- $about := partial "first-page.html" (slice "/about" "/ueber-mich") -}}
 {{- $tagsPage := site.GetPage "/tags" -}}
 
 <section class="border-b border-base-300 py-10 md:py-14">
