@@ -409,6 +409,29 @@
             }
         });
 
+        // Focus trap: keep Tab within the modal while it is open.
+        searchOverlay.addEventListener("keydown", function (event) {
+            if (event.key !== "Tab" || !searchOverlay.classList.contains("is-open")) {
+                return;
+            }
+            var focusable = searchOverlay.querySelectorAll("input, button, a[href]");
+            var list = Array.prototype.filter.call(focusable, function (el) {
+                return el.offsetParent !== null;
+            });
+            if (!list.length) {
+                return;
+            }
+            var first = list[0];
+            var last = list[list.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        });
+
         document.addEventListener("keydown", function (event) {
             if (event.key === "Escape") {
                 closeSearch();
