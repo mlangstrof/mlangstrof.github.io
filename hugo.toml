@@ -3,7 +3,9 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = 'Max Langstrof'
 staticDir = ["static", "themes/Niello/static"]
-theme = ["Niello", "hugo-shortcode-gallery"]
+# Rendering is provided by the custom theme in the repository root (layouts/ + assets/).
+# hugo-shortcode-gallery remains for the `gallery` shortcode used in recipe posts.
+theme = ["hugo-shortcode-gallery"]
 
 # [outputs]
 #   home = ['html', 'rss']

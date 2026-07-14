@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="mx-auto max-w-3xl py-10">
+    <h1 class="text-3xl font-semibold leading-tight tracking-tight">{{ .Title }}</h1>
+    {{ with .Date }}
+    <p class="mt-2 text-sm text-base-content/60">
+        <time datetime="{{ .Format `2006-01-02` }}">{{ .Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+        {{ if site.Params.readTime }}&middot; {{ $.ReadingTime }} min read{{ end }}
+    </p>
+    {{ end }}
+    <div class="prose-basic mt-8">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

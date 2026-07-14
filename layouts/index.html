@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="py-12">
+    <h1 class="text-3xl font-semibold tracking-tight text-primary">{{ i18n "sitename" | default site.Title }}</h1>
+    <p class="mt-2 text-base-content/70">{{ i18n "siteslogan" }}</p>
+
+    <ul class="mt-8 divide-y divide-base-300">
+        {{ range first 10 site.RegularPages }}
+        <li class="py-3">
+            <a class="font-medium text-primary underline underline-offset-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ if not .Date.IsZero }}
+            <span class="ml-2 text-sm text-base-content/50">
+                <time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+            </span>
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

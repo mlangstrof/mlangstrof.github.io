@@ -1,0 +1,12 @@
+{
+  "name": "cloud-and-cabernet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Presentation layer for cloudandcabernet.com (Hugo + Tailwind v4 + DaisyUI v5).",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "daisyui": "^5.0.43",
+    "tailwindcss": "^4.1.11"
+  }
+}

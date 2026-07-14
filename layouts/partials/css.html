@@ -1,0 +1,16 @@
+{{- /*
+  Stylesheet pipeline: Tailwind v4 + DaisyUI v5 compiled by Hugo's native
+  css.TailwindCSS. In production the output is minified, fingerprinted, and
+  served with a subresource-integrity hash. No pre-built CSS is committed.
+*/ -}}
+{{- with resources.Get "css/main.css" }}
+{{- $opts := dict "minify" hugo.IsProduction }}
+{{- $css := . | css.TailwindCSS $opts }}
+{{- if hugo.IsProduction }}
+{{- with $css | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+{{- else }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{- end }}
+{{- end }}

@@ -1,0 +1,6 @@
+{{- /* Skeleton footer. Minimal footer with language mirror is finalized in a later ticket. */ -}}
+<footer class="mt-16 border-t border-base-300">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-sm text-base-content/60 md:px-8">
+        {{ with site.Params.copyright }}{{ . | safeHTML }}{{ end }}
+    </div>
+</footer>

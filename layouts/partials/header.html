@@ -1,0 +1,8 @@
+{{- /* Skeleton header. The full sticky top bar (nav, search, language and theme controls) arrives in a later ticket. */ -}}
+<header class="border-b border-base-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+        <a href="{{ `/` | relLangURL }}" class="text-lg font-semibold tracking-tight text-primary">
+            {{ i18n "sitename" | default site.Title }}
+        </a>
+    </div>
+</header>
