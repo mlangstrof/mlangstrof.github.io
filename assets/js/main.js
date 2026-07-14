@@ -117,4 +117,36 @@
             });
         }
     }
+
+    // Copy-to-clipboard buttons on highlighted code blocks. Hugo wraps code in
+    // <div class="highlight">; a button is injected into each wrapper. Labels
+    // come from data attributes on the prose container so they stay localized.
+    var prose = document.querySelector("[data-prose]");
+    if (prose && navigator.clipboard) {
+        var copyLabel = prose.getAttribute("data-copy") || "Copy";
+        var copiedLabel = prose.getAttribute("data-copied") || "Copied";
+        var blocks = prose.querySelectorAll(".highlight");
+        Array.prototype.forEach.call(blocks, function (block) {
+            var code = block.querySelector("code");
+            if (!code) {
+                return;
+            }
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "code-copy";
+            btn.textContent = copyLabel;
+            btn.setAttribute("aria-label", copyLabel);
+            block.appendChild(btn);
+            btn.addEventListener("click", function () {
+                navigator.clipboard.writeText(code.textContent).then(function () {
+                    btn.textContent = copiedLabel;
+                    btn.classList.add("is-copied");
+                    window.setTimeout(function () {
+                        btn.textContent = copyLabel;
+                        btn.classList.remove("is-copied");
+                    }, 2000);
+                });
+            });
+        });
+    }
 })();

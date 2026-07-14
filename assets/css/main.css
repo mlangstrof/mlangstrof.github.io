@@ -185,6 +185,43 @@
     border-radius: var(--radius-box);
     margin: 1.5em 0;
   }
+  .prose-basic strong {
+    font-weight: 600;
+  }
+  .prose-basic h4 {
+    font-size: 1.1rem;
+  }
+  .prose-basic hr {
+    border: 0;
+    border-top: 1px solid var(--color-base-300);
+    margin: 2.5em 0;
+  }
+  /* Inline code only (code blocks are handled by the Chroma rules below). */
+  .prose-basic :not(pre) > code {
+    background: var(--color-base-200);
+    padding: 0.15em 0.35em;
+    border-radius: var(--radius-field);
+  }
+  .prose-basic table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+  }
+  .prose-basic th,
+  .prose-basic td {
+    border: 1px solid var(--color-base-300);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose-basic thead th {
+    background: var(--color-base-200);
+    font-weight: 600;
+  }
+  .prose-basic tbody tr:nth-child(even) {
+    background: color-mix(in oklab, var(--color-base-200) 45%, transparent);
+  }
 }
 
 /*
@@ -224,4 +261,187 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
  */
 [data-topbar].is-hidden {
   transform: translateY(-100%);
+}
+
+/*
+ * Code blocks: copy-to-clipboard button. Hugo wraps highlighted code in
+ * <div class="highlight"><pre class="chroma">...; the button is injected into
+ * that wrapper by main.js and revealed on hover/focus.
+ */
+.prose-basic .highlight {
+  position: relative;
+}
+.prose-basic .code-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--color-base-content);
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.prose-basic .highlight:hover .code-copy,
+.prose-basic .code-copy:focus-visible {
+  opacity: 1;
+}
+.prose-basic .code-copy.is-copied {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+/*
+ * Class-based Chroma syntax highlighting, tuned to the burgundy/warm palette.
+ * Light values first; dark overrides follow. Token classes:
+ * c=comment k=keyword s=string m=number n*=names o=operator p=punctuation
+ * g*=generic (diff) err=error.
+ */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #8a7f74;
+  font-style: italic;
+}
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .nt {
+  color: #9c2c66;
+}
+.chroma .kt,
+.chroma .nc,
+.chroma .nn,
+.chroma .na {
+  color: #9c7a43;
+}
+.chroma .s,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+  color: #4b7a4a;
+}
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #b5811f;
+}
+.chroma .nf,
+.chroma .nb,
+.chroma .fm {
+  color: #3b6ea5;
+}
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi {
+  color: #6b5e54;
+}
+.chroma .o,
+.chroma .ow,
+.chroma .p {
+  color: #6b5e54;
+}
+.chroma .gd {
+  color: #a23b3b;
+}
+.chroma .gi {
+  color: #4b7a4a;
+}
+.chroma .ge {
+  font-style: italic;
+}
+.chroma .gs {
+  font-weight: 600;
+}
+.chroma .err {
+  color: #a23b3b;
+}
+
+html[data-theme="cc-dark"] .chroma .c,
+html[data-theme="cc-dark"] .chroma .ch,
+html[data-theme="cc-dark"] .chroma .cm,
+html[data-theme="cc-dark"] .chroma .c1,
+html[data-theme="cc-dark"] .chroma .cs,
+html[data-theme="cc-dark"] .chroma .cp,
+html[data-theme="cc-dark"] .chroma .cpf {
+  color: #9a8f84;
+}
+html[data-theme="cc-dark"] .chroma .k,
+html[data-theme="cc-dark"] .chroma .kc,
+html[data-theme="cc-dark"] .chroma .kd,
+html[data-theme="cc-dark"] .chroma .kn,
+html[data-theme="cc-dark"] .chroma .kp,
+html[data-theme="cc-dark"] .chroma .kr,
+html[data-theme="cc-dark"] .chroma .nt {
+  color: #e08bb0;
+}
+html[data-theme="cc-dark"] .chroma .kt,
+html[data-theme="cc-dark"] .chroma .nc,
+html[data-theme="cc-dark"] .chroma .nn,
+html[data-theme="cc-dark"] .chroma .na {
+  color: #d9b45e;
+}
+html[data-theme="cc-dark"] .chroma .s,
+html[data-theme="cc-dark"] .chroma .sb,
+html[data-theme="cc-dark"] .chroma .sc,
+html[data-theme="cc-dark"] .chroma .sd,
+html[data-theme="cc-dark"] .chroma .s2,
+html[data-theme="cc-dark"] .chroma .se,
+html[data-theme="cc-dark"] .chroma .sh,
+html[data-theme="cc-dark"] .chroma .si,
+html[data-theme="cc-dark"] .chroma .sx,
+html[data-theme="cc-dark"] .chroma .sr,
+html[data-theme="cc-dark"] .chroma .s1,
+html[data-theme="cc-dark"] .chroma .ss {
+  color: #86b986;
+}
+html[data-theme="cc-dark"] .chroma .m,
+html[data-theme="cc-dark"] .chroma .mb,
+html[data-theme="cc-dark"] .chroma .mf,
+html[data-theme="cc-dark"] .chroma .mh,
+html[data-theme="cc-dark"] .chroma .mi,
+html[data-theme="cc-dark"] .chroma .il,
+html[data-theme="cc-dark"] .chroma .mo {
+  color: #d9b45e;
+}
+html[data-theme="cc-dark"] .chroma .nf,
+html[data-theme="cc-dark"] .chroma .nb,
+html[data-theme="cc-dark"] .chroma .fm {
+  color: #79a7d8;
+}
+html[data-theme="cc-dark"] .chroma .nv,
+html[data-theme="cc-dark"] .chroma .vc,
+html[data-theme="cc-dark"] .chroma .vg,
+html[data-theme="cc-dark"] .chroma .vi,
+html[data-theme="cc-dark"] .chroma .o,
+html[data-theme="cc-dark"] .chroma .ow,
+html[data-theme="cc-dark"] .chroma .p {
+  color: #b7a99d;
+}
+html[data-theme="cc-dark"] .chroma .err {
+  color: #e59a9a;
 }

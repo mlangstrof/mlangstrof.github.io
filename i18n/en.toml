@@ -68,6 +68,12 @@ other = "Featured"
 [viewall]
 other = "View all"
 
+[copy]
+other = "Copy"
+
+[copied]
+other = "Copied"
+
 [technology]
 other = "On technology"
 

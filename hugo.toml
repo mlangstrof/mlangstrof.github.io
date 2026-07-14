@@ -114,8 +114,6 @@ theme = ["hugo-shortcode-gallery"]
  
 languageCode = "en-us"
 
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
 #hasCJKLanguage = true
 
 rssLimit = 10
@@ -152,6 +150,14 @@ expiryDate = ["expiryDate"]
   # category = "categories"
 
 [markup]
+  # Class-based Chroma highlighting; the palette lives in assets/css/main.css so
+  # code blocks follow the light/dark theme. Copy button is added in main.js.
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    tabWidth = 4
+    lineNos = false
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]

@@ -68,6 +68,12 @@ other = "Empfohlen"
 [viewall]
 other = "Alle ansehen"
 
+[copy]
+other = "Kopieren"
+
+[copied]
+other = "Kopiert"
+
 [technology]
 other = "Technologie"
 

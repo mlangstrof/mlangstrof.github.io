@@ -1,13 +1,41 @@
 {{ define "main" }}
-<article class="mx-auto max-w-3xl py-10">
-    <h1 class="text-3xl font-semibold leading-tight tracking-tight">{{ .Title }}</h1>
-    {{ with .Date }}
-    <p class="mt-2 text-sm text-base-content/60">
-        <time datetime="{{ .Format `2006-01-02` }}">{{ .Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
-        {{ if site.Params.readTime }}&middot; {{ $.ReadingTime }} min read{{ end }}
-    </p>
-    {{ end }}
-    <div class="prose-basic mt-8">
+{{- $img := partial "featured-resource.html" . -}}
+<article class="mx-auto max-w-3xl py-10 md:py-14">
+    <header class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary">{{ .Section | humanize | upper }}</p>
+        <h1 class="mt-3 text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+        <div class="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-base-content/60">
+            {{- if not .Date.IsZero }}
+            <time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+            {{- end }}
+            {{- if and (not .Date.IsZero) (gt .ReadingTime 0) }}
+            <span aria-hidden="true">&middot;</span>
+            {{- end }}
+            {{- if gt .ReadingTime 0 }}
+            <span>{{ i18n "readingtime" .ReadingTime }}</span>
+            {{- end }}
+        </div>
+        {{- with (or .Params.standfirst .Description) }}
+        <p class="mt-5 text-lg leading-relaxed text-base-content/70">{{ . }}</p>
+        {{- end }}
+    </header>
+
+    {{- with $img }}
+    {{/* Lead image: contained within the reading column (not full-bleed), keeping
+         the focus on the text while giving the post a visual anchor. */}}
+    {{- $lead := .Resize "1600x webp q82" -}}
+    {{- $small := .Resize "800x webp q82" -}}
+    <figure class="mb-10">
+        <img src="{{ $small.RelPermalink }}"
+             srcset="{{ $small.RelPermalink }} 800w, {{ $lead.RelPermalink }} 1600w"
+             sizes="(min-width: 768px) 768px, 100vw"
+             width="{{ $lead.Width }}" height="{{ $lead.Height }}"
+             alt="{{ $.Title }}" decoding="async"
+             class="w-full rounded-lg">
+    </figure>
+    {{- end }}
+
+    <div data-prose data-copy="{{ i18n `copy` }}" data-copied="{{ i18n `copied` }}" class="prose-basic">
         {{ .Content }}
     </div>
 </article>

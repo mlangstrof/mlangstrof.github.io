@@ -5,11 +5,8 @@
       { "page": <page>, "featured": <bool> }
     The featured variant renders a larger, horizontal card for the home hero.
 
-    Featured image resolution ladder:
-      1. a matching resource inside the page bundle,
-      2. a global asset (static/images is mounted into assets/images so the
-         central /images/*.webp files can be processed),
-      3. graceful placeholder when the image is missing or unprocessable.
+    The featured image (with graceful fallback) is resolved by the
+    featured-resource.html partial.
 */}}
 {{- $page := . -}}
 {{- $featured := false -}}
@@ -17,17 +14,7 @@
     {{- $page = .page -}}
     {{- $featured = .featured -}}
 {{- end -}}
-{{- $img := "" -}}
-{{- with $page.Params.featuredImage -}}
-    {{- $rel := strings.TrimPrefix "/" . -}}
-    {{- with $page.Resources.GetMatch (printf "*%s" (path.Base $rel)) -}}
-        {{- $img = . -}}
-    {{- else -}}
-        {{- with resources.Get $rel -}}
-            {{- $img = . -}}
-        {{- end -}}
-    {{- end -}}
-{{- end -}}
+{{- $img := partial "featured-resource.html" $page -}}
 <article class="group relative flex flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 transition-shadow duration-300 hover:shadow-lg{{ if $featured }} md:flex-row md:min-h-[20rem]{{ end }}">
     <div class="relative overflow-hidden bg-base-200 {{ if $featured }}aspect-[16/10] md:aspect-auto md:w-1/2{{ else }}aspect-square{{ end }}">
         {{- if $img }}
