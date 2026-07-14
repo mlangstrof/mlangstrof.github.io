@@ -59,6 +59,9 @@ other = "No posts here yet."
 [tagged]
 other = "Tagged"
 
+[alltags]
+other = "All tags"
+
 [technology]
 other = "On technology"
 

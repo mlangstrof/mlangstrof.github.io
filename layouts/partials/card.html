@@ -23,6 +23,7 @@
 <article class="group relative flex flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 transition-shadow duration-300 hover:shadow-lg">
     <div class="relative aspect-square overflow-hidden bg-base-200">
         {{- if $img }}
+        {{/* Two square renditions drive the srcset: 600w covers mobile/tablet cards, 900w covers ~360px desktop cards on hi-dpi screens. */}}
         {{- $sm := $img.Fill "600x600 webp q80" -}}
         {{- $lg := $img.Fill "900x900 webp q72" -}}
         <img src="{{ $sm.RelPermalink }}"

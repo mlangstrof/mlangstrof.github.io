@@ -59,6 +59,9 @@ other = "Hier gibt es noch keine Beiträge."
 [tagged]
 other = "Schlagwort"
 
+[alltags]
+other = "Alle Schlagwörter"
+
 [technology]
 other = "Technologie"
 
