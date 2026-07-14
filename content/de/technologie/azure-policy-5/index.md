@@ -46,7 +46,7 @@ Wenn Sie Ihre Umgebung bewusst schlank halten möchten, können Sie auch einen B
 
 Ein weiterer wichtiger Punkt: Policies sollten immer über CI/CD-Pipelines mithilfe von Infrastructure-as-Code-Templates (ARM oder Bicep) ausgerollt werden. Der oben beschriebene Ansatz mit versionsbasierter Namenskonvention und dem Aufräumen nicht mehr genutzter Policies funktioniert nur dann sauber, wenn sich Definitionen und Assignments in einem Repository befinden. So lassen sich frühere Versionen und die jeweiligen Änderungen nachvollziehen – und ein detaillierter Audit-Trail bleibt erhalten.
 
-Zweitens müssen wir sicherstellen, dass unterschiedliche Policy-Versionen nicht überlappend zugewiesen sind. Wie Scoping bei Azure Policies funktioniert, habe ich in einem [früheren Blogartikel](https://www.cloudandcabernet.com/de/technologie/azure-policy-4/) ausführlich beschrieben.
+Zweitens müssen wir sicherstellen, dass unterschiedliche Policy-Versionen nicht überlappend zugewiesen sind. Wie Scoping bei Azure Policies funktioniert, habe ich in einem [früheren Blogartikel]({{< relref "azure-policy-4" >}}) ausführlich beschrieben.
 
 
 

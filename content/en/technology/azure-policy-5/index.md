@@ -46,7 +46,7 @@ If you want to keep your environment even simpler, you could also adopt a blue/g
 
 Another word of advice here is to always deploy policies via CI/CD pipelines using infrastructure as code (IaC) templates for the policies itself, i.e. ARM or Bicep. Following the approach above with using naming convention based versioning and cleaning up unused policies only works if we keep the policy definitions and assignments in a repository, as this will allow us to see the different previous policy versions and the changes between them – thus maintaining a rigorous audit trail.
 
-Secondly, we need to ensure that the different policy versions are assigned in a non-overlapping fashion. To understand how policies can be scoped, please refer to my [previous blog article](https://www.cloudandcabernet.com/en/technology/azure-policy-4/) on that subject.
+Secondly, we need to ensure that the different policy versions are assigned in a non-overlapping fashion. To understand how policies can be scoped, please refer to my [previous blog article]({{< relref "azure-policy-4" >}}) on that subject.
 
 # Policy Version Upgrade Rollout
 
