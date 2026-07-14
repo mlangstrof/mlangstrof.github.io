@@ -92,12 +92,13 @@
     // Missing-translation notice: shown when the visitor arrived via a fallback
     // language link (?nt=1). The flag is stripped from the URL so it never
     // persists on reload or when the link is shared.
+    var NT_FLAG = "nt";
     var notice = document.querySelector("[data-nt-notice]");
     if (notice) {
         var params = new URLSearchParams(window.location.search);
-        if (params.has("nt")) {
+        if (params.has(NT_FLAG)) {
             notice.removeAttribute("hidden");
-            params.delete("nt");
+            params.delete(NT_FLAG);
             var qs = params.toString();
             var clean =
                 window.location.pathname +

@@ -9,7 +9,7 @@
         {{- with partial "lang-alternates.html" . }}
         <nav class="flex items-center gap-3" aria-label="Languages">
             {{- range . }}
-            <a href="{{ .url }}{{ if .missing }}?nt=1{{ end }}" hreflang="{{ .lang }}" class="transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
+            <a href="{{ .href }}" hreflang="{{ .lang }}" class="transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
             {{- end }}
         </nav>
         {{- end }}

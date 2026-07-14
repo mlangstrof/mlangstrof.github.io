@@ -80,7 +80,7 @@
       {{- $url = $other.Home.RelPermalink -}}{{- $missing = true -}}
     {{- end -}}
 
-    {{- $alts = $alts | append (dict "lang" $other.Language.Lang "name" $other.Language.LanguageName "url" $url "missing" $missing) -}}
+    {{- $alts = $alts | append (dict "lang" $other.Language.Lang "name" $other.Language.LanguageName "url" $url "missing" $missing "href" (printf "%s%s" $url (cond $missing "?nt=1" ""))) -}}
   {{- end -}}
 {{- end -}}
 {{- return $alts -}}

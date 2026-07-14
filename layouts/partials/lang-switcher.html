@@ -6,9 +6,9 @@
 */ -}}
 {{- $alts := partial "lang-alternates.html" . -}}
 <div class="flex items-center gap-1.5 text-sm" aria-label="Language">
-    <span class="font-semibold text-primary">{{ site.Language.LanguageName | default (upper site.Language.Lang) }}</span>
+    <span class="font-semibold text-primary">{{ .Language.LanguageName | default (upper .Language.Lang) }}</span>
     {{- range $alts }}
     <span aria-hidden="true" class="text-base-content/30">/</span>
-    <a href="{{ .url }}{{ if .missing }}?nt=1{{ end }}" hreflang="{{ .lang }}" class="font-medium text-base-content/70 transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
+    <a href="{{ .href }}" hreflang="{{ .lang }}" class="font-medium text-base-content/70 transition-colors hover:text-primary">{{ .name | default (upper .lang) }}</a>
     {{- end }}
 </div>
