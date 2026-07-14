@@ -1,0 +1,6 @@
+{{/* Renders a list-item date badge for the given page (.), or nothing when undated. */}}
+{{ if not .Date.IsZero }}
+<span class="ml-2 text-sm text-base-content/50">
+    <time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+</span>
+{{ end }}

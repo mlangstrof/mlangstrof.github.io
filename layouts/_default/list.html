@@ -8,11 +8,7 @@
         {{ range .Pages }}
         <li class="py-3">
             <a class="font-medium text-primary underline underline-offset-2" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ if not .Date.IsZero }}
-            <span class="ml-2 text-sm text-base-content/50">
-                <time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
-            </span>
-            {{ end }}
+            {{ partial "date.html" . }}
         </li>
         {{ end }}
     </ul>
