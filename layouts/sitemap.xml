@@ -1,0 +1,27 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- /*
+  Per-language sitemap with hreflang alternates. Hugo emits a sitemap index at
+  the site root that references each language's sitemap; this template adds
+  xhtml:link alternates so search engines can map the EN/DE counterparts. The
+  alternates reuse lang-alternates.html, the single source of truth also used
+  by the header switcher and hreflang tags.
+*/ -}}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range .Data.Pages }}
+  {{- if .Permalink }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- with .Lastmod }}
+    <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{- end }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- range partial "lang-alternates.html" . }}
+    {{- if not .missing }}
+    <xhtml:link rel="alternate" hreflang="{{ .lang }}" href="{{ .url | absURL }}" />
+    {{- end }}
+    {{- end }}
+  </url>
+  {{- end }}
+  {{- end }}
+</urlset>

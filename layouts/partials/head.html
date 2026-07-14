@@ -25,4 +25,6 @@
 <link rel="alternate" hreflang="{{ .lang }}" href="{{ .url | absURL }}">
 {{- end }}
 {{- end }}
+{{ partial "seo.html" . }}
+{{ partial "schema.html" . }}
 {{ partial "css.html" . }}
