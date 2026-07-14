@@ -223,4 +223,7 @@ expiryDate = ["expiryDate"]
   # usesAnimation = true
 
 [outputs]
-  home = ["HTML", "JSON"]
+  # HTML for pages, JSON for the search index, robots for /robots.txt. The
+  # robots format must be listed explicitly because customising home outputs
+  # overrides Hugo's default set (enableRobotsTXT alone would be dropped).
+  home = ["HTML", "JSON", "robots"]
