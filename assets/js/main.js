@@ -149,4 +149,24 @@
             });
         });
     }
+
+    // Share: copy the current page URL to the clipboard. The link is read from
+    // the live location so it always matches the canonical rendered page.
+    var shareCopy = document.querySelector("[data-share-copy]");
+    if (shareCopy && navigator.clipboard) {
+        var originalTitle = shareCopy.getAttribute("title") || "";
+        var copiedTitle = shareCopy.getAttribute("data-copied") || "Copied";
+        shareCopy.addEventListener("click", function () {
+            navigator.clipboard.writeText(window.location.href).then(function () {
+                shareCopy.classList.add("is-copied");
+                shareCopy.setAttribute("title", copiedTitle);
+                shareCopy.setAttribute("aria-label", copiedTitle);
+                window.setTimeout(function () {
+                    shareCopy.classList.remove("is-copied");
+                    shareCopy.setAttribute("title", originalTitle);
+                    shareCopy.setAttribute("aria-label", originalTitle);
+                }, 2000);
+            });
+        });
+    }
 })();

@@ -1,0 +1,110 @@
+{{/*
+    Post footer for single pages (ticket #9):
+      1. compact author card linking to About/CV,
+      2. privacy-friendly share controls (copy link, LinkedIn, email) as icons,
+         with no third-party widgets or tracking scripts,
+      3. 2-3 related posts (Hugo's Related index, falling back to recent posts
+         from the same section),
+      4. a "more from this section" prompt,
+      5. optional previous/next navigation within the section.
+
+    Context (.) is the single page.
+*/}}
+{{- $about := partial "first-page.html" (slice "/about" "/ueber-mich") -}}
+{{- $avatar := resources.Get "images/about.webp" -}}
+
+{{- /* Related: prefer Hugo's relevance ranking; fall back to same-section
+       recent posts (excluding the current page) when there is little overlap. */ -}}
+{{- $related := first 3 (site.RegularPages.Related .) -}}
+{{- if lt (len $related) 2 -}}
+    {{- $sectionPosts := where (where site.RegularPages "Section" .Section) "Permalink" "!=" .Permalink -}}
+    {{- $related = first 3 (sort $sectionPosts "Date" "desc") -}}
+{{- end -}}
+
+<footer class="mx-auto mt-14 max-w-3xl border-t border-base-300 pt-10">
+    {{/* Author card + share controls */}}
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-4">
+            {{- with $avatar }}
+            {{- $a := .Fill "128x128 webp q85" -}}
+            <img src="{{ $a.RelPermalink }}" width="56" height="56" loading="lazy" decoding="async"
+                 alt="{{ site.Params.author.name }}" class="h-14 w-14 shrink-0 rounded-full object-cover">
+            {{- end }}
+            <div>
+                <p class="text-xs uppercase tracking-widest text-base-content/50">{{ i18n "writtenby" }}</p>
+                <p class="text-base font-semibold tracking-tight">{{ site.Params.author.name }}</p>
+                {{- with $about }}
+                <a href="{{ .RelPermalink }}" class="text-sm font-medium text-primary transition-colors hover:text-primary/70">{{ i18n "about" }} &rarr;</a>
+                {{- end }}
+            </div>
+        </div>
+
+        <div class="flex items-center gap-2" aria-label="{{ i18n "share" }}">
+            <span class="mr-1 text-xs uppercase tracking-widest text-base-content/50">{{ i18n "share" }}</span>
+            <button type="button" data-share-copy
+                    data-copied="{{ i18n "linkcopied" }}"
+                    class="share-btn" title="{{ i18n "copylink" }}" aria-label="{{ i18n "copylink" }}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                    <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                    <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+            </button>
+            <a class="share-btn" title="{{ i18n "sharelinkedin" }}" aria-label="{{ i18n "sharelinkedin" }}"
+               href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlquery }}"
+               target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+                </svg>
+            </a>
+            <a class="share-btn" title="{{ i18n "shareemail" }}" aria-label="{{ i18n "shareemail" }}"
+               href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    {{/* Related posts */}}
+    {{- with $related }}
+    <section class="mt-12" aria-labelledby="read-next-heading">
+        <h2 id="read-next-heading" class="mb-6 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "readnext" }}</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {{- range . }}
+            {{ partial "card.html" . }}
+            {{- end }}
+        </div>
+    </section>
+    {{- end }}
+
+    {{/* More from this section + previous/next navigation */}}
+    <nav class="mt-12 flex flex-col gap-6" aria-label="{{ i18n "postnav" }}">
+        {{- with .CurrentSection }}
+        <a href="{{ .RelPermalink }}" class="inline-flex items-center text-sm font-medium text-primary transition-colors hover:text-primary/70">
+            {{ i18n "morefrom" (dict "Section" ($.Section | humanize)) }} &rarr;
+        </a>
+        {{- end }}
+
+        {{- if or .PrevInSection .NextInSection }}
+        <div class="flex items-stretch justify-between gap-4 border-t border-base-300 pt-6">
+            <div class="flex-1">
+                {{- with .PrevInSection }}
+                <a href="{{ .RelPermalink }}" class="group block rounded-lg border border-base-300 p-4 transition-colors hover:border-primary/40">
+                    <span class="text-xs uppercase tracking-widest text-base-content/50">{{ i18n "prevpost" }}</span>
+                    <span class="mt-1 block font-medium leading-snug group-hover:text-primary">{{ .Title }}</span>
+                </a>
+                {{- end }}
+            </div>
+            <div class="flex-1">
+                {{- with .NextInSection }}
+                <a href="{{ .RelPermalink }}" class="group block rounded-lg border border-base-300 p-4 text-right transition-colors hover:border-primary/40">
+                    <span class="text-xs uppercase tracking-widest text-base-content/50">{{ i18n "nextpost" }}</span>
+                    <span class="mt-1 block font-medium leading-snug group-hover:text-primary">{{ .Title }}</span>
+                </a>
+                {{- end }}
+            </div>
+        </div>
+        {{- end }}
+    </nav>
+</footer>

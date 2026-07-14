@@ -264,6 +264,33 @@ html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
 }
 
 /*
+ * Share controls in the post footer (ticket #9). Icon-only buttons/links with
+ * no third-party widgets; the copy-link button turns success-colored briefly.
+ */
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--color-base-content);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  background: var(--color-base-100);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.share-btn:hover,
+.share-btn:focus-visible {
+  color: var(--color-primary);
+  border-color: color-mix(in oklab, var(--color-primary) 40%, transparent);
+}
+.share-btn.is-copied {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+/*
  * Code blocks: copy-to-clipboard button. Hugo wraps highlighted code in
  * <div class="highlight"><pre class="chroma">...; the button is injected into
  * that wrapper by main.js and revealed on hover/focus.

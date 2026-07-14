@@ -74,6 +74,39 @@ other = "Copy"
 [copied]
 other = "Copied"
 
+[writtenby]
+other = "Written by"
+
+[share]
+other = "Share"
+
+[copylink]
+other = "Copy link"
+
+[linkcopied]
+other = "Link copied"
+
+[sharelinkedin]
+other = "Share on LinkedIn"
+
+[shareemail]
+other = "Share by email"
+
+[readnext]
+other = "Read next"
+
+[morefrom]
+other = "More from {{ .Section }}"
+
+[postnav]
+other = "Post navigation"
+
+[prevpost]
+other = "Previous"
+
+[nextpost]
+other = "Next"
+
 [technology]
 other = "On technology"
 
