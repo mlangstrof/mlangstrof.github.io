@@ -171,4 +171,62 @@
             });
         });
     }
+
+    // Self-hosted image zoom (no third-party / CDN library). Clicking a prose
+    // image opens a lightweight overlay with the enlarged image; click anywhere
+    // or press Escape to close. Transitions are handled in CSS and disabled for
+    // users who prefer reduced motion.
+    var proseForZoom = document.querySelector("[data-prose]");
+    if (proseForZoom) {
+        var zoomImages = proseForZoom.querySelectorAll("img");
+        if (zoomImages.length) {
+            var overlay = null;
+            var overlayImg = null;
+            var lastFocused = null;
+
+            var closeZoom = function () {
+                if (!overlay || !overlay.classList.contains("is-open")) {
+                    return;
+                }
+                overlay.classList.remove("is-open");
+                overlay.setAttribute("aria-hidden", "true");
+                document.removeEventListener("keydown", onKeydown);
+                if (lastFocused && lastFocused.focus) {
+                    lastFocused.focus();
+                }
+            };
+
+            var onKeydown = function (event) {
+                if (event.key === "Escape") {
+                    closeZoom();
+                }
+            };
+
+            var buildOverlay = function () {
+                overlay = document.createElement("div");
+                overlay.className = "zoom-overlay";
+                overlay.setAttribute("aria-hidden", "true");
+                overlayImg = document.createElement("img");
+                overlayImg.alt = "";
+                overlay.appendChild(overlayImg);
+                overlay.addEventListener("click", closeZoom);
+                document.body.appendChild(overlay);
+            };
+
+            Array.prototype.forEach.call(zoomImages, function (img) {
+                img.classList.add("is-zoomable");
+                img.addEventListener("click", function () {
+                    if (!overlay) {
+                        buildOverlay();
+                    }
+                    overlayImg.src = img.currentSrc || img.src;
+                    overlayImg.alt = img.alt || "";
+                    lastFocused = document.activeElement;
+                    overlay.classList.add("is-open");
+                    overlay.setAttribute("aria-hidden", "false");
+                    document.addEventListener("keydown", onKeydown);
+                });
+            });
+        }
+    }
 })();

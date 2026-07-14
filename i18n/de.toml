@@ -107,6 +107,9 @@ other = "Vorheriger"
 [nextpost]
 other = "Nächster"
 
+[contents]
+other = "Inhalt"
+
 [technology]
 other = "Technologie"
 

@@ -1,0 +1,15 @@
+{{/*
+    Returns the post's table of contents markup, but only for "long" posts that
+    actually contain headings. Returns an empty string otherwise, so callers can
+    gate the whole TOC UI with a simple {{ with }}.
+
+    "Long" is defined as more than 400 words; the heading check avoids rendering
+    an empty <nav> for posts that have body copy but no section headings.
+
+    Context (.) is the single page.
+*/}}
+{{- $toc := "" -}}
+{{- if and (gt .WordCount 400) (strings.Contains .TableOfContents "<ul") -}}
+    {{- $toc = .TableOfContents -}}
+{{- end -}}
+{{- return $toc -}}
