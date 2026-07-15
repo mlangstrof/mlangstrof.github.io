@@ -11,10 +11,10 @@ Hallo zusammen! Haben Sie sich schon einmal mitten beim Kochen, während Sie mit
 
 Zum Glück leben wir im Zeitalter der KI. Warum also nicht statt eines Desserts einfach mal einen KI-Sommelier zusammen mixen? Definitiv kalorienärmer! Ich zeige Ihnen, wie man in weniger als 10 Minuten so einen Agenten einrichtet. Also setzen Sie ruhig schon mal einen Topf Wasser auf – bis die Pasta fertig ist, ist Ihr persönlicher KI-Sommelier startklar und serviert Ihnen die perfekte Weinempfehlung.
 
-## Die Grundlagen
+# Die Grundlagen
 Für dieses Tutorial verwende ich ChatGPT, aber jede andere KI-Plattform mit Agentenfunktionen (z. B. Copilot) eignet sich genauso gut. Falls Sie noch kein ChatGPT-Konto besitzen, gehen Sie einfach auf die  [Webseite](https://chatgpt.com/) (oder laden Sie die App herunter) und registrieren Sie sich. Die kostenlose Version reicht für unser Experiment völlig aus, ein Plus- oder Premium-Abo ist nicht notwendig. Sobald Ihr Konto eingerichtet ist, loggen Sie sich ein, und los geht’s.
 
-## Die Daten
+# Die Daten
 Wenn Sie eine größere Weinsammlung besitzen, lohnt es sich, diese zu inventorisieren. Dafür stehen viele Optionen zur Verfügung: Von einer einfachen Textdatei oder Excel-Tabelle bis hin zu spezialisierten Inventardiensten wie [Vivino](https://www.vivino.com/) oder  [Cellartracker](https://www.cellartracker.com/). Ich persönlich bevorzuge CellarTracker – die Plattform existiert seit fast 20 Jahren (Stand heute), wird kontinuierlich verbessert, und selbst die kostenlose Version (die ich aktuell nutze) deckt alle wichtigen Funktionen ab. Mit einer Premium-Mitgliedschaft erhalten Sie Zusatzfeatures wie Trinkreifeberichte, Schätzungen zum Gesamtwert Ihrer Sammlung oder detailliertere Verkostungsnotizen. Falls das für Sie interessant klingt, kann sich ein Upgrade vielleicht lohnen, ansonsten reicht die Basisversion völlig aus.
 
 Der nächste Schritt ist der Export Ihrer Rohdaten. Falls Sie Ihre Weine bereits in einer Text- oder Excel-Datei pflegen, sind Sie schon bestens vorbereitet. Wenn Sie CellarTracker nutzen, gehen Sie auf die [Webseite](https://www.cellartracker.com/), loggen Sie sich ein, und navigieren Sie zu „Wine in My Cellar“ → „Export“ (oben rechts). Wählen Sie „Comma Separated Values“ und bestimmen Sie die gewünschten Spalten. Ich empfehle die folgenden Selektionen:
@@ -45,7 +45,7 @@ ChatGPT sollte daraufhin die Daten umwandeln und Ihnen einen Download-Link zur V
 
 ![data conversion](images/data_conversion.PNG "600px")
 
-## Der Agent
+# Der Agent
 
 Nun da die Vorarbeit getan ist, können wir endlich den Agenten erstellen. Öffnen Sie die ChatGPT-Website oder -App und klicken Sie auf „Neues Projekt“. Geben Sie dem Projekt einen beliebigen Namen – meinen taufte ich schlicht „AI Sommelier“. Nutzen Sie anschließend die Option „Dateien hinzufügen“, um die zuvor vorbereitete Weinliste (Ihre Kellerdatei) hochzuladen.
 
