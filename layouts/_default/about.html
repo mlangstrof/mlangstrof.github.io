@@ -7,8 +7,7 @@
     <div class="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-start">
         <article>
             <header class="mb-6">
-                <p class="text-sm font-semibold uppercase tracking-widest text-primary">{{ i18n "about" }}</p>
-                <h1 class="mt-3 text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+                <h1 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
                 {{- with .Params.role }}
                 <p class="mt-3 text-lg text-base-content/70">{{ . }}</p>
                 {{- end }}

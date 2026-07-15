@@ -144,10 +144,9 @@ expiryDate = ["expiryDate"]
 [params.author]
   name = "Max Langstrof"
   about = "about"
-  # Contact details surfaced on the About/CV pages. Placeholders (RFC 2606
-  # example.com / a sample handle) - replace with the real values to populate.
-  email = "max.langstrof@example.com"
-  linkedin = "https://www.linkedin.com/in/example"
+  # Contact details surfaced on the About/CV pages.
+  email = "mlangstrof@gmail.com"
+  linkedin = "https://linkedin.com/in/mlangstrof"
 
 #[blackfriday]
   # hrefTargetBlank = true
@@ -160,6 +159,13 @@ expiryDate = ["expiryDate"]
   # category = "categories"
 
 [markup]
+  # Table of contents lists only top-level headings. Posts author their main
+  # sections as H1 (`#`); Hugo's default startLevel of 2 would hide those and
+  # surface subsections instead, so pin the TOC to H1 only.
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 1
+    ordered = false
   # Class-based Chroma highlighting; the palette lives in assets/css/main.css so
   # code blocks follow the light/dark theme. Copy button is added in main.js.
   [markup.highlight]

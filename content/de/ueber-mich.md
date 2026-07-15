@@ -6,7 +6,7 @@ categories = ["about"]
 layout = "about"
 featuredImage = "/images/about.webp"
 role = "Solution Architect & DevSecOps Engineer"
-skills = ["Azure-Architektur", "DevSecOps", "Infrastructure as Code", "Cloud-Sicherheit", "KI & Daten"]
+skills = ["Cloud Architecture", "Data & AI", "Security & Zero Trust", "Governance & Risk", "Automation", "DevSecOps", "Technology Advisory"]
 certificationsIt = ["Azure Solutions Architect (AZ-305)", "Cybersecurity Architect (SC-100)", "Azure DevOps Engineer (AZ-400)", "Azure AI Engineer (AI-102)", "TOGAF"]
 certificationsWine = ["WSET Level 3 Award in Wines", "Italian Wine Scholar", "French Wine Scholar"]
 [ _build ]
