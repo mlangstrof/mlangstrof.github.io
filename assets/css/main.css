@@ -135,6 +135,9 @@
     margin-top: 1.6em;
     margin-bottom: 0.5em;
   }
+  .prose-basic > :first-child {
+    margin-top: 0;
+  }
   .prose-basic h1 {
     font-size: 1.75rem;
   }

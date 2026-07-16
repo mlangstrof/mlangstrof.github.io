@@ -11,9 +11,10 @@
 {{- end -}}
 {{- $description = $description | plainify | chomp | truncate 200 -}}
 
-{{- /* Resolve an absolute social image: the page's featured image, else the site default. */ -}}
+{{- /* Resolve an absolute social image: the page's featured image, else the generated site card, else the raw default. */ -}}
 {{- $ogImage := "" -}}
 {{- with partial "featured-resource.html" . }}{{ $ogImage = .Permalink }}{{ end -}}
+{{- if not $ogImage }}{{ with partialCached "og-card.html" . site.Language.Lang }}{{ $ogImage = .Permalink }}{{ end }}{{ end -}}
 {{- if not $ogImage }}{{ with resources.Get (site.Params.ogImage | default "images/about.webp") }}{{ $ogImage = .Permalink }}{{ end }}{{ end -}}
 
 {{- /* OpenGraph locale (language_TERRITORY) from the language code. */ -}}

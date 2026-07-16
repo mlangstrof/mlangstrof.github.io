@@ -23,8 +23,9 @@
     </header>
 
     {{- with $img }}
-    {{/* Lead image: contained within the reading column (not full-bleed), keeping
-         the focus on the text while giving the post a visual anchor. */}}
+    {{/* Lead image: contained within the reading column (not full-bleed) and
+         cropped to a consistent 3:2 banner so tall/square sources don't
+         dominate the page. */}}
     {{- $lead := .Resize "1600x webp q82" -}}
     {{- $small := .Resize "800x webp q82" -}}
     <figure class="mb-10" data-reveal>
@@ -33,7 +34,7 @@
              sizes="(min-width: 768px) 768px, 100vw"
              width="{{ $lead.Width }}" height="{{ $lead.Height }}"
              alt="{{ $.Title }}" decoding="async"
-             class="w-full rounded-lg">
+             class="aspect-[3/2] w-full rounded-lg object-cover">
     </figure>
     {{- end }}
 

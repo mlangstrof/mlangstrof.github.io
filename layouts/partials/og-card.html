@@ -1,0 +1,27 @@
+{{- /*
+  Builds the site-wide default social share (Open Graph) card: a 1200x630
+  cream canvas with the author's circular headshot on the left and the name +
+  tagline in burgundy on the right. Composited from static building blocks
+  (see scripts/generate-og-assets.ps1) plus the headshot, entirely within
+  Hugo's image pipeline. The circular crop is achieved by overlaying a cream
+  frame with a transparent circular window over the square headshot (Hugo
+  0.137 has no images.Mask). Returns the generated image resource (or an empty
+  string if any input is missing). Call via partialCached so it is built once.
+*/ -}}
+{{- $canvas := resources.Get "images/og/og-canvas.png" -}}
+{{- $frame := resources.Get "images/og/og-frame.png" -}}
+{{- $photo := resources.Get "images/about.webp" -}}
+{{- $font := resources.Get "fonts/Montserrat-Regular.ttf" -}}
+{{- $card := "" -}}
+{{- if and $canvas $frame $photo $font -}}
+  {{- $head := $photo.Fill "440x440 Center" -}}
+  {{- $card = $canvas.Filter
+        (images.Overlay $head 95 95)
+        (images.Overlay $frame 0 0)
+        (images.Text (site.Params.author.name | default site.Title) (dict
+          "color" "#800040" "size" 76 "x" 560 "y" 248 "font" $font))
+        (images.Text (i18n "siteslogan" | default site.Params.description) (dict
+          "color" "#800040" "size" 34 "x" 562 "y" 360 "font" $font))
+  -}}
+{{- end -}}
+{{- return $card -}}

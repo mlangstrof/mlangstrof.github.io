@@ -23,7 +23,6 @@
     <div class="flex flex-col gap-12 lg:col-span-2">
         {{ with $featured }}
         <section>
-            <h2 class="mb-4 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "featured" }}</h2>
             {{ partial "card.html" (dict "page" . "featured" true) }}
         </section>
         {{ end }}
@@ -55,7 +54,7 @@
             {{ $avatar := resources.Get "images/about.webp" }}
             <div class="flex items-center gap-4">
                 {{ with $avatar }}
-                {{ $a := .Fill "128x128 webp q85" }}
+                {{ $a := .Fill "128x128 webp q85 Center" }}
                 <img src="{{ $a.RelPermalink }}" width="64" height="64" alt="{{ site.Params.author.name }}" loading="lazy" decoding="async" class="h-16 w-16 shrink-0 rounded-full object-cover">
                 {{ end }}
                 <div>

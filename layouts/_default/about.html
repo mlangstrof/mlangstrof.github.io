@@ -3,27 +3,28 @@
 {{- $cv := partial "first-page.html" (slice "/cv" "/lebenslauf") -}}
 {{- $email := site.Params.author.email -}}
 {{- $linkedin := site.Params.author.linkedin -}}
-<div class="mx-auto max-w-5xl py-10 md:py-14">
+<div class="mx-auto max-w-5xl py-14 md:py-20">
+    <header class="mb-10 flex items-center gap-5 border-b border-base-300 pb-8 sm:gap-6">
+        {{- with $portrait }}
+        {{- $p := .Fill "224x224 webp q85 Center" -}}
+        <img src="{{ $p.RelPermalink }}" width="112" height="112" loading="eager" decoding="async"
+             alt="{{ site.Params.author.name }}" class="h-20 w-20 shrink-0 rounded-full object-cover sm:h-28 sm:w-28">
+        {{- end }}
+        <div>
+            <h1 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+            {{- with .Params.role }}
+            <p class="mt-2 text-lg text-base-content/70">{{ . }}</p>
+            {{- end }}
+        </div>
+    </header>
     <div class="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-start">
         <article>
-            <header class="mb-6">
-                <h1 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
-                {{- with .Params.role }}
-                <p class="mt-3 text-lg text-base-content/70">{{ . }}</p>
-                {{- end }}
-            </header>
             <div class="prose-basic">
                 {{ .Content }}
             </div>
         </article>
 
         <aside class="flex flex-col gap-6">
-            {{- with $portrait }}
-            {{- $p := .Fill "480x480 webp q85" -}}
-            <img src="{{ $p.RelPermalink }}" width="240" height="240" loading="lazy" decoding="async"
-                 alt="{{ site.Params.author.name }}" class="mx-auto h-40 w-40 rounded-full object-cover sm:h-48 sm:w-48">
-            {{- end }}
-
             {{/* Condensed highlights */}}
             <section class="rounded-lg border border-base-300 bg-base-100 p-6">
                 {{- with .Params.skills }}

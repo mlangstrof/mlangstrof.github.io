@@ -26,7 +26,7 @@
     <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div class="flex items-center gap-4">
             {{- with $avatar }}
-            {{- $a := .Fill "128x128 webp q85" -}}
+            {{- $a := .Fill "128x128 webp q85 Center" -}}
             <img src="{{ $a.RelPermalink }}" width="56" height="56" loading="lazy" decoding="async"
                  alt="{{ site.Params.author.name }}" class="h-14 w-14 shrink-0 rounded-full object-cover">
             {{- end }}
