@@ -2,6 +2,8 @@
 title = "Curriculum Vitae"
 description = "Structured CV for Max Langstrof - cloud architecture, DevSecOps and wine credentials."
 layout = "cv"
+# Temporarily unpublished - not ready to put the CV online yet. Set to false to re-enable.
+draft = true
 # Scaffolded structure - replace the placeholder entries below with real data.
 # The CV page renders entirely from these params, so no separate PDF is kept;
 # use the browser's print / save-as-PDF (print stylesheet included).

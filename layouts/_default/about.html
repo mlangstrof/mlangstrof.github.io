@@ -78,11 +78,15 @@
                     </a>
                     {{- end }}
                 </div>
+                {{/* CV temporarily disabled - not published for now. To re-enable:
+                     set draft = false in content/en/cv.md and content/de/lebenslauf.md,
+                     then uncomment the button below.
                 {{- with $cv }}
                 <a href="{{ .RelPermalink }}" class="mt-5 inline-flex w-full items-center justify-center rounded-field bg-primary px-4 py-2 text-sm font-semibold text-primary-content transition-colors hover:bg-primary/90">
                     {{ i18n "viewcv" }}
                 </a>
                 {{- end }}
+                */}}
             </section>
         </aside>
     </div>

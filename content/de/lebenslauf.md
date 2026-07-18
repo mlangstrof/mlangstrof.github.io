@@ -2,6 +2,8 @@
 title = "Lebenslauf"
 description = "Strukturierter Lebenslauf von Max Langstrof - Cloud-Architektur, DevSecOps und Weinqualifikationen."
 layout = "cv"
+# Temporarily unpublished - not ready to put the CV online yet. Set to false to re-enable.
+draft = true
 # Geruest - Platzhalter unten durch echte Daten ersetzen. Die Seite wird komplett
 # aus diesen Parametern gerendert; es wird keine separate PDF gepflegt - nutze
 # die Druck-/Als-PDF-speichern-Funktion des Browsers (Druck-Stylesheet vorhanden).
