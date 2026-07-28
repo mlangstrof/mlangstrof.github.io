@@ -1,6 +1,6 @@
 +++
 title = 'Tipps zum Bestehen der Microsoft-Cybersecurity-Architect-Prüfung (SC-100)'
-date = 2026-07-16T18:45:03+08:00
+date = 2026-07-27T18:45:03+08:00
 draft = false
 categories = ["technologie", "empfehlung"]
 featuredImage = "/images/sc-100.webp"
