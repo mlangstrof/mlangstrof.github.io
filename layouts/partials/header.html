@@ -1,0 +1,55 @@
+{{- /*
+  Sticky top bar: brand mark (links home, no wordmark - the "Cloud & Cabernet"
+  name lives in the hero), primary nav (Technology, Wine, About from the `top`
+  menu), and a right-hand control cluster with a theme toggle. On mobile the nav
+  collapses behind a menu button while the theme toggle stays directly
+  reachable. Scroll hide/reveal and toggle behavior live in main.js; the bar
+  degrades gracefully without JS.
+*/ -}}
+{{- $home := "/" | relLangURL -}}
+<header data-topbar class="sticky top-0 z-40 border-b border-base-300 bg-base-100/90 backdrop-blur transition-transform duration-300 will-change-transform">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
+        <a href="{{ $home }}" class="flex items-center text-primary" aria-label="{{ i18n "sitename" | default site.Title }}">
+            <svg class="h-8 w-8 shrink-0" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 16C12 16 9 14 9 11C9 8.4 11.2 7.2 13.2 7.6C14 5.2 18 5.2 18.8 7.6C20.8 7.2 23 8.4 23 11C23 14 20 16 16 16Z" />
+                <path d="M16 16v7.5" />
+                <path d="M10.5 23.5h11" />
+            </svg>
+        </a>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">
+            {{- partial "nav-items.html" (dict "page" . "base" "text-sm font-medium transition-colors hover:text-primary") }}
+        </nav>
+
+        <div class="flex items-center gap-1">
+            <button type="button" data-search-open class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary" aria-label="{{ i18n "search" }}" aria-haspopup="dialog">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+            </button>
+            {{ partial "lang-switcher.html" . }}
+            <span aria-hidden="true" class="mx-1 h-5 w-px bg-base-300"></span>
+            <button type="button" data-theme-toggle class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary" aria-label="{{ i18n "toggletheme" | default "Toggle theme" }}">
+                <svg data-icon-sun class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+                <svg data-icon-moon class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                </svg>
+            </button>
+            <button type="button" data-nav-toggle class="inline-flex h-9 w-9 items-center justify-center rounded-field text-base-content/80 transition-colors hover:bg-base-200 hover:text-primary md:hidden" aria-label="{{ i18n "menu" | default "Menu" }}" aria-expanded="false" aria-controls="mobile-nav">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <nav id="mobile-nav" data-mobile-nav hidden class="border-t border-base-300 md:hidden" aria-label="Primary">
+        <div class="mx-auto flex max-w-7xl flex-col px-4 py-2">
+            {{- partial "nav-items.html" (dict "page" . "base" "rounded-field px-2 py-2 text-base font-medium transition-colors hover:bg-base-200 hover:text-primary") }}
+        </div>
+    </nav>
+</header>

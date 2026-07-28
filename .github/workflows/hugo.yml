@@ -48,8 +48,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || npm install"
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -60,17 +64,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: Log index.html file before modification
-        run: |
-          echo "Printing info for index.html files before sed operation..."
-          cat public/index.html
-      - name: Remove noindex Meta Tag
-        run: |
-          sed -i 's|<meta name=robots content="noindex">|<meta name="google-site-verification" content="c6gnx8B3K0vSEMzyJ6-fxkTfZPdMqJ0FWfWL7zEyEWc" />|g' public/index.html
-      - name: Log index.html file before modification
-        run: |
-          echo "Printing info for index.html files after sed operation..."
-          cat public/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

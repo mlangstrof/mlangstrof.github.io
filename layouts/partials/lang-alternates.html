@@ -1,0 +1,86 @@
+{{- /*
+  Resolves this page's language alternates as a data structure shared by the
+  language switcher, the footer mirror, and the hreflang tags — a single source
+  of truth so the three never diverge. Returns a slice of dicts:
+    lang    - target language code (e.g. "de")
+    name    - target language display name (EN / DE)
+    url     - RelPermalink to navigate to
+    missing - true when no direct counterpart exists and url is a section (or
+              home) fallback; the switcher appends a notice flag in that case
+
+  Resolution order per other language:
+    1. A native Hugo translation (home is always linked; content pages when a
+       translationKey or identical path matches).
+    2. Section list page -> the mapped section in the other language.
+    3. Leaf page -> a same-named bundle in the mapped section; if absent, fall
+       back to the mapped section list (missing = true). Root single pages
+       (e.g. about) map by name.
+    4. Home -> the other-language home.
+    5. Last resort -> the other-language home (missing = true).
+
+  Section/root slugs differ across languages (technology<->technologie,
+  wine<->wein, about<->ueber-mich), so the maps below bridge them without
+  requiring translationKey front matter on existing content.
+*/ -}}
+{{- $page := . -}}
+{{- $sectionMap := dict "technology" "technologie" "technologie" "technology" "wine" "wein" "wein" "wine" -}}
+{{- $rootMap := dict "about" "ueber-mich" "ueber-mich" "about" -}}
+{{- $alts := slice -}}
+{{- range site.Sites -}}
+  {{- if ne .Language.Lang $page.Language.Lang -}}
+    {{- $other := . -}}
+    {{- $url := "" -}}
+    {{- $missing := true -}}
+
+    {{- /* 1. Native translation. */ -}}
+    {{- range $page.Translations -}}
+      {{- if eq .Language.Lang $other.Language.Lang -}}
+        {{- $url = .RelPermalink -}}{{- $missing = false -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* 2. Section list page -> mapped section. */ -}}
+    {{- if and (not $url) (eq $page.Kind "section") -}}
+      {{- with index $sectionMap $page.Section -}}
+        {{- with $other.GetPage (printf "/%s" .) -}}
+          {{- $url = .RelPermalink -}}{{- $missing = false -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* 3. Leaf page -> same-named counterpart, else section fallback; root pages map by name. */ -}}
+    {{- if and (not $url) (eq $page.Kind "page") $page.File -}}
+      {{- $base := $page.File.ContentBaseName -}}
+      {{- $sec := index $sectionMap $page.Section -}}
+      {{- if $sec -}}
+        {{- with $other.GetPage (printf "/%s/%s" $sec $base) -}}
+          {{- $url = .RelPermalink -}}{{- $missing = false -}}
+        {{- end -}}
+        {{- if not $url -}}
+          {{- with $other.GetPage (printf "/%s" $sec) -}}
+            {{- $url = .RelPermalink -}}{{- $missing = true -}}
+          {{- end -}}
+        {{- end -}}
+      {{- else -}}
+        {{- with index $rootMap $base -}}
+          {{- with $other.GetPage (printf "/%s" .) -}}
+            {{- $url = .RelPermalink -}}{{- $missing = false -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* 4. Home. */ -}}
+    {{- if and (not $url) $page.IsHome -}}
+      {{- $url = $other.Home.RelPermalink -}}{{- $missing = false -}}
+    {{- end -}}
+
+    {{- /* 5. Last resort -> other-language home. */ -}}
+    {{- if not $url -}}
+      {{- $url = $other.Home.RelPermalink -}}{{- $missing = true -}}
+    {{- end -}}
+
+    {{- $alts = $alts | append (dict "lang" $other.Language.Lang "name" $other.Language.LanguageName "url" $url "missing" $missing "href" (printf "%s%s" $url (cond $missing "?nt=1" ""))) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $alts -}}

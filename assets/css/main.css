@@ -1,0 +1,724 @@
+@import "tailwindcss";
+
+/* DaisyUI v5 — disable built-in themes; the site ships its own token palettes. */
+@plugin "daisyui" {
+  themes: false;
+}
+
+/*
+ * Semantic design tokens — light palette (default).
+ * Warm neutral ramp + burgundy accent. Values are provisional and will be
+ * contrast-tuned in a later pass; components must consume these tokens rather
+ * than hardcoding raw colors.
+ */
+@plugin "daisyui/theme" {
+  name: "cc-light";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #faf7f2;
+  --color-base-200: #f2ece3;
+  --color-base-300: #e6ddd0;
+  --color-base-content: #2b2622;
+
+  --color-primary: #800040;
+  --color-primary-content: #fdf2f7;
+  --color-secondary: #6b5e54;
+  --color-secondary-content: #faf7f2;
+  --color-accent: #9c7a43;
+  --color-accent-content: #faf7f2;
+  --color-neutral: #2b2622;
+  --color-neutral-content: #faf7f2;
+
+  --color-info: #3b6ea5;
+  --color-info-content: #ffffff;
+  --color-success: #4b7a4a;
+  --color-success-content: #ffffff;
+  --color-warning: #b5811f;
+  --color-warning-content: #ffffff;
+  --color-error: #a23b3b;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+}
+
+/*
+ * Semantic design tokens — dark palette.
+ * Applied automatically when the OS prefers a dark color scheme. The burgundy
+ * accent is lightened here so accent text/links remain legible on near-black;
+ * an explicit user toggle is layered on in a later ticket.
+ */
+@plugin "daisyui/theme" {
+  name: "cc-dark";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #14110e;
+  --color-base-200: #1c1815;
+  --color-base-300: #2a251f;
+  --color-base-content: #e8e1d8;
+
+  --color-primary: #c85d86;
+  --color-primary-content: #1a0b11;
+  --color-secondary: #b8a99a;
+  --color-secondary-content: #14110e;
+  --color-accent: #c9a877;
+  --color-accent-content: #14110e;
+  --color-neutral: #e8e1d8;
+  --color-neutral-content: #14110e;
+
+  --color-info: #7aa7d6;
+  --color-info-content: #0b1420;
+  --color-success: #8fbf8e;
+  --color-success-content: #0b1a0b;
+  --color-warning: #d8b25a;
+  --color-warning-content: #1f1608;
+  --color-error: #d68a8a;
+  --color-error-content: #200b0b;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+}
+
+@layer base {
+  /* Self-hosted Montserrat (variable, weights 100–900 — no faux weights). */
+  @font-face {
+    font-family: "Montserrat Variable";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("/fonts/montserrat-latin-wght-normal.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+      U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: "Montserrat Variable";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("/fonts/montserrat-latin-ext-wght-normal.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+      U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+      U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+      U+A720-A7FF;
+  }
+
+  :root {
+    --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, -apple-system,
+      "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-size: 1.125rem;
+  }
+
+  /*
+   * Minimal readable defaults for rendered Markdown. Rich single-post
+   * typography (code highlighting, TOC, zoom, etc.) arrives in a later ticket.
+   */
+  .prose-basic :is(h1, h2, h3, h4) {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+  }
+  .prose-basic > :first-child {
+    margin-top: 0;
+  }
+  .prose-basic h1 {
+    font-size: 1.75rem;
+  }
+  .prose-basic h2 {
+    font-size: 1.5rem;
+  }
+  .prose-basic h3 {
+    font-size: 1.25rem;
+  }
+  .prose-basic p {
+    margin: 1em 0;
+  }
+  .prose-basic a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .prose-basic ul {
+    list-style: disc;
+    margin: 1em 0;
+    padding-left: 1.5rem;
+  }
+  .prose-basic ol {
+    list-style: decimal;
+    margin: 1em 0;
+    padding-left: 1.5rem;
+  }
+  .prose-basic li {
+    margin: 0.35em 0;
+  }
+  .prose-basic pre {
+    background: var(--color-base-200);
+    padding: 1rem;
+    border-radius: var(--radius-box);
+    overflow-x: auto;
+    margin: 1.25em 0;
+  }
+  .prose-basic code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.95em;
+  }
+  .prose-basic blockquote {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 1.25em 0;
+    color: color-mix(in oklab, var(--color-base-content) 75%, transparent);
+  }
+  .prose-basic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-box);
+    margin: 1.5em 0;
+  }
+  .prose-basic strong {
+    font-weight: 600;
+  }
+  .prose-basic h4 {
+    font-size: 1.1rem;
+  }
+  .prose-basic hr {
+    border: 0;
+    border-top: 1px solid var(--color-base-300);
+    margin: 2.5em 0;
+  }
+  /* Inline code only (code blocks are handled by the Chroma rules below). */
+  .prose-basic :not(pre) > code {
+    background: var(--color-base-200);
+    padding: 0.15em 0.35em;
+    border-radius: var(--radius-field);
+  }
+  .prose-basic table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+  }
+  .prose-basic th,
+  .prose-basic td {
+    border: 1px solid var(--color-base-300);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose-basic thead th {
+    background: var(--color-base-200);
+    font-weight: 600;
+  }
+  .prose-basic tbody tr:nth-child(even) {
+    background: color-mix(in oklab, var(--color-base-200) 45%, transparent);
+  }
+}
+
+/*
+ * Theme toggle icon: show the icon for the palette the click would switch TO
+ * (moon while light, sun while dark). Kept outside @layer base so it wins over
+ * utility display classes.
+ */
+[data-theme-toggle] [data-icon-sun] {
+  display: none;
+}
+[data-theme-toggle] [data-icon-moon] {
+  display: block;
+}
+html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-sun] {
+  display: block;
+}
+html[data-theme="cc-dark"] [data-theme-toggle] [data-icon-moon] {
+  display: none;
+}
+
+/* Cross-fade the palette on theme switch; disabled under reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body,
+  header[data-topbar],
+  footer,
+  .prose-basic pre,
+  .prose-basic blockquote {
+    transition: background-color 0.3s ease, border-color 0.3s ease,
+      color 0.3s ease;
+  }
+}
+
+/*
+ * Hide-on-scroll state for the sticky top bar. Defined explicitly (rather than
+ * a JS-injected Tailwind utility) so it survives Tailwind content scanning.
+ */
+[data-topbar].is-hidden {
+  transform: translateY(-100%);
+}
+
+/*
+ * Share controls in the post footer (ticket #9). Icon-only buttons/links with
+ * no third-party widgets; the copy-link button turns success-colored briefly.
+ */
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--color-base-content);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  background: var(--color-base-100);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.share-btn:hover,
+.share-btn:focus-visible {
+  color: var(--color-primary);
+  border-color: color-mix(in oklab, var(--color-primary) 40%, transparent);
+}
+.share-btn.is-copied {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+/*
+ * Self-hosted image zoom (ticket #10). Prose images become clickable and open
+ * a full-viewport overlay. Fades are only applied when the user has not asked
+ * for reduced motion.
+ */
+.prose-basic img.is-zoomable {
+  cursor: zoom-in;
+}
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: color-mix(in oklab, var(--color-base-100) 8%, rgb(0 0 0 / 88%));
+  cursor: zoom-out;
+}
+.zoom-overlay.is-open {
+  display: flex;
+}
+.zoom-overlay img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: var(--radius-box);
+  box-shadow: 0 10px 40px rgb(0 0 0 / 45%);
+}
+
+/*
+ * Search overlay (ticket #11). Opened from the top bar; results come from the
+ * per-language JSON index and are rendered by main.js. Hidden (display:none)
+ * until opened; the fade is only applied when motion is allowed.
+ */
+body.is-search-open {
+  overflow: hidden;
+}
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(1rem, 10vh, 8rem) 1rem 1rem;
+}
+.search-overlay.is-open {
+  display: flex;
+}
+.search-overlay__backdrop {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in oklab, var(--color-base-100) 8%, rgb(0 0 0 / 70%));
+}
+.search-overlay__panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  max-height: 80vh;
+  overflow: hidden;
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-box);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+}
+.search-overlay__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--color-base-300);
+}
+.search-overlay__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 1.05rem;
+  color: var(--color-base-content);
+}
+.search-overlay__close {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--color-base-content);
+  opacity: 0.6;
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  cursor: pointer;
+}
+.search-overlay__status {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: color-mix(in oklab, var(--color-base-content) 60%, transparent);
+}
+.search-overlay__results {
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  overflow-y: auto;
+}
+.search-overlay__result-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-field);
+  text-decoration: none;
+  color: var(--color-base-content);
+}
+.search-overlay__result:hover .search-overlay__result-link,
+.search-overlay__result.is-active .search-overlay__result-link {
+  background: var(--color-base-200);
+}
+.search-overlay__result-title {
+  font-weight: 600;
+  line-height: 1.3;
+}
+.search-overlay__result-meta {
+  font-size: 0.8rem;
+  color: color-mix(in oklab, var(--color-base-content) 55%, transparent);
+  text-transform: capitalize;
+}
+
+/*
+ * Table of contents (ticket #10). Hugo emits <nav id="TableOfContents"> with a
+ * nested list; style it to match the muted sidebar aesthetic.
+ */
+.toc-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.toc-nav li {
+  margin: 0;
+}
+.toc-nav ul ul {
+  padding-left: 0.9rem;
+}
+.toc-nav a {
+  display: block;
+  padding: 0.2rem 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-base-content);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.toc-nav a:hover,
+.toc-nav a:focus-visible {
+  color: var(--color-primary);
+  opacity: 1;
+}
+/* Keep headings clear of the sticky top bar when jumped to via the TOC. */
+.prose-basic :is(h2, h3, h4) {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .toc-nav a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+  .zoom-overlay {
+    transition: opacity 0.2s ease;
+  }
+  .zoom-overlay:not(.is-open) {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .zoom-overlay.is-open {
+    opacity: 1;
+  }
+  .search-overlay {
+    transition: opacity 0.2s ease;
+  }
+  .search-overlay:not(.is-open) {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .search-overlay.is-open {
+    opacity: 1;
+  }
+  /*
+   * Quiet scroll-entrance fades. Elements are visible by default; the hidden
+   * start state only applies once main.js adds html.js-reveal, and main.js only
+   * does so when motion is allowed — so this whole effect is inert under
+   * prefers-reduced-motion and when JS is unavailable.
+   */
+  html.js-reveal [data-reveal] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    will-change: opacity, transform;
+  }
+  html.js-reveal [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * Code blocks: copy-to-clipboard button. Hugo wraps highlighted code in
+ * <div class="highlight"><pre class="chroma">...; the button is injected into
+ * that wrapper by main.js and revealed on hover/focus.
+ */
+.prose-basic .highlight {
+  position: relative;
+}
+.prose-basic .highlight .code-copy {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--color-base-content);
+  background: var(--color-base-100);
+  border: 1px solid var(--color-base-300);
+  border-radius: var(--radius-field);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.prose-basic .highlight:hover .code-copy,
+.prose-basic .highlight .code-copy:focus-visible {
+  opacity: 1;
+}
+.prose-basic .highlight .code-copy.is-copied {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+/*
+ * Class-based Chroma syntax highlighting, tuned to the burgundy/warm palette.
+ * Light values first; dark overrides follow. Token classes:
+ * c=comment k=keyword s=string m=number n*=names o=operator p=punctuation
+ * g*=generic (diff) err=error.
+ */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #8a7f74;
+  font-style: italic;
+}
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .nt {
+  color: #9c2c66;
+}
+.chroma .kt,
+.chroma .nc,
+.chroma .nn,
+.chroma .na {
+  color: #9c7a43;
+}
+.chroma .s,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+  color: #4b7a4a;
+}
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #b5811f;
+}
+.chroma .nf,
+.chroma .nb,
+.chroma .fm {
+  color: #3b6ea5;
+}
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi {
+  color: #6b5e54;
+}
+.chroma .o,
+.chroma .ow,
+.chroma .p {
+  color: #6b5e54;
+}
+.chroma .gd {
+  color: #a23b3b;
+}
+.chroma .gi {
+  color: #4b7a4a;
+}
+.chroma .ge {
+  font-style: italic;
+}
+.chroma .gs {
+  font-weight: 600;
+}
+.chroma .err {
+  color: #a23b3b;
+}
+
+html[data-theme="cc-dark"] .chroma .c,
+html[data-theme="cc-dark"] .chroma .ch,
+html[data-theme="cc-dark"] .chroma .cm,
+html[data-theme="cc-dark"] .chroma .c1,
+html[data-theme="cc-dark"] .chroma .cs,
+html[data-theme="cc-dark"] .chroma .cp,
+html[data-theme="cc-dark"] .chroma .cpf {
+  color: #9a8f84;
+}
+html[data-theme="cc-dark"] .chroma .k,
+html[data-theme="cc-dark"] .chroma .kc,
+html[data-theme="cc-dark"] .chroma .kd,
+html[data-theme="cc-dark"] .chroma .kn,
+html[data-theme="cc-dark"] .chroma .kp,
+html[data-theme="cc-dark"] .chroma .kr,
+html[data-theme="cc-dark"] .chroma .nt {
+  color: #e08bb0;
+}
+html[data-theme="cc-dark"] .chroma .kt,
+html[data-theme="cc-dark"] .chroma .nc,
+html[data-theme="cc-dark"] .chroma .nn,
+html[data-theme="cc-dark"] .chroma .na {
+  color: #d9b45e;
+}
+html[data-theme="cc-dark"] .chroma .s,
+html[data-theme="cc-dark"] .chroma .sb,
+html[data-theme="cc-dark"] .chroma .sc,
+html[data-theme="cc-dark"] .chroma .sd,
+html[data-theme="cc-dark"] .chroma .s2,
+html[data-theme="cc-dark"] .chroma .se,
+html[data-theme="cc-dark"] .chroma .sh,
+html[data-theme="cc-dark"] .chroma .si,
+html[data-theme="cc-dark"] .chroma .sx,
+html[data-theme="cc-dark"] .chroma .sr,
+html[data-theme="cc-dark"] .chroma .s1,
+html[data-theme="cc-dark"] .chroma .ss {
+  color: #86b986;
+}
+html[data-theme="cc-dark"] .chroma .m,
+html[data-theme="cc-dark"] .chroma .mb,
+html[data-theme="cc-dark"] .chroma .mf,
+html[data-theme="cc-dark"] .chroma .mh,
+html[data-theme="cc-dark"] .chroma .mi,
+html[data-theme="cc-dark"] .chroma .il,
+html[data-theme="cc-dark"] .chroma .mo {
+  color: #d9b45e;
+}
+html[data-theme="cc-dark"] .chroma .nf,
+html[data-theme="cc-dark"] .chroma .nb,
+html[data-theme="cc-dark"] .chroma .fm {
+  color: #79a7d8;
+}
+html[data-theme="cc-dark"] .chroma .nv,
+html[data-theme="cc-dark"] .chroma .vc,
+html[data-theme="cc-dark"] .chroma .vg,
+html[data-theme="cc-dark"] .chroma .vi,
+html[data-theme="cc-dark"] .chroma .o,
+html[data-theme="cc-dark"] .chroma .ow,
+html[data-theme="cc-dark"] .chroma .p {
+  color: #b7a99d;
+}
+html[data-theme="cc-dark"] .chroma .err {
+  color: #e59a9a;
+}
+
+/*
+ * Print stylesheet (ticket #12). Used for the CV page's browser print /
+ * save-as-PDF, so no separate PDF file is maintained. Strips chrome and
+ * interactive-only controls and keeps CV entries from breaking across pages.
+ */
+@media print {
+  [data-topbar],
+  footer,
+  [data-nt-notice],
+  .search-overlay,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  main {
+    max-width: none;
+    padding: 0;
+  }
+  .cv {
+    max-width: none;
+    padding: 0;
+  }
+  .cv__section,
+  .cv__entry {
+    break-inside: avoid;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

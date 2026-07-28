@@ -34,6 +34,115 @@ other = "Home"
 [about]
 other = "Über mich"
 
+[toggletheme]
+other = "Zwischen hellem und dunklem Design wechseln"
+
+[menu]
+other = "Menü"
+
+[notranslation]
+other = "Diese Seite ist noch nicht auf Deutsch verfügbar - stattdessen wird der zugehörige Bereich angezeigt."
+
+[dismiss]
+other = "Schließen"
+
+[readingtime]
+other = "{{ .Count }} Min. Lesezeit"
+
+[postcount]
+one = "{{ .Count }} Beitrag"
+other = "{{ .Count }} Beiträge"
+
+[noposts]
+other = "Hier gibt es noch keine Beiträge."
+
+[tagged]
+other = "Schlagwort"
+
+[alltags]
+other = "Alle Schlagwörter"
+
+[featured]
+other = "Empfohlen"
+
+[viewall]
+other = "Alle ansehen"
+
+[copy]
+other = "Kopieren"
+
+[copied]
+other = "Kopiert"
+
+[writtenby]
+other = "Geschrieben von"
+
+[share]
+other = "Teilen"
+
+[copylink]
+other = "Link kopieren"
+
+[linkcopied]
+other = "Link kopiert"
+
+[sharelinkedin]
+other = "Auf LinkedIn teilen"
+
+[shareemail]
+other = "Per E-Mail teilen"
+
+[readnext]
+other = "Weiterlesen"
+
+[morefrom]
+other = "Mehr aus {{ .Section }}"
+
+[postnav]
+other = "Beitragsnavigation"
+
+[prevpost]
+other = "Vorheriger"
+
+[nextpost]
+other = "Nächster"
+
+[contents]
+other = "Inhalt"
+
+[skills]
+other = "Kompetenzen"
+
+[certifications]
+other = "Zertifizierungen"
+
+[certificationsit]
+other = "IT-Zertifizierungen"
+
+[certificationswine]
+other = "Wein-Zertifizierungen"
+
+[experience]
+other = "Berufserfahrung"
+
+[education]
+other = "Ausbildung"
+
+[winecredentials]
+other = "Weinqualifikationen"
+
+[viewcv]
+other = "Vollständigen Lebenslauf ansehen"
+
+[emailme]
+other = "E-Mail schreiben"
+
+[connectlinkedin]
+other = "Auf LinkedIn vernetzen"
+
+[printcv]
+other = "Drucken / PDF"
+
 [technology]
 other = "Technologie"
 

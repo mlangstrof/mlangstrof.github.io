@@ -1,0 +1,15 @@
+{{- /* Per-language search index (JSON). Consumed by the search overlay in a later ticket. */ -}}
+{{- $pages := site.RegularPages -}}
+[
+{{- range $i, $p := $pages -}}
+{{- if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "url": {{ $p.RelPermalink | jsonify }},
+    "section": {{ $p.Section | jsonify }},
+    "date": {{ ($p.Date.Format "2006-01-02") | jsonify }},
+    "tags": {{ (or $p.Params.tags slice) | jsonify }},
+    "summary": {{ ($p.Summary | plainify) | jsonify }}
+  }
+{{- end }}
+]

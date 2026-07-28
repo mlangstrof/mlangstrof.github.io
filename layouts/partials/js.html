@@ -1,0 +1,17 @@
+{{- /*
+  Script pipeline: bundled and transpiled by Hugo's esbuild integration
+  (js.Build). In production the output is minified, fingerprinted, and served
+  with a subresource-integrity hash. Loaded deferred; no CDN. Behavior degrades
+  gracefully when JS is unavailable.
+*/ -}}
+{{- with resources.Get "js/main.js" }}
+{{- $opts := dict "minify" hugo.IsProduction }}
+{{- $js := . | js.Build $opts }}
+{{- if hugo.IsProduction }}
+{{- with $js | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{- end }}
+{{- else }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{- end }}
+{{- end }}

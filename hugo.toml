@@ -2,8 +2,33 @@ baseURL = "https://mlangstrof.github.io/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = 'Max Langstrof'
-staticDir = ["static", "themes/Niello/static"]
-theme = ["Niello", "hugo-shortcode-gallery"]
+# Serve /robots.txt from static/robots.txt (a repo file, not a deploy-time
+# script). enableRobotsTXT is off so Hugo does not also emit a generated one.
+enableRobotsTXT = false
+# Use the literal section name for auto-generated list titles ("Technology",
+# "Wine") instead of Hugo's default pluralisation ("Technologies", "Wines").
+pluralizeListTitles = false
+# Rendering is provided by the custom theme in the repository root (layouts/ + assets/).
+# hugo-shortcode-gallery remains for the `gallery` shortcode used in recipe posts.
+theme = ["hugo-shortcode-gallery"]
+
+# Explicit module mounts (replaces the deprecated staticDir). The default
+# assets and static roots are re-declared, plus static/images is mounted into
+# the asset pipeline so featured images can be processed (responsive/WebP)
+# while still being served statically at /images/.
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "themes/Niello/static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
 
 # [outputs]
 #   home = ['html', 'rss']
@@ -40,6 +65,19 @@ theme = ["Niello", "hugo-shortcode-gallery"]
             name = 'Tags'
             pageRef = '/tags'
             weight = 5
+        # Primary top-bar navigation (redesign): Technology, Wine, About.
+        [[languages.en.menus.top]]
+            name = 'Technology'
+            pageRef = '/technology'
+            weight = 1
+        [[languages.en.menus.top]]
+            name = 'Wine'
+            pageRef = '/wine'
+            weight = 2
+        [[languages.en.menus.top]]
+            name = 'About'
+            pageRef = '/about'
+            weight = 3
   [languages.de]
         title = "Max Langstrof"
         languageCode = "de-de"
@@ -66,11 +104,22 @@ theme = ["Niello", "hugo-shortcode-gallery"]
             name = 'Tags'
             pageRef = '/tags'
             weight = 5
+        # Primaere Top-Bar-Navigation (Redesign): Technologie, Wein, Ueber mich.
+        [[languages.de.menus.top]]
+            name = 'Technologie'
+            pageRef = '/technologie'
+            weight = 1
+        [[languages.de.menus.top]]
+            name = 'Wein'
+            pageRef = '/wein'
+            weight = 2
+        [[languages.de.menus.top]]
+            name = 'Über mich'
+            pageRef = '/ueber-mich'
+            weight = 3
  
 languageCode = "en-us"
 
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
 #hasCJKLanguage = true
 
 rssLimit = 10
@@ -95,6 +144,9 @@ expiryDate = ["expiryDate"]
 [params.author]
   name = "Max Langstrof"
   about = "about"
+  # Contact details surfaced on the About/CV pages.
+  email = "mlangstrof@gmail.com"
+  linkedin = "https://linkedin.com/in/mlangstrof"
 
 #[blackfriday]
   # hrefTargetBlank = true
@@ -107,6 +159,21 @@ expiryDate = ["expiryDate"]
   # category = "categories"
 
 [markup]
+  # Table of contents lists only top-level headings. Posts author their main
+  # sections as H1 (`#`); Hugo's default startLevel of 2 would hide those and
+  # surface subsections instead, so pin the TOC to H1 only.
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 1
+    ordered = false
+  # Class-based Chroma highlighting; the palette lives in assets/css/main.css so
+  # code blocks follow the light/dark theme. Copy button is added in main.js.
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    tabWidth = 4
+    lineNos = false
   [markup.goldmark]
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
@@ -130,6 +197,12 @@ expiryDate = ["expiryDate"]
   description = "On IT and wine"
   # images = [""]
   themeColor = "#494f5c"
+  # Google Search Console ownership token, emitted as a <meta> tag in the head
+  # and on the root redirect (replaces the old deploy-time sed hack).
+  googleSiteVerification = "c6gnx8B3K0vSEMzyJ6-fxkTfZPdMqJ0FWfWL7zEyEWc"
+  # Default social-share image (relative to the assets image mount) used when a
+  # page has no featured image of its own.
+  ogImage = "images/about.webp"
 
   #homeSubtitle = ""
   #footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
@@ -159,4 +232,6 @@ expiryDate = ["expiryDate"]
   # usesAnimation = true
 
 [outputs]
+  # HTML for pages, JSON for the search index. robots.txt is served statically
+  # from static/robots.txt, so it is not a home output format here.
   home = ["HTML", "JSON"]

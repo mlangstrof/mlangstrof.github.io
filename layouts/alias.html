@@ -1,0 +1,22 @@
+{{- /*
+  Root language-redirect page (and any page alias). Kept out of the index with
+  noindex, but carries the Google Search Console verification token so the
+  property root can be verified without a deploy-time sed hack. The redirect
+  target for the multilingual root has no backing page, so .Page is guarded.
+*/ -}}
+<!DOCTYPE html>
+<html lang="{{ with .Page }}{{ or .Language.LanguageCode .Language.Lang }}{{ else }}{{ or site.Language.LanguageCode site.Language.Lang }}{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="robots" content="noindex">
+  {{- with site.Params.googleSiteVerification }}
+  <meta name="google-site-verification" content="{{ . }}">
+  {{- end }}
+  <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+</head>
+<body>
+  <p>Redirecting to <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
+</body>
+</html>

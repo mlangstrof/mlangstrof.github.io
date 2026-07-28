@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{- $img := partial "featured-resource.html" . -}}
+{{- $toc := partial "toc.html" . -}}
+<div class="mx-auto max-w-6xl px-4 sm:px-6 {{ with $toc }}xl:grid xl:grid-cols-[minmax(0,1fr)_minmax(0,48rem)_minmax(0,1fr)] xl:gap-10{{ end }}">
+<article class="mx-auto max-w-3xl py-10 md:py-14 xl:col-start-2">
+    <header class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-widest text-primary">{{ .Section | humanize | upper }}</p>
+        <h1 class="mt-3 text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+        <div class="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-base-content/60">
+            {{- if not .Date.IsZero }}
+            <time datetime="{{ .Date.Format `2006-01-02` }}">{{ .Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+            {{- end }}
+            {{- if and (not .Date.IsZero) (gt .ReadingTime 0) }}
+            <span aria-hidden="true">&middot;</span>
+            {{- end }}
+            {{- if gt .ReadingTime 0 }}
+            <span>{{ i18n "readingtime" .ReadingTime }}</span>
+            {{- end }}
+        </div>
+        {{- with (or .Params.standfirst .Description) }}
+        <p class="mt-5 text-lg leading-relaxed text-base-content/70">{{ . }}</p>
+        {{- end }}
+    </header>
+
+    {{- with $img }}
+    {{/* Lead image: contained within the reading column (not full-bleed) and
+         cropped to a consistent 3:2 banner so tall/square sources don't
+         dominate the page. */}}
+    {{- $lead := .Resize "1600x webp q82" -}}
+    {{- $small := .Resize "800x webp q82" -}}
+    <figure class="mb-10" data-reveal>
+        <img src="{{ $small.RelPermalink }}"
+             srcset="{{ $small.RelPermalink }} 800w, {{ $lead.RelPermalink }} 1600w"
+             sizes="(min-width: 768px) 768px, 100vw"
+             width="{{ $lead.Width }}" height="{{ $lead.Height }}"
+             alt="{{ $.Title }}" decoding="async"
+             class="aspect-[3/2] w-full rounded-lg object-cover">
+    </figure>
+    {{- end }}
+
+    {{- with $toc }}
+    {{/* Mobile / narrow viewports: collapsible TOC above the article body. */}}
+    <details class="toc-details mb-10 rounded-lg border border-base-300 bg-base-100 p-4 xl:hidden">
+        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "contents" }}</summary>
+        <div class="toc-nav mt-3">{{ . }}</div>
+    </details>
+    {{- end }}
+
+    <div data-prose data-copy="{{ i18n "copy" }}" data-copied="{{ i18n "copied" }}" class="prose-basic">
+        {{ .Content }}
+    </div>
+</article>
+
+    {{- with $toc }}
+    {{/* Desktop: sticky TOC in the right margin. */}}
+    <aside class="hidden xl:col-start-3 xl:block" aria-label="{{ i18n "contents" }}">
+        <div class="sticky top-24 py-14">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "contents" }}</p>
+            <nav class="toc-nav">{{ . }}</nav>
+        </div>
+    </aside>
+    {{- end }}
+</div>
+
+{{ partial "post-footer.html" . }}
+{{ end }}

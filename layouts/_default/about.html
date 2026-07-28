@@ -1,0 +1,94 @@
+{{ define "main" }}
+{{- $portrait := resources.Get "images/about.webp" -}}
+{{- $cv := partial "first-page.html" (slice "/cv" "/lebenslauf") -}}
+{{- $email := site.Params.author.email -}}
+{{- $linkedin := site.Params.author.linkedin -}}
+<div class="mx-auto max-w-5xl py-14 md:py-20">
+    <header class="mb-10 flex items-center gap-5 border-b border-base-300 pb-8 sm:gap-6">
+        {{- with $portrait }}
+        {{- $p := .Fill "224x224 webp q85 Center" -}}
+        <img src="{{ $p.RelPermalink }}" width="112" height="112" loading="eager" decoding="async"
+             alt="{{ site.Params.author.name }}" class="h-20 w-20 shrink-0 rounded-full object-cover sm:h-28 sm:w-28">
+        {{- end }}
+        <div>
+            <h1 class="text-3xl font-bold leading-tight tracking-tight md:text-4xl">{{ .Title }}</h1>
+            {{- with .Params.role }}
+            <p class="mt-2 text-lg text-base-content/70">{{ . }}</p>
+            {{- end }}
+        </div>
+    </header>
+    <div class="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-start">
+        <article>
+            <div class="prose-basic">
+                {{ .Content }}
+            </div>
+        </article>
+
+        <aside class="flex flex-col gap-6">
+            {{/* Condensed highlights */}}
+            <section class="rounded-lg border border-base-300 bg-base-100 p-6">
+                {{- with .Params.skills }}
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "skills" }}</h2>
+                <ul class="mt-3 flex flex-wrap gap-2">
+                    {{- range . }}
+                    <li class="rounded-field bg-base-200 px-2.5 py-1 text-sm">{{ . }}</li>
+                    {{- end }}
+                </ul>
+                {{- end }}
+                {{- with .Params.certificationsIt }}
+                <h2 class="mt-5 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "certificationsit" }}</h2>
+                <ul class="mt-3 flex flex-col gap-1.5 text-sm">
+                    {{- range . }}
+                    <li class="flex items-start gap-2">
+                        <svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                        <span>{{ . }}</span>
+                    </li>
+                    {{- end }}
+                </ul>
+                {{- end }}
+                {{- with .Params.certificationsWine }}
+                <h2 class="mt-5 text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "certificationswine" }}</h2>
+                <ul class="mt-3 flex flex-col gap-1.5 text-sm">
+                    {{- range . }}
+                    <li class="flex items-start gap-2">
+                        <svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+                        <span>{{ . }}</span>
+                    </li>
+                    {{- end }}
+                </ul>
+                {{- end }}
+            </section>
+
+            {{/* Contact + CV */}}
+            <section class="rounded-lg border border-base-300 bg-base-100 p-6">
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-base-content/50">{{ i18n "contact" }}</h2>
+                <div class="mt-4 flex flex-col gap-2">
+                    {{- with $linkedin }}
+                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/70">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                        {{ i18n "connectlinkedin" }}
+                    </a>
+                    {{- end }}
+                    {{- with $email }}
+                    <a href="mailto:{{ . }}"
+                       class="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/70">
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        {{ i18n "emailme" }}
+                    </a>
+                    {{- end }}
+                </div>
+                {{/* CV temporarily disabled - not published for now. To re-enable:
+                     set draft = false in content/en/cv.md and content/de/lebenslauf.md,
+                     then uncomment the button below.
+                {{- with $cv }}
+                <a href="{{ .RelPermalink }}" class="mt-5 inline-flex w-full items-center justify-center rounded-field bg-primary px-4 py-2 text-sm font-semibold text-primary-content transition-colors hover:bg-primary/90">
+                    {{ i18n "viewcv" }}
+                </a>
+                {{- end }}
+                */}}
+            </section>
+        </aside>
+    </div>
+</div>
+{{ end }}

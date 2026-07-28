@@ -1,0 +1,10 @@
+{{/*
+    Returns the first page that resolves from a slice of candidate paths, or an
+    empty string when none exist. Used for language-aware lookups where only the
+    current language's path resolves (e.g. /technology vs /technologie).
+
+    Usage: {{ $p := partial "first-page.html" (slice "/technology" "/technologie") }}
+*/}}
+{{- $found := "" -}}
+{{- range . }}{{ if not $found }}{{ with site.GetPage . }}{{ $found = . }}{{ end }}{{ end }}{{ end -}}
+{{- return $found -}}

@@ -34,6 +34,115 @@ other = "Home"
 [about]
 other = "About"
 
+[toggletheme]
+other = "Toggle light and dark theme"
+
+[menu]
+other = "Menu"
+
+[notranslation]
+other = "This page isn't available in English yet - showing the related section instead."
+
+[dismiss]
+other = "Dismiss"
+
+[readingtime]
+other = "{{ .Count }} min read"
+
+[postcount]
+one = "{{ .Count }} post"
+other = "{{ .Count }} posts"
+
+[noposts]
+other = "No posts here yet."
+
+[tagged]
+other = "Tagged"
+
+[alltags]
+other = "All tags"
+
+[featured]
+other = "Featured"
+
+[viewall]
+other = "View all"
+
+[copy]
+other = "Copy"
+
+[copied]
+other = "Copied"
+
+[writtenby]
+other = "Written by"
+
+[share]
+other = "Share"
+
+[copylink]
+other = "Copy link"
+
+[linkcopied]
+other = "Link copied"
+
+[sharelinkedin]
+other = "Share on LinkedIn"
+
+[shareemail]
+other = "Share by email"
+
+[readnext]
+other = "Read next"
+
+[morefrom]
+other = "More from {{ .Section }}"
+
+[postnav]
+other = "Post navigation"
+
+[prevpost]
+other = "Previous"
+
+[nextpost]
+other = "Next"
+
+[contents]
+other = "Contents"
+
+[skills]
+other = "Skills"
+
+[certifications]
+other = "Certifications"
+
+[certificationsit]
+other = "IT certifications"
+
+[certificationswine]
+other = "Wine certifications"
+
+[experience]
+other = "Experience"
+
+[education]
+other = "Education"
+
+[winecredentials]
+other = "Wine credentials"
+
+[viewcv]
+other = "View full CV"
+
+[emailme]
+other = "Email me"
+
+[connectlinkedin]
+other = "Connect on LinkedIn"
+
+[printcv]
+other = "Print / PDF"
+
 [technology]
 other = "On technology"
 

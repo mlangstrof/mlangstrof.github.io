@@ -1,0 +1,44 @@
+{{- /*
+  Structured data (JSON-LD). A Person object is emitted site-wide; a BlogPosting
+  object is added on section posts (Technology / Wine, either language). Root
+  pages such as About and CV carry only the Person object. Context is the page.
+*/ -}}
+{{- $author := site.Params.author.name -}}
+{{- $sameAs := slice -}}
+{{- with site.Params.author.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $author
+  "url" site.Home.Permalink
+-}}
+{{- with site.Params.author.email }}{{ $person = merge $person (dict "email" (printf "mailto:%s" .)) }}{{ end -}}
+{{- if $sameAs }}{{ $person = merge $person (dict "sameAs" $sameAs) }}{{ end -}}
+{{- with $author }}
+<script type="application/ld+json">
+{{ $person | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}
+{{- if and .IsPage (ne .Section "") }}
+{{- $img := "" -}}
+{{- with partial "featured-resource.html" . }}{{ $img = .Permalink }}{{ end -}}
+{{- $article := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "url" .Permalink
+  "author" (dict "@type" "Person" "name" $author "url" site.Home.Permalink)
+  "publisher" (dict "@type" "Person" "name" $author)
+  "inLanguage" .Language.Lang
+-}}
+{{- if not .PublishDate.IsZero }}{{ $article = merge $article (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+{{- if not .Lastmod.IsZero }}{{ $article = merge $article (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+{{- $desc := "" }}{{ with .Description }}{{ $desc = . }}{{ else }}{{ with .Summary }}{{ $desc = . }}{{ end }}{{ end -}}
+{{- with $desc }}{{ $article = merge $article (dict "description" (. | plainify | chomp | truncate 200)) }}{{ end -}}
+{{- with $img }}{{ $article = merge $article (dict "image" .) }}{{ end -}}
+{{- with .Params.tags }}{{ $article = merge $article (dict "keywords" (delimit . ", ")) }}{{ end -}}
+<script type="application/ld+json">
+{{ $article | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end }}

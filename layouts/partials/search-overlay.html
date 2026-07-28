@@ -1,0 +1,33 @@
+{{- /*
+    Site search overlay (ticket #11). Opened from the top-bar search button (or
+    the "/" key) on any page. Results come from the per-language JSON index at
+    {{ "index.json" | relLangURL }}, so they are automatically scoped to the
+    language currently being browsed. All rendering and keyboard handling live
+    in main.js; the overlay is display:none until opened and degrades to the
+    dedicated /search page when JS is unavailable.
+
+    Status/label strings are passed as data attributes because main.js has no
+    access to Hugo's i18n.
+*/ -}}
+<div data-search-overlay
+     data-index="{{ "index.json" | relLangURL }}"
+     data-l-searching="{{ i18n "searching" }}"
+     data-l-nomatch="{{ i18n "nomatch" }}"
+     data-l-hint="{{ i18n "keywordmissing" }}"
+     class="search-overlay" role="dialog" aria-modal="true" aria-label="{{ i18n "search" }}">
+    <div class="search-overlay__backdrop" data-search-close></div>
+    <div class="search-overlay__panel">
+        <div class="search-overlay__bar">
+            <svg class="h-5 w-5 shrink-0 text-base-content/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input type="search" data-search-input class="search-overlay__input"
+                   placeholder="{{ i18n "searchplaceholder" }}" aria-label="{{ i18n "search" }}"
+                   aria-controls="search-results-list" autocomplete="off" spellcheck="false">
+            <button type="button" data-search-close class="search-overlay__close" aria-label="{{ i18n "dismiss" }} (Esc)">Esc</button>
+        </div>
+        <p data-search-status class="search-overlay__status" role="status" aria-live="polite">{{ i18n "keywordmissing" }}</p>
+        <ul id="search-results-list" data-search-results class="search-overlay__results" role="listbox" aria-label="{{ i18n "search" }}"></ul>
+    </div>
+</div>

@@ -4,7 +4,7 @@ date = 2024-11-19T21:00:03+08:00
 draft = false
 categories = ["technology"]
 featuredImage = "/images/prompt_engineering_101.webp"
-tags = ["AI","Copilot","Grundlagen"]
+tags = ["KI","Copilot","Grundlagen"]
 
 
 +++

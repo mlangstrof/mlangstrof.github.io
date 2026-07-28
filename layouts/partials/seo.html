@@ -1,0 +1,68 @@
+{{- /*
+  Per-page SEO metadata: description, canonical URL, robots directive, Google
+  Search Console verification, and OpenGraph / Twitter card tags. Called from
+  head.html. Context is the current page.
+*/ -}}
+{{- $description := "" -}}
+{{- with .Description }}
+  {{- $description = . -}}
+{{- else }}
+  {{- with .Summary }}{{ $description = . }}{{ else }}{{ $description = site.Params.description }}{{ end -}}
+{{- end -}}
+{{- $description = $description | plainify | chomp | truncate 200 -}}
+
+{{- /* Resolve an absolute social image: the page's featured image, else the generated site card, else the raw default. */ -}}
+{{- $ogImage := "" -}}
+{{- with partial "featured-resource.html" . }}{{ $ogImage = .Permalink }}{{ end -}}
+{{- if not $ogImage }}{{ with partialCached "og-card.html" . site.Language.Lang }}{{ $ogImage = .Permalink }}{{ end }}{{ end -}}
+{{- if not $ogImage }}{{ with resources.Get (site.Params.ogImage | default "images/about.webp") }}{{ $ogImage = .Permalink }}{{ end }}{{ end -}}
+
+{{- /* OpenGraph locale (language_TERRITORY) from the language code. */ -}}
+{{- $lc := or site.Language.LanguageCode site.Language.Lang -}}
+{{- $ogLocale := $lc -}}
+{{- if strings.Contains $lc "-" }}{{ $p := split $lc "-" }}{{ $ogLocale = printf "%s_%s" (index $p 0) (upper (index $p 1)) }}{{ end -}}
+
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- if or .Params.noindex site.Params.noindex (eq .Kind "404") }}
+<meta name="robots" content="noindex, nofollow">
+{{- else }}
+<meta name="robots" content="index, follow">
+{{- end }}
+{{- with site.Params.googleSiteVerification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+
+<meta property="og:type" content="{{ if and .IsPage (ne .Section "") }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ .Title | default site.Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="{{ $ogLocale }}">
+{{- range site.Sites }}{{ if ne .Language.Lang site.Language.Lang }}
+{{- $alc := or .Language.LanguageCode .Language.Lang }}
+{{- $al := $alc }}{{ if strings.Contains $alc "-" }}{{ $ap := split $alc "-" }}{{ $al = printf "%s_%s" (index $ap 0) (upper (index $ap 1)) }}{{ end }}
+<meta property="og:locale:alternate" content="{{ $al }}">
+{{- end }}{{ end }}
+{{- with $ogImage }}
+<meta property="og:image" content="{{ . }}">
+{{- end }}
+{{- if and .IsPage (ne .Section "") }}
+{{- if not .PublishDate.IsZero }}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+<meta property="article:author" content="{{ site.Params.author.name }}">
+{{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+
+<meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ .Title | default site.Title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with $ogImage }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}

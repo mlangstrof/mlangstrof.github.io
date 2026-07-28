@@ -1,0 +1,23 @@
+{{/*
+    Resolves a page's featuredImage to a processable image resource, or returns
+    an empty string when it is absent or unprocessable. Context (.) is the page.
+
+    Resolution ladder:
+      1. a matching resource inside the page bundle,
+      2. a global asset (static/images is mounted into assets/images so the
+         central /images/*.webp files can be processed).
+
+    Usage: {{ $img := partial "featured-resource.html" . }}
+*/}}
+{{- $img := "" -}}
+{{- with .Params.featuredImage -}}
+    {{- $rel := strings.TrimPrefix "/" . -}}
+    {{- with $.Resources.GetMatch (printf "*%s" (path.Base $rel)) -}}
+        {{- $img = . -}}
+    {{- else -}}
+        {{- with resources.Get $rel -}}
+            {{- $img = . -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $img -}}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="min-h-screen bg-base-100 text-base-content antialiased">
+    {{ partial "header.html" . }}
+    {{ partial "lang-notice.html" . }}
+
+    <main id="main" class="mx-auto w-full max-w-7xl px-4 md:px-8">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "search-overlay.html" . }}
+    {{ partial "js.html" . }}
+</body>
+
+</html>

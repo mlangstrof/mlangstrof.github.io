@@ -1,0 +1,69 @@
+{{/*
+    Post card used by section lists, taxonomy term lists and the home feed.
+
+    Context (.) is either the post page directly, or a dict:
+      { "page": <page>, "featured": <bool> }
+    The featured variant renders a larger, horizontal card for the home hero.
+
+    The featured image (with graceful fallback) is resolved by the
+    featured-resource.html partial.
+*/}}
+{{- $page := . -}}
+{{- $featured := false -}}
+{{- if reflect.IsMap . -}}
+    {{- $page = .page -}}
+    {{- $featured = .featured -}}
+{{- end -}}
+{{- $img := partial "featured-resource.html" $page -}}
+<article data-reveal class="group relative flex flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 transition-shadow duration-300 hover:shadow-lg{{ if $featured }} md:flex-row md:min-h-[20rem]{{ end }}">
+    <div class="relative overflow-hidden bg-base-200 {{ if $featured }}aspect-[16/10] md:aspect-auto md:w-1/2{{ else }}aspect-square{{ end }}">
+        {{- if $img }}
+        {{/* Two square renditions drive the srcset: 600w covers mobile/tablet cards, 900w covers larger/featured and hi-dpi cards. */}}
+        {{- $sm := $img.Fill "600x600 webp q80 Center" -}}
+        {{- $lg := $img.Fill "900x900 webp q72 Center" -}}
+        <img src="{{ $sm.RelPermalink }}"
+             srcset="{{ $sm.RelPermalink }} 600w, {{ $lg.RelPermalink }} 900w"
+             sizes="{{ if $featured }}(min-width: 1024px) 40vw, 100vw{{ else }}(min-width: 1024px) 360px, (min-width: 640px) 45vw, 92vw{{ end }}"
+             width="{{ $sm.Width }}" height="{{ $sm.Height }}"
+             alt="{{ $page.Title }}"
+             loading="lazy" decoding="async"
+             class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105">
+        <span class="pointer-events-none absolute inset-0 bg-neutral/0 transition-colors duration-500 group-hover:bg-neutral/15"></span>
+        {{- else }}
+        <div class="flex h-full w-full items-center justify-center text-primary/25" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" class="h-16 w-16">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <path d="m21 15-5-5L5 21"/>
+            </svg>
+        </div>
+        {{- end }}
+    </div>
+    <div class="flex flex-1 flex-col gap-2 p-5{{ if $featured }} md:justify-center md:p-8{{ end }}">
+        <p class="text-xs font-semibold uppercase tracking-widest text-primary">{{ $page.Section | humanize | upper }}{{ if $featured }} <span class="text-base-content/40" aria-hidden="true">&middot;</span> {{ i18n "featured" | upper }}{{ end }}</p>
+        <h3 class="{{ if $featured }}text-2xl md:text-3xl{{ else }}text-lg{{ end }} font-semibold leading-snug tracking-tight text-base-content transition-colors group-hover:text-primary">
+            <a href="{{ $page.RelPermalink }}" class="after:absolute after:inset-0">{{ $page.Title }}</a>
+        </h3>
+        <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-base-content/60">
+            {{- if not $page.Date.IsZero }}
+            <time datetime="{{ $page.Date.Format `2006-01-02` }}">{{ $page.Date.Format (site.Params.dateform | default `Jan 2, 2006`) }}</time>
+            {{- end }}
+            {{- if and (not $page.Date.IsZero) (gt $page.ReadingTime 0) }}
+            <span aria-hidden="true">&middot;</span>
+            {{- end }}
+            {{- if gt $page.ReadingTime 0 }}
+            <span>{{ i18n "readingtime" $page.ReadingTime }}</span>
+            {{- end }}
+        </div>
+        {{- with $page.Summary }}
+        <p class="{{ if $featured }}line-clamp-3 text-base{{ else }}line-clamp-1 text-sm{{ end }} text-base-content/70">{{ . | plainify | truncate (cond $featured 260 140) }}</p>
+        {{- end }}
+        {{- with $page.GetTerms "tags" }}
+        <div class="relative z-10 mt-1 flex flex-wrap gap-1.5">
+            {{- range . }}
+            <a href="{{ .RelPermalink }}" class="rounded-full bg-base-200 px-2 py-0.5 text-xs text-base-content/70 transition-colors hover:bg-primary hover:text-primary-content">#{{ .LinkTitle }}</a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+</article>

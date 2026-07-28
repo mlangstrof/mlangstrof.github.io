@@ -7,9 +7,9 @@ featuredImage = "/images/ai_wine_tour_guide.webp"
 tags = ["wine", "basics", "ai"]
 +++
 
-Agentic AI, or *agents* for short are all the rage these days. As I showed in my [previous post](https://www.cloudandcabernet.com/en/wine/ai-sommelier/), they can come in quite handy when it comes to quickly and easily analyzing and making sense of data and help generate the insights you are looking for. 
+Agentic AI, or *agents* for short are all the rage these days. As I showed in my [previous post]({{< relref "ai-sommelier" >}}), they can come in quite handy when it comes to quickly and easily analyzing and making sense of data and help generate the insights you are looking for. 
 
-With my wine cellar already imported, I began to wonder what else my little AI helper might do for me. Zurich hosts several sizeable wine fairs each year (see my article [here](https://www.cloudandcabernet.com/en/wine/wine-events-zurich/) for more info), but making the most of them can be surprisingly tricky. Sure it's easy to wander in unprepared and leisurely drift from stall to stall (or wherever one happens to find free elbow-room) but if you're actually interested in finding wines that are right up your nose or those that are complete novelties, you'll need to carefully study the brochure and then plan a route, lest you be running around like a headless chicken looking for the 10th booth with something like *wine* or *vino* in the name. So what to do? Easy: Let AI do the heavy lifting.
+With my wine cellar already imported, I began to wonder what else my little AI helper might do for me. Zurich hosts several sizeable wine fairs each year (see my article [here]({{< relref "wine-events-zurich" >}}) for more info), but making the most of them can be surprisingly tricky. Sure it's easy to wander in unprepared and leisurely drift from stall to stall (or wherever one happens to find free elbow-room) but if you're actually interested in finding wines that are right up your nose or those that are complete novelties, you'll need to carefully study the brochure and then plan a route, lest you be running around like a headless chicken looking for the 10th booth with something like *wine* or *vino* in the name. So what to do? Easy: Let AI do the heavy lifting.
 
 This means we first use a prompt to have ChatGPT analyze our cellar to determine a taste profile:
 

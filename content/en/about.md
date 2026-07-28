@@ -1,17 +1,22 @@
 +++
 title = 'About'
-date = 2024-11-15T09:16:03+08:00
+date = 2026-07-16T09:16:03+08:00
 draft = false
 categories = ["about"]
-layout = "single"
+layout = "about"
 featuredImage = "/images/about.webp"
+role = "Solution Architect & DevSecOps Engineer"
+skills = ["Cloud Architecture", "Data & AI", "Security & Zero Trust", "Governance & Risk", "Automation", "DevSecOps", "Technology Advisory"]
+certificationsIt = ["Azure Solutions Architect (AZ-305)", "Cybersecurity Architect (SC-100)", "Azure DevOps Engineer (AZ-400)", "Azure AI Engineer (AI-102)", "TOGAF"]
+certificationsWine = ["WSET Level 3 Award in Wines", "Italian Wine Scholar", "French Wine Scholar"]
 [ _build ]
   list = false
 +++
 
-Welcome to my corner of the web! My name is Max Langstrof —a seasoned solution architect and DevSecOps engineer with a passion for cracking the code on complex cloud-based workloads. Whether I’m designing secure, automated Azure solutions or digging into the nitty-gritty of how Azure services tick under the hood, I thrive on solving puzzles and turning chaos into clarity.
+Welcome. My Name is Max Langstrof, a senior solution architect, cloud consultant, and DevSecOps engineer specializing in designing secure, automated Azure environments for highly complex and highly regulated industries. Having spent years advising Fortune 100 companies, I focus on bringing structural clarity to massive enterprise scale, ensuring global systems are optimized for performance, security, and next-generation data and AI workloads.
+​
 
-But there’s more to me than tech! When I’m not wrangling cloud services, you’ll find me swirling wine glasses and training my taste buds. With certifications like WSET Level 3 and the Italian Wine Scholar already under my belt—and more to come—I’m on a lifelong mission to sip, savor, and share the magic of wine with anyone willing to listen.
+When I am not designing cloud infrastructure, I pursue a lifelong passion for wine education as an active educator and scholar. Holding WSET Level 3, Italian Wine Scholar, and French Wine Scholar certifications, I periodically host structured classes to share the depth of this discipline with others. I treat viticulture with the same precision and rigorous study that I bring to technology.
+​
 
-This blog is where my worlds collide—a space for musings, observations, and a splash of humor on all things IT and wine. So pour yourself a glass (or brew some coffee), and let’s dive in!
-
+This blog is a space where these distinct worlds intersect. Here, you will find my strategic observations, professional commentary, and insights drawn from the frontiers of enterprise cloud architecture, data, AI, and wine education.

@@ -4,7 +4,7 @@ date = 2025-06-02T20:45:03+08:00
 draft = false
 categories = ["wine","recommendation"]
 featuredImage = "/images/whisky1.webp"
-tags = ["wine", "basics"]
+tags = ["Wein", "Grundlagen"]
 +++
 
 Heute stellen wir den Wein einmal ins Regal und widmen uns einem anderen edlen Tropfen: dem Whisky. Genauer gesagt, nehme ich euch mit nach **Islay** – einer kleinen Insel westlich von Glasgow, die berühmt ist für ihre raue Schönheit und ihren torfigen Whisky. Ich hatte das Glück, ein paar unvergessliche Tage auf dieser magischen Insel zu verbringen – und das pünktlich zum **Fèis Ìle** Whisky-Festival, zu dem Liebhaber des rauchigen Elixirs aus aller Welt pilgern, auf der Suche nach dem perfekten Schluck.
