@@ -58,7 +58,7 @@ The exam interface also provides access to Microsoft Learn documentation. This m
 
 # How should I prepare?
 Before I attempted the exam, I tried to find some helpful advice and while I found some blog posts and forum threads, none were quite as helpful as I had hoped. So here is what I wish I'd known beforehand:
-** Ideally, your preparation should combine three different approaches, tailored according to your already existing knowledge and practical experience:**:
+**Ideally, your preparation should combine three different approaches, tailored according to your already existing knowledge and practical experience:**:
 
 ## 1. Build broad conceptual knowledge
 
