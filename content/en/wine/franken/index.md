@@ -47,7 +47,7 @@ Another feature that sets Franken apart is the famous **Bocksbeutel** bottle sha
 I hope this short exploration proved interesting and perhaps made you curious to learn more. Stay tuned for additional German Wine Scholar-related articles highlighting more distinctive regional styles and hidden gems.
 
 # Recall flashcard
-![ Franken overview](images/franken_overview.webp "600px")
+![ Franken overview](images/franken_overview.svg "600px")
 
 
 
