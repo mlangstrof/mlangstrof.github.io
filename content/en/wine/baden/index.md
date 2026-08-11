@@ -75,12 +75,4 @@ This diversity is ultimately Baden's defining feature: it can produce delicate l
 And with that, our short excursion into Germany's southernmost wine region comes to an end. I hope you found it informative, and I'll see you in the next post.
 
 # Recall flashcard
-<<<<<<< HEAD
 ![ Baden overview](images/baden_overview.svg "600px")
-=======
-![ Baden overview](images/baden_overview.webp "600px")
->>>>>>> 50172e025146cb911f1b7349d7106a05872ebc93
-
-
-
-
