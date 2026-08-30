@@ -1,6 +1,6 @@
 +++
 title = 'GWS #4: Mittelrhein'
-date = 2026-08-30T18:45:03+08:00
+date = 2026-08-29T18:45:03+08:00
 draft = false
 categories = ["wine",]
 featuredImage = "/images/mittelrhein.webp"
